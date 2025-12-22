@@ -1,6 +1,7 @@
 import json
 import os
 import sys
+import random  # <--- YENI: Rastgelelik icin gerekli kutuphane
 from pathlib import Path
 from notifier import TelegramNotifier
 
@@ -31,10 +32,9 @@ def format_tip(tip):
     )
 
 def main():
-    print("DEBUG: Script baslatiliyor...")
+    print("DEBUG: Script baslatiliyor (Rastgele Mod)...")
 
     # 1. ORTAM DEGISKENLERINI AL
-    # GitHub Secrets'tan gelen verileri aliyoruz
     token = os.getenv("TELEGRAM_TOKEN")
     raw_chat_ids = os.getenv("TELEGRAM_CHAT_ID")
 
@@ -47,31 +47,35 @@ def main():
         print("HATA: TELEGRAM_CHAT_ID environment variable bulunamadi!")
         sys.exit(1)
 
-    # Chat ID'leri virgulden ayirip listeye ceviriyoruz
-    # Ornek: "123, 456" -> ['123', '456']
     target_ids = [x.strip() for x in raw_chat_ids.split(',') if x.strip()]
 
     if not target_ids:
-        print("HATA: Gecerli bir Chat ID bulunamadi. Format: ID1,ID2")
+        print("HATA: Gecerli bir Chat ID bulunamadi.")
         sys.exit(1)
-
-    print(f"DEBUG: Toplam {len(target_ids)} aliciya gonderim yapilacak.")
 
     # 3. VERIYI YUKLE
     data = load_data()
-    target_tip = None
-    target_index = -1
-
-    # Yayinlanmamis ipucunu bul
-    for index, tip in enumerate(data):
-        if not tip.get("is_published", False):
-            target_tip = tip
-            target_index = index
-            break
     
-    if not target_tip:
-        print("BILGI: Yayinlanacak yeni ipucu kalmadi.")
+    # --- DEGISIKLIK BASLANGICI ---
+    
+    # A) Yayinlanmamis (is_published: false) tum ipuclarini bir havuza at
+    unpublished_pool = [tip for tip in data if not tip.get("is_published", False)]
+    
+    # B) Havuz bos mu kontrol et
+    if not unpublished_pool:
+        print("BILGI: Yayinlanacak yeni ipucu kalmadi. Hepsi tukendi.")
         sys.exit(0)
+    
+    # C) Havuzdan RASTGELE bir tane sec
+    target_tip = random.choice(unpublished_pool)
+    
+    # D) Secilen ipucunun orijinal ana listedeki sirasini (index) bul
+    # (Kaydederken dogru satiri guncellemek icin bu sart)
+    target_index = data.index(target_tip)
+    
+    print(f"DEBUG: Rastgele secilen ID: {target_tip['id']}")
+    
+    # --- DEGISIKLIK BITISI ---
 
     # 4. GONDERIM DONGUSU
     message = format_tip(target_tip)
@@ -79,10 +83,7 @@ def main():
 
     for uid in target_ids:
         try:
-            print(f"DEBUG: {uid} ID'sine gonderiliyor...")
-            # Burada 'CHAT_ID' degil, dongudeki 'uid' degiskenini kullaniyoruz
             notifier = TelegramNotifier(token, uid)
-            
             if notifier.send_message(message):
                 print(f"BASARILI: {uid}")
                 success_count += 1
@@ -95,9 +96,9 @@ def main():
     if success_count > 0:
         data[target_index]["is_published"] = True
         save_data(data)
-        print(f"SONUC: İpucu {target_tip['id']} yayinlandi. Veritabani guncellendi.")
+        print(f"SONUC: İpucu {target_tip['id']} yayinlandi ve durum guncellendi.")
     else:
-        print("KRITIK: Hicbir aliciya mesaj gonderilemedi. Veritabani guncellenmedi.")
+        print("KRITIK: Mesaj gonderilemedi. Veritabani guncellenmedi.")
         sys.exit(1)
 
 if __name__ == "__main__":
