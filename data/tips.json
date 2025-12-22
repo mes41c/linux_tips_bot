@@ -1,0 +1,2402 @@
+[
+  {
+    "id": 1,
+    "category": "navigation",
+    "command": "cd -",
+    "title": "Hızlı Geri Dönüş",
+    "description": "Bulunduğunuz dizinden bir önceki dizine anında dönmek için kullanılır. Uzun dosya yollarını tekrar yazmanızı engeller.",
+    "is_published": false
+  },
+  {
+    "id": 2,
+    "category": "productivity",
+    "command": "Ctrl + R",
+    "title": "Geçmişte Arama (Reverse Search)",
+    "description": "Terminalde daha önce yazdığınız uzun bir komutu aramak için 'Ctrl + R' tuşlarına basın ve hatırladığınız birkaç harfi yazın.",
+    "is_published": false
+  },
+  {
+    "id": 3,
+    "category": "file_system",
+    "command": "du -sh ./*",
+    "title": "Dizin Boyutlarını İnsan Gözüyle Görme",
+    "description": "'disk usage' komutudur. -s (summary) ve -h (human-readable) parametreleri ile klasörlerin boyutunu MB/GB cinsinden listeler.",
+    "is_published": false
+  },
+  {
+    "id": 4,
+    "category": "file_system",
+    "command": "tail -f error.log",
+    "title": "Logları Canlı İzleme",
+    "description": "Bir log dosyasına yazılan verileri anlık olarak (real-time) ekranda akıtmak için kullanılır. Hata ayıklama için kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 5,
+    "category": "file_system",
+    "command": "mkdir -p proje/src/main",
+    "title": "İç İçe Klasör Oluşturma",
+    "description": "Tek tek klasör oluşturmak yerine, -p (parents) bayrağı ile tüm dizin ağacını tek komutla oluşturabilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 6,
+    "category": "productivity",
+    "command": "!!",
+    "title": "Son Komutu Tekrarla",
+    "description": "Son yazdığınız komutu çalıştırır. Genellikle yetki hatası aldığınızda 'sudo !!' şeklinde kullanılarak hayat kurtarır.",
+    "is_published": false
+  },
+  {
+    "id": 7,
+    "category": "file_system",
+    "command": "find . -name '*.py' -type f",
+    "title": "Dosya Bulma",
+    "description": "Bulunduğunuz dizin ve alt dizinlerinde, uzantısı .py olan tüm dosyaları listeler. Dosya ismini tam hatırlamadığınızda etkilidir.",
+    "is_published": false
+  },
+  {
+    "id": 8,
+    "category": "file_operations",
+    "command": "cp -a kaynak/ hedef/",
+    "title": "Birebir Yedekleme (Archive Mode)",
+    "description": "Dosyaları kopyalarken izinleri, sahiplik bilgilerini ve oluşturulma tarihlerini korumak için -a (archive) parametresi kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 9,
+    "category": "text_processing",
+    "command": "grep -r 'aranan_kelime' .",
+    "title": "İçerik Arama",
+    "description": "Bir klasördeki yüzlerce dosyanın içinde belirli bir kelimenin geçtiği dosyaları ve satırları bulur. Kod okurken çok işe yarar.",
+    "is_published": false
+  },
+  {
+    "id": 10,
+    "category": "productivity",
+    "command": "alias cls='clear'",
+    "title": "Kendi Komutunu Yarat",
+    "description": "Sık kullandığınız uzun komutlara kısa isimler takmanızı sağlar. Kalıcı olması için .bashrc veya .zshrc dosyasına eklenmelidir.",
+    "is_published": false
+  },
+  {
+    "id": 11,
+    "category": "navigation",
+    "command": "pushd /var/log && popd",
+    "title": "Dizin Yığınlama (Stack)",
+    "description": "'cd' komutundan daha yeteneklidir. 'pushd' ile bir dizine giderken mevcut konumunuzu hafızaya alırsınız, işiniz bitince 'popd' diyerek tam olarak kaldığınız yere dönersiniz.",
+    "is_published": false
+  },
+  {
+    "id": 12,
+    "category": "file_operations",
+    "command": "zcat access.log.tar.gz | grep '404'",
+    "title": "Sıkıştırılmış Dosyayı Açmadan Okuma",
+    "description": "Log dosyalarını açmakla (extract) zaman kaybetmeyin. zcat (veya zless, zgrep) sıkıştırılmış dosyaların içeriğini doğrudan okur.",
+    "is_published": false
+  },
+  {
+    "id": 13,
+    "category": "file_system",
+    "command": "stat dosya.txt",
+    "title": "Dosya Metaverisi ve Zaman Damgaları",
+    "description": "'ls' komutundan çok daha detaylıdır. Dosyanın erişim (Access), değişiklik (Modify) ve durum değiştirme (Change) zamanlarını ve inode numarasını gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 14,
+    "category": "file_operations",
+    "command": "ln -s /uzun/yol/hedef link_ismi",
+    "title": "Sembolik Link (Symlink) Oluşturma",
+    "description": "Windows'taki 'Kısayol' mantığıdır. Bir dosyanın veya klasörün başka bir konumda da varmış gibi davranmasını sağlar. Konfigürasyon yönetiminde kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 15,
+    "category": "file_system",
+    "command": "df -hT",
+    "title": "Disk Alanı ve Dosya Sistemi Tipi",
+    "description": "Disklerin doluluk oranını (-h: human readable) ve dosya sistemi tiplerini (-T: type, örn: ext4, xfs) gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 16,
+    "category": "file_operations",
+    "command": "find . -type f -name '*.tmp' -delete",
+    "title": "Bul ve Yok Et",
+    "description": "Belirli kriterlere uyan dosyaları bulup tek komutla siler. Dikkatli kullanılmalıdır. Test etmek için önce -delete yerine -print kullanın.",
+    "is_published": false
+  },
+  {
+    "id": 17,
+    "category": "file_analysis",
+    "command": "file resim.jpg",
+    "title": "Gerçek Dosya Türünü Tespit Etme",
+    "description": "Linux dosya uzantılarına güvenmez. Dosyanın 'Magic Number'ına (header) bakarak gerçekten ne dosyası olduğunu (ASCII text, PNG image, executable) söyler.",
+    "is_published": false
+  },
+  {
+    "id": 18,
+    "category": "security_ops",
+    "command": "shred -u hassas_veri.txt",
+    "title": "Güvenli Dosya Silme",
+    "description": "Dosyayı sadece silmez (unlink), üzerine rastgele veriler yazarak (overwrite) kurtarılmasını imkansız hale getirir. -u işlemi bitince dosyayı kaldırır.",
+    "is_published": false
+  },
+  {
+    "id": 19,
+    "category": "navigation",
+    "command": "tree -L 2",
+    "title": "Dizin Ağacını Görselleştirme",
+    "description": "Klasör yapısını ağaç şeklinde çizer. -L (Level) parametresi ile derinliği sınırlandırarak terminalin dolmasını engellersiniz.",
+    "is_published": false
+  },
+  {
+    "id": 20,
+    "category": "file_operations",
+    "command": "realpath goreceli_dosya.txt",
+    "title": "Tam Dosya Yolunu (Absolute Path) Alma",
+    "description": "Bir dosyanın tam yolunu (/home/user/...) verir. Scriptlerde veya başka bir programa dosya yolu verirken hata yapmayı önler.",
+    "is_published": false
+  },
+  {
+    "id": 21,
+    "category": "monitoring",
+    "command": "watch -n 1 'ls -lh dosya_adi'",
+    "title": "Dosya Değişimini Canlı İzleme",
+    "description": "'watch' komutu, yanına yazılan komutu belirli aralıklarla (burada 1 saniye) tekrar tekrar çalıştırır. Dosya boyutu değişimini veya indirme işlemlerini izlemek için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 22,
+    "category": "security_ops",
+    "command": "chattr +i kritik_dosya.conf",
+    "title": "Dosyayı Ölümsüz Yapma (Immutable)",
+    "description": "Root kullanıcısının bile dosyayı silmesini veya değiştirmesini engeller. Yanlışlıkla silinmeyi önlemek veya siber saldırılarda log dosyasını korumak için kullanılır. Kaldırmak için: 'chattr -i'.",
+    "is_published": false
+  },
+  {
+    "id": 23,
+    "category": "text_processing",
+    "command": "grep -C 5 'Error' app.log",
+    "title": "Hata Bağlamını Görme (Context)",
+    "description": "Grep ile arama yaparken sadece hatayı görmek yetmez. -C (Context) parametresi, aranan kelimenin geçtiği satırın 5 satır öncesini ve 5 satır sonrasını da getirerek olayı anlamanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 24,
+    "category": "file_operations",
+    "command": "mv config.yaml{,.yedek}",
+    "title": "Brace Expansion ile Hızlı Yedekleme",
+    "description": "Dosya ismini iki kez yazmanıza gerek yoktur. Bu komut 'mv config.yaml config.yaml.yedek' komutunun Bash kısayoludur.",
+    "is_published": false
+  },
+  {
+    "id": 25,
+    "category": "file_analysis",
+    "command": "sort | uniq -c | sort -nr",
+    "title": "Frekans Analizi",
+    "description": "Log dosyalarında en çok tekrar eden satırları sayar ve çoktan aza sıralar. Örneğin, bir web sunucusu logunda en çok istek yapan IP adreslerini tespit etmek için standart yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 26,
+    "category": "file_system",
+    "command": "ls -lrt",
+    "title": "Zamana Göre Sıralama",
+    "description": "Dosyaları oluşturulma/değiştirilme tarihine göre sıralar (-t) ve listeyi ters çevirir (-r). Böylece dizindeki en yeni dosyalar en altta görünür, hemen fark edilir.",
+    "is_published": false
+  },
+  {
+    "id": 27,
+    "category": "file_operations",
+    "command": "split -b 100M buyuk_dosya.tar.gz parca_",
+    "title": "Dosyayı Parçalara Bölme",
+    "description": "Devasa bir dosyayı taşımak veya e-posta ile atmak için belirli boyutlarda (örn: 100MB) parçalara böler. Birleştirmek için 'cat parca_* > tek_dosya' kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 28,
+    "category": "navigation",
+    "command": "locate dosya_adi",
+    "title": "Veritabanından Hızlı Arama",
+    "description": "'find' komutu diski o an taradığı için yavaştır. 'locate' ise önceden indekslenmiş veritabanından (mlocate.db) sorgu yaptığı için sonuçları milisaniyeler içinde getirir. (Veritabanını güncellemek için: sudo updatedb)",
+    "is_published": false
+  },
+  {
+    "id": 29,
+    "category": "file_comparison",
+    "command": "diff -u eski.conf yeni.conf",
+    "title": "Konfigürasyon Farklarını Bulma",
+    "description": "İki dosya arasındaki farkları satır satır gösterir. -u (unified) formatı, hangi satırın eklendiğini (+) veya çıkarıldığını (-) daha okunaklı sunar.",
+    "is_published": false
+  },
+  {
+    "id": 30,
+    "category": "file_operations",
+    "command": "tee -a islem.log",
+    "title": "Hem Ekrana Hem Dosyaya Yazma",
+    "description": "Bir komutun çıktısını hem terminalde görmek hem de aynı anda bir dosyaya kaydetmek için boru (pipe) ile 'tee' komutuna aktarılır. -a (append) üzerine ekleme yapar.",
+    "is_published": false
+  },
+  {
+    "id": 31,
+    "category": "text_processing",
+    "command": "sed -i 's/eski/yeni/g' config.xml",
+    "title": "Dosya İçi Yerinde Değişiklik",
+    "description": "Dosyayı açmadan içindeki metinleri değiştirir. 'sed' (stream editor) ile yapılan bu işlem kalıcıdır (-i: in-place). Büyük SQL dump dosyalarında domain değiştirmek için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 32,
+    "category": "text_processing",
+    "command": "awk '{print $1, $9}' access.log",
+    "title": "Sütun Bazlı Veri Çekme",
+    "description": "Dosyayı satır satır değil, sütun sütun okur. Örneğin bir Apache log dosyasından sadece IP adresini (1. sütun) ve HTTP durum kodunu (9. sütun) çekip temiz bir liste almanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 33,
+    "category": "productivity",
+    "command": "find . -name '*.log' -print0 | xargs -0 rm",
+    "title": "Hızlı ve Güvenli Toplu Silme",
+    "description": "'find' sonuçlarını 'rm' komutuna argüman olarak verir. '-print0' ve '-0' kullanımı, dosya isminde boşluk karakteri olsa bile (örn: 'Hata Logu.txt') işlemin hatasız yapılmasını sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 34,
+    "category": "monitoring",
+    "command": "lsof +D /var/log",
+    "title": "Dizini Kullanan Süreçleri Bulma",
+    "description": "Bir klasörü silmek veya unmount etmek istediğinizde 'Device or resource busy' hatası alırsanız, bu komut o dizindeki dosyaları o an hangi programın açık tuttuğunu gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 35,
+    "category": "file_comparison",
+    "command": "diff -y --suppress-common-lines a.txt b.txt",
+    "title": "Yan Yana Karşılaştırma",
+    "description": "İki dosyayı alt alta değil, yan yana (side-by-side) karşılaştırır. '--suppress-common-lines' parametresi sadece farklı olan satırları göstererek odağınızı korur.",
+    "is_published": false
+  },
+  {
+    "id": 36,
+    "category": "file_operations",
+    "command": "tar -czvf yedek.tar.gz -C /var/www html",
+    "title": "Dizin Yapısını Bozmadan Arşivleme",
+    "description": "Arşiv oluştururken tam dosya yolunu (/var/www/html/...) dahil etmemek için -C (Change directory) kullanılır. Böylece arşiv açıldığında dosyalar doğrudan mevcut dizine çıkar.",
+    "is_published": false
+  },
+  {
+    "id": 37,
+    "category": "security_ops",
+    "command": "sha256sum -c checksum.txt",
+    "title": "Dosya Bütünlüğü Doğrulama",
+    "description": "İndirdiğiniz bir ISO veya script dosyasının yolda bozulmadığını veya hacklenmediğini doğrular. Orijinal hash değerlerini içeren dosyayı kontrol eder.",
+    "is_published": false
+  },
+  {
+    "id": 38,
+    "category": "text_processing",
+    "command": "cat dosya.csv | column -t -s ','",
+    "title": "CSV'yi Tablo Olarak Okuma",
+    "description": "Okunması zor olan virgülle ayrılmış (CSV) dosyaları, terminalde hizalı bir tablo formatına çevirir. -s ayırıcı karakteri belirtir.",
+    "is_published": false
+  },
+  {
+    "id": 39,
+    "category": "text_processing",
+    "command": "grep -l 'error' *.log",
+    "title": "Sadece Dosya İsimlerini Listeleme",
+    "description": "Hatayı içeren satırları ekrana basmak yerine, hatanın geçtiği dosya isimlerini (-l: list files) listeler. Hangi günün logunda sorun olduğunu bulmak için hızlı bir yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 40,
+    "category": "file_system",
+    "command": "mount -o remount,rw /",
+    "title": "Read-Only Dosya Sistemini Yazılabilir Yapma",
+    "description": "Sistem hatası nedeniyle 'Read-only file system' moduna düşen bir sunucuda, kök dizini tekrar yazılabilir (Read-Write) olarak bağlamak için kullanılan kurtarma komutudur.",
+    "is_published": false
+  },
+  {
+    "id": 41,
+    "category": "file_maintenance",
+    "command": "find /var/log -name '*.log' -mtime +30 -delete",
+    "title": "Eski Dosyaları Otomatik Temizleme",
+    "description": "30 günden (+30) daha eski (-mtime) log dosyalarını bulup siler. Disk doluluğunu önlemek için cron job olarak tanımlanan standart bir bakım komutudur.",
+    "is_published": false
+  },
+  {
+    "id": 42,
+    "category": "security_ops",
+    "command": "lsattr -R",
+    "title": "Gizli Dosya Niteliklerini Görüntüleme",
+    "description": "'ls -l' izinleri gösterir ama 'chattr' ile atanmış özel nitelikleri (örn: silinemezlik) göstermez. 'lsattr' ile bu nitelikleri rekürsif (-R) olarak görebilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 43,
+    "category": "file_operations",
+    "command": "chmod -R +X .",
+    "title": "Akıllı İzin Verme (Capital X)",
+    "description": "Küçük 'x' tüm dosyalara çalıştırma izni verir ki bu güvenlik açığıdır. Büyük 'X' ise sadece klasörlere çalıştırma (içine girme) izni verir, dosyalara dokunmaz.",
+    "is_published": false
+  },
+  {
+    "id": 44,
+    "category": "troubleshooting",
+    "command": "namei -l /var/www/html/index.php",
+    "title": "İzin Hatalarını Ayıklama",
+    "description": "Derin bir dizin yapısında 'Permission denied' hatası alıyorsanız, bu komut yol üzerindeki her bir klasörün izinlerini alt alta listeleyerek tıkanıklığın nerede olduğunu gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 45,
+    "category": "file_operations",
+    "command": "dd if=/dev/zero of=test.img bs=1G count=1 status=progress",
+    "title": "Test Dosyası Oluşturma / Disk Yazma",
+    "description": "Belirli bir boyutta (örn: 1GB) boş dosya oluşturur veya disk imajı yazar. 'status=progress' parametresi işlemin ne kadarının tamamlandığını gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 46,
+    "category": "navigation",
+    "command": "ls -d */",
+    "title": "Sadece Klasörleri Listeleme",
+    "description": "'ls' komutu her şeyi listeler. Sadece dizinleri görmek istediğinizde -d (directory) parametresi ve globbing (*/) kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 47,
+    "category": "text_processing",
+    "command": "iconv -f ISO-8859-9 -t UTF-8 eski.txt > yeni.txt",
+    "title": "Karakter Kodlaması Dönüştürme",
+    "description": "Türkçe karakter sorunu yaşayan (bozuk görünen) dosyaların encoding yapısını ISO-8859-9'dan (veya Windows-1254) modern UTF-8 formatına çevirir.",
+    "is_published": false
+  },
+  {
+    "id": 48,
+    "category": "file_operations",
+    "command": "tar -xvf arsiv.tar.gz dosya.txt",
+    "title": "Arşivden Tek Dosya Çıkarma",
+    "description": "Devasa bir yedek dosyasını tamamen açmak yerine, sadece ihtiyacınız olan spesifik dosyayı dışarı çıkarır. Zamandan ve disk alanından tasarruf sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 49,
+    "category": "security_ops",
+    "command": "find / -perm -4000 2>/dev/null",
+    "title": "SUID Dosyalarını Tespit Etme",
+    "description": "Root yetkisiyle çalışan (SUID bit set edilmiş) dosyaları bulur. Hacklenen sistemlerde 'Privilege Escalation' (Yetki Yükseltme) saldırıları için ilk bakılan yerdir.",
+    "is_published": false
+  },
+  {
+    "id": 50,
+    "category": "scripting",
+    "command": "basename /usr/local/bin/script.sh .sh",
+    "title": "Dosya Adını Ayrıştırma",
+    "description": "Dosya yolundan sadece dosya ismini (script) alır ve uzantıyı (.sh) atar. Scriptlerde dosya isimleriyle dinamik işlem yaparken kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 51,
+    "category": "networking",
+    "command": "ss -tulpn",
+    "title": "Açık Portları Listeleme",
+    "description": "Eski 'netstat' komutunun modern halidir. Sistemde hangi portların (p) dinlendiğini (l), TCP/UDP (tu) ayrımını ve bu portu kullanan süreç isimlerini sayısal (n) olarak gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 52,
+    "category": "networking",
+    "command": "curl -I https://site.com",
+    "title": "HTTP Header Analizi",
+    "description": "Sayfanın gövdesini indirmeden sadece sunucu yanıt başlıklarını (Headers) çeker. Sunucu türünü (Nginx/Apache), versiyon bilgisini veya güvenlik başlıklarını kontrol etmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 53,
+    "category": "networking",
+    "command": "ip -c a",
+    "title": "IP Adreslerini Renkli Görüntüleme",
+    "description": "Kullanımdan kaldırılan 'ifconfig' yerine 'ip' komutu kullanılır. '-c' parametresi çıktıyı renklendirerek arayüzleri ve IP adreslerini okumayı kolaylaştırır.",
+    "is_published": false
+  },
+  {
+    "id": 54,
+    "category": "connectivity",
+    "command": "nc -zv 192.168.1.1 22",
+    "title": "Hızlı Port Kontrolü (Netcat)",
+    "description": "Telnet yerine 'Netcat' kullanılır. Hedef IP ve Port'a TCP bağlantısı (-z) dener. Portun açık olup olmadığını (Open/Connection refused) anlamanın en hızlı yoludur.",
+    "is_published": false
+  },
+  {
+    "id": 55,
+    "category": "security_ops",
+    "command": "ssh-copy-id user@server",
+    "title": "Şifresiz SSH Erişimi Kurulumu",
+    "description": "Public anahtarınızı (id_rsa.pub) karşı sunucuya güvenli bir şekilde kopyalar. Böylece her seferinde parola girmek zorunda kalmadan SSH bağlantısı kurabilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 56,
+    "category": "networking",
+    "command": "dig +short google.com MX",
+    "title": "Temiz DNS Sorgusu",
+    "description": "'nslookup' yerine 'dig' tercih edilir. '+short' parametresi gereksiz teknik detayları gizler ve sadece istenen kayıt türünü (örn: MX mail sunucuları) gösterir. Scriptlerde kullanımı idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 57,
+    "category": "troubleshooting",
+    "command": "mtr google.com",
+    "title": "Gelişmiş Ağ Tanılaması",
+    "description": "'ping' ve 'traceroute' komutlarının birleşimidir. Paketin hangi hop (durak) noktalarında ne kadar paket kaybettiğini (packet loss) canlı ve istatistiksel olarak gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 58,
+    "category": "networking",
+    "command": "lsof -i :80",
+    "title": "Portu Kullanan Süreci Bulma",
+    "description": "Belirli bir portu (örn: 80) hangi uygulamanın veya PID'nin işgal ettiğini listeler. Çakışma durumlarında veya şüpheli bağlantıları tespit etmekte kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 59,
+    "category": "networking",
+    "command": "curl ifconfig.me",
+    "title": "Dış (Public) IP Adresini Öğrenme",
+    "description": "NAT arkasındaki bir cihazdan internete hangi IP adresi ile çıktığınızı öğrenmek için harici bir servise istek atar. VPN kontrolü için sıkça kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 60,
+    "category": "security_ops",
+    "command": "tcpdump -i eth0 port 80 -w capture.pcap",
+    "title": "Ağ Trafiğini Kaydetme",
+    "description": "Belirtilen arayüz (eth0) ve port (80) üzerindeki paketleri yakalar ve daha sonra Wireshark ile incelenmek üzere bir dosyaya (.pcap) yazar.",
+    "is_published": false
+  },
+  {
+    "id": 61,
+    "category": "security_ops",
+    "command": "nmap -sV -p- 192.168.1.5",
+    "title": "Versiyon Tespiti ve Tam Port Tarama",
+    "description": "Hedef üzerindeki tüm 65535 portu (-p-) tarar ve çalışan servislerin versiyon bilgilerini (-sV) tespit eder. Güvenlik açıklarını (CVE) aramak için ilk adımdır.",
+    "is_published": false
+  },
+  {
+    "id": 62,
+    "category": "security_ops",
+    "command": "ssh -L 8080:localhost:80 user@remote_server",
+    "title": "SSH Local Port Forwarding (Tünelleme)",
+    "description": "Uzaktaki sunucunun yerel ağında çalışan (dışarıya kapalı) bir servise, kendi bilgisayarınızın 8080 portundan erişmenizi sağlar. Güvenli erişim ve firewall atlatma yöntemidir.",
+    "is_published": false
+  },
+  {
+    "id": 63,
+    "category": "networking",
+    "command": "ip neigh show",
+    "title": "ARP Tablosunu Görüntüleme",
+    "description": "Eski 'arp -a' komutunun modern halidir. Aynı ağdaki cihazların IP ve MAC adresi eşleşmelerini (Neighbor table) gösterir. 'REACHABLE' veya 'STALE' durumlarını belirtir.",
+    "is_published": false
+  },
+  {
+    "id": 64,
+    "category": "data_transfer",
+    "command": "rsync -avz -e ssh /yerel/klasor user@server:/uzak/yedek",
+    "title": "Akıllı ve Sıkıştırılmış Senkronizasyon",
+    "description": "'scp'den daha verimlidir. Sadece değişen dosyaları gönderir, kesilirse kaldığı yerden devam eder ve transfer sırasında veriyi sıkıştırır (-z).",
+    "is_published": false
+  },
+  {
+    "id": 65,
+    "category": "networking",
+    "command": "wget --mirror --convert-links example.com",
+    "title": "Web Sitesini Klonlama",
+    "description": "Bir web sitesinin tamamını çevrimdışı incelemek üzere indirir. Linkleri yerel yapıya göre dönüştürür. Statik site analizi ve phishing senaryoları (eğitim amaçlı) için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 66,
+    "category": "security_ops",
+    "command": "iptables -L -v -n",
+    "title": "Firewall Kurallarını Okuma",
+    "description": "Güvenlik duvarı kurallarını listeler. '-n' parametresi DNS çözümlemesi yapmadan sadece IP'leri gösterdiği için komutun çok hızlı çalışmasını sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 67,
+    "category": "reconnaissance",
+    "command": "whois example.com",
+    "title": "Domain Kayıt Bilgisi (OSINT)",
+    "description": "Domainin kime ait olduğu, ne zaman oluşturulduğu, hangi Name Server'ları (NS) kullandığı gibi açık kaynak istihbarat (OSINT) bilgilerini sorgular.",
+    "is_published": false
+  },
+  {
+    "id": 68,
+    "category": "networking",
+    "command": "nmcli device wifi list",
+    "title": "Terminalden Wi-Fi Taraması",
+    "description": "NetworkManager'ın komut satırı aracıdır. GUI olmayan sunucularda veya headless cihazlarda çevredeki kablosuz ağları listelemek ve bağlanmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 69,
+    "category": "troubleshooting",
+    "command": "curl -v telnet://192.168.1.1:22",
+    "title": "Curl ile Port Testi",
+    "description": "Eğer sistemde 'telnet' veya 'nc' yüklü değilse, 'curl' komutu bir İsviçre çakısı gibi TCP bağlantı testi yapmak için de kullanılabilir.",
+    "is_published": false
+  },
+  {
+    "id": 70,
+    "category": "data_transfer",
+    "command": "scp -r user@server:/var/www/html .",
+    "title": "Sunucudan Klasör İndirme",
+    "description": "SSH protokolü üzerinden güvenli dosya kopyalama (Secure Copy). '-r' (recursive) parametresi ile tek bir dosya yerine tüm klasör yapısını bilgisayarınıza çeker.",
+    "is_published": false
+  },
+  {
+    "id": 71,
+    "category": "networking",
+    "command": "sudo nano /etc/hosts",
+    "title": "Yerel DNS Yönlendirmesi (DNS Spoofing)",
+    "description": "DNS sunucusuna sormadan, belirli bir alan adını (örn: banka.com) istediğiniz IP adresine yönlendirmek için kullanılır. Yazılım geliştirme ve phishing simülasyonlarında kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 72,
+    "category": "security_ops",
+    "command": "nc -lvnp 4444",
+    "title": "Netcat Listener (Dinleyici)",
+    "description": "Belirtilen portta (4444) gelen bağlantıları dinler. Siber güvenlikte 'Reverse Shell' yakalamak veya iki bilgisayar arasında hızlıca dosya/mesaj transferi yapmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 73,
+    "category": "networking",
+    "command": "ip route show",
+    "title": "Yönlendirme Tablosunu (Routing Table) İnceleme",
+    "description": "Paketlerin hangi ağ geçidinden (Gateway) geçerek dışarı çıktığını gösterir. 'default via' satırı, internete çıkış kapınızdır.",
+    "is_published": false
+  },
+  {
+    "id": 74,
+    "category": "troubleshooting",
+    "command": "ethtool eth0",
+    "title": "Fiziksel Bağlantı Kontrolü",
+    "description": "Ağ kartının fiziksel durumunu sorgular. Kablo takılı mı (Link detected: yes), bağlantı hızı ne (Speed: 1000Mb/s) ve Duplex modu nedir gibi donanımsal bilgileri verir.",
+    "is_published": false
+  },
+  {
+    "id": 75,
+    "category": "networking",
+    "command": "curl -X POST -d 'user=admin&pass=123' http://api.site.com/login",
+    "title": "API Testi ve Veri Gönderme",
+    "description": "Curl sadece dosya indirmez. -X POST parametresi ile web formlarını simüle edebilir veya API'lere veri (payload) gönderebilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 76,
+    "category": "system_config",
+    "command": "hostnamectl set-hostname yeni-isim",
+    "title": "Makine İsmini (Hostname) Değiştirme",
+    "description": "Sunucunun ağda görünen ismini kalıcı olarak değiştirir. Değişikliğin aktif olması için oturumu kapatıp açmak gerekebilir.",
+    "is_published": false
+  },
+  {
+    "id": 77,
+    "category": "security_ops",
+    "command": "tcpdump -r capture.pcap",
+    "title": "PCAP Dosyasını Terminalde Okuma",
+    "description": "Daha önce kaydedilmiş bir ağ trafiği dosyasını (Wireshark formatı) terminal üzerinden okumanızı sağlar. GUI olmayan sunucularda analiz için gereklidir.",
+    "is_published": false
+  },
+  {
+    "id": 78,
+    "category": "troubleshooting",
+    "command": "resolvectl flush-caches",
+    "title": "DNS Önbelleğini Temizleme",
+    "description": "Systemd tabanlı modern Linux sistemlerde (Ubuntu 20.04+), yapılan DNS değişikliklerinin hemen algılanması için yerel DNS önbelleğini temizler.",
+    "is_published": false
+  },
+  {
+    "id": 79,
+    "category": "reconnaissance",
+    "command": "whois 8.8.8.8",
+    "title": "IP Sahipliğini Sorgulama",
+    "description": "Whois sadece domainler için değildir. Bir IP adresinin hangi kuruma (ISP, Şirket) ait olduğunu, hangi IP bloğunda (Range) yer aldığını gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 80,
+    "category": "data_transfer",
+    "command": "wget -O - http://site.com/script.sh | bash",
+    "title": "İndir ve Doğrudan Çalıştır (Pipe to Bash)",
+    "description": "Dosyayı diske kaydetmeden (-O -) doğrudan standart çıktıya (stdout) verir ve bunu bash'e aktarır. Hızlı kurulumlar için kullanılır ancak güvenlik riski yüksektir, kaynağa güvenilmelidir.",
+    "is_published": false
+  },
+  {
+    "id": 81,
+    "category": "security_ops",
+    "command": "macchanger -r eth0",
+    "title": "MAC Adresi Spoofing (Rastgele)",
+    "description": "Donanım adresinizi (MAC) rastgele bir değerle değiştirir. Halka açık Wi-Fi ağlarında kimliğinizi gizlemek veya MAC filtresi uygulayan ağlara sızmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 82,
+    "category": "monitoring",
+    "command": "iftop -n",
+    "title": "Anlık Bant Genişliği İzleme",
+    "description": "Ağ trafiğini, hangi IP adresiyle ne kadar veri alışverişi yapıldığına göre sıralayarak gösterir. Sunucuyu sömüren bir bağlantıyı tespit etmek için 'top' komutunun ağ versiyonudur.",
+    "is_published": false
+  },
+  {
+    "id": 83,
+    "category": "security_ops",
+    "command": "ssh -D 9090 user@server",
+    "title": "Dinamik SOCKS Proxy (SSH Tünelleme)",
+    "description": "SSH üzerinden dinamik bir SOCKS proxy tüneli açar. Tarayıcınızı localhost:9090'a yönlendirerek, internete sanki uzak sunucu üzerinden çıkıyormuşsunuz gibi (VPN benzeri) gezebilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 84,
+    "category": "troubleshooting",
+    "command": "traceroute -T -p 443 google.com",
+    "title": "TCP Traceroute",
+    "description": "Klasik traceroute (ICMP) güvenlik duvarlarına takılabilir. -T parametresi TCP paketleri (varsayılan 80. port, -p ile değişir) göndererek gerçek bir web isteği gibi davranır ve engelleri aşar.",
+    "is_published": false
+  },
+  {
+    "id": 85,
+    "category": "networking",
+    "command": "curl -L -v http://short.url",
+    "title": "Yönlendirmeleri Takip Etme",
+    "description": "-L (Location) parametresi HTTP 301/302 yönlendirmelerini takip eder. -v (verbose) ile birleştiğinde, bir kısaltılmış linkin sizi nihai olarak hangi siteye götürdüğünü analiz edersiniz.",
+    "is_published": false
+  },
+  {
+    "id": 86,
+    "category": "reconnaissance",
+    "command": "arp-scan --localnet",
+    "title": "Aktif Yerel Ağ Taraması",
+    "description": "Yerel ağdaki tüm cihazlara ARP paketleri göndererek aktif cihazları listeler. Pasif izlemenin aksine, IP'si gizlenmiş olsa bile fiziksel olarak ağda olan cihazları bulur.",
+    "is_published": false
+  },
+  {
+    "id": 87,
+    "category": "reconnaissance",
+    "command": "host -t txt google.com",
+    "title": "DNS TXT Kayıtlarını Okuma",
+    "description": "Sadece IP değil, SPF kayıtları ve doğrulama anahtarları gibi metin tabanlı DNS kayıtlarını çeker. Phishing analizlerinde domainin güvenilirliğini sorgulamak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 88,
+    "category": "data_transfer",
+    "command": "wget -c http://site.com/buyuk_dosya.iso",
+    "title": "İndirmeye Kaldığı Yerden Devam Etme",
+    "description": "Kesilen bir indirmeyi baştan başlatmak yerine -c (continue) parametresi ile kaldığı yerden devam ettirir. Kararsız ağ bağlantılarında büyük dosyalar için hayat kurtarıcıdır.",
+    "is_published": false
+  },
+  {
+    "id": 89,
+    "category": "system_config",
+    "command": "nmtui",
+    "title": "Terminal İçinde Görsel Ağ Ayarı",
+    "description": "Karmaşık 'nmcli' komutlarını hatırlamak zorunda kalmadan, terminal içinde çalışan grafiksel bir arayüzle (TUI) IP atama, DNS değiştirme ve Wi-Fi bağlantısı yapmanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 90,
+    "category": "productivity",
+    "command": "nano ~/.ssh/config",
+    "title": "SSH Konfigürasyon Dosyası",
+    "description": "Her seferinde 'ssh user@uzun.sunucu.adresi -p 2222 -i key.pem' yazmak yerine, bu dosyaya takma ad (alias) tanımlayarak sadece 'ssh sunucum' yazarak bağlanmanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 91,
+    "category": "security_ops",
+    "command": "openssl s_client -connect google.com:443",
+    "title": "SSL/TLS Sertifika Analizi",
+    "description": "Bir sunucunun SSL sertifikasının geçerlilik süresini, şifreleme algoritmasını ve zincir yapısını (Chain) terminalden detaylıca inceler. Tarayıcının 'kilit' ikonuna tıklamanın mühendislik karşılığıdır.",
+    "is_published": false
+  },
+  {
+    "id": 92,
+    "category": "networking",
+    "command": "socat TCP-LISTEN:8080,fork TCP:192.168.1.5:80",
+    "title": "Gelişmiş Port Yönlendirme (Socat)",
+    "description": "Netcat'in çok daha güçlü abisidir. Bu komut, makinenize 8080 portundan gelen trafiği alır ve 192.168.1.5'in 80 portuna iletir. 'Fork' parametresi birden fazla bağlantıyı yönetmesini sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 93,
+    "category": "reconnaissance",
+    "command": "curl -A 'Mozilla/5.0' http://site.com",
+    "title": "User-Agent Spoofing (Kimlik Gizleme)",
+    "description": "Sunucular bazen 'curl' veya 'python' gibi bot isteklerini engeller. -A parametresi ile kendinizi bir Chrome tarayıcısı (Mozilla/5.0...) gibi tanıtarak bu basit güvenlik duvarlarını aşarsınız.",
+    "is_published": false
+  },
+  {
+    "id": 94,
+    "category": "data_transfer",
+    "command": "python3 -m http.server 8000",
+    "title": "Anlık HTTP Sunucusu Başlatma",
+    "description": "Bulunduğunuz klasörü anında bir web sunucusuna dönüştürür. Ağdaki diğer cihazlara hızlıca dosya göndermek veya bir exploit'i karşı tarafa indirtmek için en pratik yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 95,
+    "category": "reconnaissance",
+    "command": "dig -x 8.8.8.8",
+    "title": "Tersine DNS (Reverse Lookup)",
+    "description": "Bir IP adresinin hangi alan adına (hostname) karşılık geldiğini sorgular. Log dosyalarında gördüğünüz şüpheli IP'lerin aslında Google, AWS veya bilinen bir servise ait olup olmadığını anlamanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 96,
+    "category": "networking",
+    "command": "fping -a -g 192.168.1.0/24",
+    "title": "Hızlı Ağ Taraması (Ping Sweep)",
+    "description": "Standart ping yavaştır. 'fping', tüm bloğu (-g) paralel olarak pingler ve sadece hayatta olan (-a: alive) cihazları listeler. Nmap öncesi hızlı keşif için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 97,
+    "category": "data_transfer",
+    "command": "wget --limit-rate=100k http://site.com/dosya.iso",
+    "title": "İndirme Hızını Sınırlama",
+    "description": "Büyük bir dosya indirirken tüm ağın bant genişliğini (bandwidth) tüketmemek için indirme hızını 100KB/s ile sınırlar. Paylaşımlı ağlarda veya IDS/IPS sistemlerini tetiklememek için (Stealth) kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 98,
+    "category": "monitoring",
+    "command": "ss -o state established",
+    "title": "Sadece Aktif Bağlantıları Listeleme",
+    "description": "Dinleyen (Listening) veya kapanmış portları görmezden gelerek, sadece o anda veri alışverişi yapan (Established) bağlantıları listeler. 'Keepalive' sayaçlarını da (-o) gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 99,
+    "category": "security_ops",
+    "command": "curl --cookie 'session_id=123' http://site.com",
+    "title": "Oturum Çalma (Session Hijacking) Testi",
+    "description": "Web sitesine tarayıcı olmadan, belirli bir çerez (cookie) değeriyle istek atar. XSS açıklarıyla elde edilen oturum çerezlerini test etmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 100,
+    "category": "security_ops",
+    "command": "ssh -R 80:localhost:3000 user@public_server",
+    "title": "SSH Remote Port Forwarding (Dışa Açma)",
+    "description": "Yerel bilgisayarınızdaki bir servisi (port 3000), NAT veya Firewall arkasında olsanız bile internete açık bir sunucunun (public_server) portuna (80) tüneller. Localhost'u internete açmak demektir.",
+    "is_published": false
+  },
+  {
+    "id": 101,
+    "category": "performance",
+    "command": "htop",
+    "title": "İnteraktif Süreç Yöneticisi",
+    "description": "Klasik 'top' komutunun modern, renkli ve mouse destekli halidir. CPU çekirdeklerini grafiksel gösterir, F9 ile süreçleri öldürmenizi sağlar. Kurulu değilse mutlaka kurulmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 102,
+    "category": "process_management",
+    "command": "ps aux | grep 'python'",
+    "title": "Süreç Yakalama (Snapshot)",
+    "description": "Sistemde o an çalışan tüm süreçlerin dökümünü alır (aux) ve içinden belirli bir kelimeyi (örn: python) filtreler. Anlık analiz için standart yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 103,
+    "category": "performance",
+    "command": "free -h",
+    "title": "RAM Kullanımı Kontrolü",
+    "description": "Sistemin bellek durumunu insan tarafından okunabilir (human-readable, GB/MB) formatta gösterir. 'Available' sütunu, gerçekten kullanılabilir boş belleği ifade eder.",
+    "is_published": false
+  },
+  {
+    "id": 104,
+    "category": "process_management",
+    "command": "kill -9 PID",
+    "title": "Zorla Sonlandırma (SIGKILL)",
+    "description": "Normal 'kill' (SIGTERM) komutuna yanıt vermeyen inatçı veya kilitlenmiş süreçleri derhal ve temizlik yapmasına izin vermeden öldürür (-9).",
+    "is_published": false
+  },
+  {
+    "id": 105,
+    "category": "performance",
+    "command": "uptime",
+    "title": "Sistem Yükü (Load Average)",
+    "description": "Sistemin ne kadar süredir açık olduğunu ve son 1, 5, 15 dakikalık yük ortalamasını gösterir. Yük ortalaması CPU çekirdek sayısını geçiyorsa darboğaz var demektir.",
+    "is_published": false
+  },
+  {
+    "id": 106,
+    "category": "monitoring",
+    "command": "iotop",
+    "title": "Disk I/O İzleme",
+    "description": "CPU kullanımı düşük olmasına rağmen sistem yavaşsa, suçlu disktir. 'iotop', hangi sürecin diske en çok yazma/okuma yaptığını anlık gösterir. (Root yetkisi ister)",
+    "is_published": false
+  },
+  {
+    "id": 107,
+    "category": "process_management",
+    "command": "pgrep -a python",
+    "title": "Süreç ID'lerini Listeleme",
+    "description": "'ps' ve 'grep' kombinasyonunun kısayoludur. Belirli bir isme sahip süreçlerin sadece PID'lerini (ve -a ile tam komut satırını) listeler. Scriptlerde kullanım için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 108,
+    "category": "performance",
+    "command": "vmstat 1",
+    "title": "Sanal Bellek ve CPU İstatistikleri",
+    "description": "Sistem kaynaklarını her saniye (1) güncelleyerek raporlar. 'htop'un aksine metin tabanlıdır ve loglanabilir. CPU bekleme süresi (wa) ve swap kullanımı (si/so) kritik metriklerdir.",
+    "is_published": false
+  },
+  {
+    "id": 109,
+    "category": "process_management",
+    "command": "nice -n 10 ./script.sh",
+    "title": "Düşük Öncelikli Çalıştırma",
+    "description": "İşlemciyi yoracak bir scripti, sistemin geri kalanını yavaşlatmadan çalıştırmak için önceliğini (niceness) düşürür. Pozitif değerler daha düşük öncelik demektir.",
+    "is_published": false
+  },
+  {
+    "id": 110,
+    "category": "system_info",
+    "command": "lscpu",
+    "title": "CPU Mimarisi Detayları",
+    "description": "İşlemci modelini, çekirdek sayısını, sanallaştırma desteğini (VT-x/AMD-V) ve mimariyi (x86_64/ARM) detaylıca döker.",
+    "is_published": false
+  },
+  {
+    "id": 111,
+    "category": "service_management",
+    "command": "systemctl status nginx",
+    "title": "Servis Durumunu Sorgulama",
+    "description": "Bir servisin (Daemon) çalışıp çalışmadığını, en son ne zaman başladığını ve son log satırlarını gösterir. Sistem yöneticisinin sabah kahvesinden önce baktığı ilk yerdir.",
+    "is_published": false
+  },
+  {
+    "id": 112,
+    "category": "troubleshooting",
+    "command": "journalctl -xe",
+    "title": "Sistem Hata Logları (Detaylı)",
+    "description": "Bir servis başlamadığında sebebini bulmak için kullanılır. -x (explanation) hatayı açıklar, -e (end) ise logun en sonuna (güncel olana) gider.",
+    "is_published": false
+  },
+  {
+    "id": 113,
+    "category": "process_management",
+    "command": "Ctrl + Z ve ardından 'bg'",
+    "title": "Süreci Arka Plana Atma",
+    "description": "Uzun süren bir işlemi (örn: kopyalama) durdurmadan terminali geri almak için önce Ctrl+Z ile duraklatılır, sonra 'bg' komutu ile arka planda çalışmaya devam etmesi sağlanır.",
+    "is_published": false
+  },
+  {
+    "id": 114,
+    "category": "scheduling",
+    "command": "crontab -e",
+    "title": "Zamanlanmış Görevler (Cron Job)",
+    "description": "Belirli zamanlarda otomatik çalışacak komutları (yedekleme, log temizleme) düzenler. Siber güvenlikte saldırganlar kalıcılık (persistence) sağlamak için buraya gizlenir.",
+    "is_published": false
+  },
+  {
+    "id": 115,
+    "category": "service_management",
+    "command": "systemctl enable --now docker",
+    "title": "Servisi Başlat ve Otomatikleştir",
+    "description": "İki komut yerine geçer: Hem servisi o an başlatır (start) hem de bir sonraki sistem açılışında otomatik başlaması için ayarlar (enable).",
+    "is_published": false
+  },
+  {
+    "id": 116,
+    "category": "monitoring",
+    "command": "dmesg -w",
+    "title": "Kernel Mesajlarını Canlı İzleme",
+    "description": "Donanım ve sürücü (driver) seviyesindeki olayları gösterir. USB takıldığında veya disk hatası oluştuğunda kernelin ne tepki verdiğini canlı (-w: wait) izlersiniz.",
+    "is_published": false
+  },
+  {
+    "id": 117,
+    "category": "process_management",
+    "command": "nohup ./uzun_script.sh &",
+    "title": "Oturum Kapansa da Çalışmaya Devam Et",
+    "description": "SSH bağlantısı kopsa bile işlemin ölmesini engeller (No Hang Up). Çıktıyı varsayılan olarak 'nohup.out' dosyasına yazar. Uzun taramalar için kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 118,
+    "category": "process_management",
+    "command": "killall -u user php-fpm",
+    "title": "Kullanıcıya Ait Süreçleri Toplu Öldürme",
+    "description": "PID aramak yerine, isme göre süreçleri sonlandırır. -u parametresi ile sadece belirli bir kullanıcının çalıştırdığı süreçleri hedef alarak diğerlerini korur.",
+    "is_published": false
+  },
+  {
+    "id": 119,
+    "category": "performance",
+    "command": "systemd-analyze blame",
+    "title": "Yavaş Açılış Analizi",
+    "description": "Sistemin açılış (boot) süresini hangi servisin ne kadar geciktirdiğini sıralı bir liste halinde gösterir. Optimizasyon için darboğazı işaret eder.",
+    "is_published": false
+  },
+  {
+    "id": 120,
+    "category": "monitoring",
+    "command": "last -a",
+    "title": "Son Giriş Yapanları Listeleme",
+    "description": "Sisteme en son kimin, ne zaman ve hangi IP adresinden bağlandığını gösterir. Yetkisiz erişim denemelerini tespit etmek için log dosyası (wtmp) kaydını okur.",
+    "is_published": false
+  },
+  {
+    "id": 121,
+    "category": "troubleshooting",
+    "command": "strace -p PID",
+    "title": "Sistem Çağrılarını İzleme (X-Ray)",
+    "description": "Çalışan bir sürecin (process) kernel ile nasıl konuştuğunu, hangi dosyaları açtığını ve hangi ağ bağlantılarını yaptığını anlık izler. Debugging ve Malware analizi için 1 numaralı araçtır.",
+    "is_published": false
+  },
+  {
+    "id": 122,
+    "category": "system_config",
+    "command": "sysctl -a | grep net.ipv4",
+    "title": "Kernel Parametrelerini Listeleme",
+    "description": "Linux çekirdeğinin çalışma zamanı (runtime) ayarlarını listeler. Özellikle ağ yığınını (network stack) optimize etmek veya IP yönlendirmeyi açmak/kapatmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 123,
+    "category": "process_management",
+    "command": "pstree -p",
+    "title": "Süreç Ağacı",
+    "description": "Süreçleri düz liste yerine, ebeveyn-çocuk (parent-child) ilişkisine göre ağaç yapısında gösterir. Bir zararlı yazılımın hangi süreç tarafından başlatıldığını (origin) tespit etmekte kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 124,
+    "category": "performance",
+    "command": "ulimit -a",
+    "title": "Kullanıcı Kaynak Limitleri",
+    "description": "Bir kullanıcının açabileceği maksimum dosya sayısını veya çalıştırabileceği maksimum süreç sayısını gösterir. 'Too many open files' hatası alıyorsanız buraya bakmalısınız.",
+    "is_published": false
+  },
+  {
+    "id": 125,
+    "category": "monitoring",
+    "command": "cat /proc/cpuinfo",
+    "title": "Detaylı İşlemci Bilgisi (ProcFS)",
+    "description": "Kernelin işlemciyi nasıl gördüğünü ham haliyle okur. 'flags' kısmında işlemcinin desteklediği özellikleri (örn: sanallaştırma için 'vmx' veya 'svm') görebilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 126,
+    "category": "process_management",
+    "command": "fuser -k -v /var/lib/dpkg/lock",
+    "title": "Dosyayı Kilitleyen Süreci Öldürme",
+    "description": "Bir dosyayı (örneğin paket yöneticisi kilidini) hangi sürecin tuttuğunu bulur (-v) ve o süreci öldürür (-k). Güncelleme sırasında alınan kilit hatalarını çözmek için birebirdir.",
+    "is_published": false
+  },
+  {
+    "id": 127,
+    "category": "performance",
+    "command": "time ./script.sh",
+    "title": "Komut Süresi Ölçme (Benchmarking)",
+    "description": "Bir komutun veya scriptin ne kadar sürede tamamlandığını ölçer. Real (gerçek süre), User (CPU süresi) ve Sys (Kernel süresi) ayrımlarını verir.",
+    "is_published": false
+  },
+  {
+    "id": 128,
+    "category": "system_info",
+    "command": "lsmod",
+    "title": "Yüklü Kernel Modülleri",
+    "description": "Çekirdeğe yüklenmiş sürücüleri (drivers) ve modülleri listeler. Rootkit'ler genellikle kendilerini buraya gizlemeye çalışır veya buradan tespit edilir.",
+    "is_published": false
+  },
+  {
+    "id": 129,
+    "category": "monitoring",
+    "command": "w",
+    "title": "Kim Ne Yapıyor?",
+    "description": "'who' komutundan daha detaylıdır. Sisteme bağlı kullanıcıları, nereden bağlandıklarını ve O AN terminalde hangi komutu çalıştırdıklarını (WHAT) gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 130,
+    "category": "process_management",
+    "command": "top -b -n 1 > snapshot.txt",
+    "title": "Süreç Raporunu Dosyaya Kaydetme",
+    "description": "'top' komutunu interaktif mod yerine Batch (-b) modunda tek seferlik (-n 1) çalıştırır. Otomatik scriptlerde sistem durumunu log dosyasına yazmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 131,
+    "category": "hardware_info",
+    "command": "lspci -tv",
+    "title": "PCI Veriyolu Ağacı",
+    "description": "Anakarta takılı donanımları (Ekran kartı, Ağ kartı, USB denetleyicisi) ve bunların nasıl bağlandığını ağaç yapısında gösterir. Donanım uyumluluk sorunlarını çözerken kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 132,
+    "category": "security_ops",
+    "command": "lsusb -t",
+    "title": "USB Cihaz Hiyerarşisi",
+    "description": "Hangi USB portuna neyin takılı olduğunu, hangi sürücüyü (driver) kullandığını ve veri yolu hızını gösterir. Fiziksel güvenlik denetimlerinde (Keylogger tespiti) kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 133,
+    "category": "performance",
+    "command": "cat /proc/meminfo",
+    "title": "Ham Bellek Detayları",
+    "description": "'free' komutunun kaynak verisidir. RAM'in ne kadarının 'Dirty', ne kadarının 'Mapped' veya 'Slab' (Kernel cache) olduğunu mikroskobik düzeyde gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 134,
+    "category": "process_management",
+    "command": "ionice -c 3 -p PID",
+    "title": "Disk I/O Önceliğini Düşürme",
+    "description": "CPU için 'nice' neyse, Disk için 'ionice' odur. -c 3 (Idle) parametresi, sürece 'Sadece disk boşken yazma yap' emri verir. Yedekleme scriptleri için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 135,
+    "category": "hardware_info",
+    "command": "lsblk -f",
+    "title": "Blok Cihazları ve Dosya Sistemleri",
+    "description": "Diskleri, bölümleri (partitions), dosya sistemi tiplerini (ext4, xfs) ve UUID'lerini ağaç yapısında listeler. Disk yönetimi öncesi büyük resmi görmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 136,
+    "category": "troubleshooting",
+    "command": "pmap -x PID",
+    "title": "Süreç Bellek Haritası",
+    "description": "Bir uygulamanın RAM'de kapladığı alanı kütüphane kütüphane (library) ayırır. Bellek sızıntısı (Memory Leak) analizi yaparken hangi modülün RAM'i şişirdiğini bulur.",
+    "is_published": false
+  },
+  {
+    "id": 137,
+    "category": "monitoring",
+    "command": "sar -u 1 5",
+    "title": "Geçmişe Dönük Performans (System Activity Reporter)",
+    "description": "Sistem o an yavaş olmasa bile, geçmişte ne zaman CPU tavan yaptı? 'sar', sistemin kara kutusudur. CPU, RAM ve Disk istatistiklerini tarihçeli olarak tutar.",
+    "is_published": false
+  },
+  {
+    "id": 138,
+    "category": "performance",
+    "command": "taskset -cp 0-2 PID",
+    "title": "CPU Affinity (Çekirdek Sabitleme)",
+    "description": "Bir süreci belirli CPU çekirdeklerine (örn: 0, 1 ve 2) hapseder. Yüksek performanslı sunucularda Context Switch maliyetini azaltmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 139,
+    "category": "system_config",
+    "command": "sysctl vm.swappiness=10",
+    "title": "Swap Kullanım Eğilimini Azaltma",
+    "description": "Sistemin RAM dolmadan diske (Swap) geçme eğilimini ayarlar. Varsayılan 60'tır. 10 yapmak, sistemi RAM'i sonuna kadar kullanmaya zorlar ve performansı artırır.",
+    "is_published": false
+  },
+  {
+    "id": 140,
+    "category": "troubleshooting",
+    "command": "logrotate -d /etc/logrotate.conf",
+    "title": "Log Rotasyonu Debug",
+    "description": "Disk doluluğunun ana sebebi logların dönmemesidir (rotate). -d (debug) modu, logrotate işlemini simüle eder ve neden eski logların silinmediğini raporlar.",
+    "is_published": false
+  },
+  {
+    "id": 141,
+    "category": "monitoring",
+    "command": "watch -d 'cat /proc/interrupts'",
+    "title": "Donanım Kesmelerini (Interrupts) İzleme",
+    "description": "CPU'nun hangi donanımla (Klavye, Ethernet, Disk) ne kadar meşgul olduğunu gösterir. Bir çekirdeğin neden %100 kullanıldığını anlamak için donanım seviyesi analizdir.",
+    "is_published": false
+  },
+  {
+    "id": 142,
+    "category": "process_management",
+    "command": "chrt -f -p 99 PID",
+    "title": "Real-Time Öncelik Atama",
+    "description": "Bir süreci FIFO (First-In First-Out) modunda en yüksek öncelikle (99) çalıştırır. Son derece tehlikelidir; süreç kilitlenirse tüm sistem donar. Endüstriyel sistemlerde kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 143,
+    "category": "file_operations",
+    "command": "sync; echo 3 > /proc/sys/vm/drop_caches",
+    "title": "RAM Önbelleğini (Cache) Zorla Temizleme",
+    "description": "Kernelin dosya işlemleri için ayırdığı önbelleği boşaltır ve RAM'i 'Free' durumuna getirir. Genellikle performans testlerinden önce sistemi sıfırlamak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 144,
+    "category": "hardware_info",
+    "command": "lshw -short",
+    "title": "Donanım Envanteri",
+    "description": "Sistemin Marka, Model, Seri Numarası, RAM slotları ve Firmware sürümlerini tek bir tabloda özetler. Sunucu envanteri çıkarmak için en iyi araçtır.",
+    "is_published": false
+  },
+  {
+    "id": 145,
+    "category": "troubleshooting",
+    "command": "cat /proc/PID/environ | tr '\\0' '\\n'",
+    "title": "Süreç Ortam Değişkenlerini Okuma",
+    "description": "Çalışan bir programın hangi ortam değişkenleriyle (Environment Variables) başlatıldığını gösterir. Malware analizi ve API anahtarı sızıntılarını kontrol etmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 146,
+    "category": "performance",
+    "command": "prlimit --pid PID --nofile=1024:4096",
+    "title": "Canlı Süreç Limitlerini Değiştirme",
+    "description": "Uygulamayı kapatıp açmadan, çalışma anında kaynak limitlerini (örn: Açık dosya sayısı) değiştirir. Servis kesintisi yapmadan darboğazı açmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 147,
+    "category": "hardware_info",
+    "command": "dmidecode -t memory",
+    "title": "Fiziksel RAM Slot Bilgisi",
+    "description": "Kasayı açmadan anakart üzerindeki RAM slotlarının dolu mu boş mu olduğunu, takılı RAM'in hızını ve üreticisini BIOS (DMI) üzerinden okur.",
+    "is_published": false
+  },
+  {
+    "id": 148,
+    "category": "monitoring",
+    "command": "sensors",
+    "title": "Sıcaklık ve Voltaj İzleme",
+    "description": "lm-sensors paketi ile CPU çekirdeklerinin sıcaklığını, fan hızlarını ve voltaj değerlerini okur. Sunucu odası klimaları bozulduğunda hayat kurtarır.",
+    "is_published": false
+  },
+  {
+    "id": 149,
+    "category": "process_management",
+    "command": "pidof uygulama_adi",
+    "title": "PID Bulma (Hızlı)",
+    "description": "'ps aux | grep' yazmak yerine, bir uygulamanın Process ID'sini tek seferde döndürür. Scriptlerde 'kill $(pidof apache2)' şeklinde sıkça kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 150,
+    "category": "performance",
+    "command": "perf top",
+    "title": "Kernel Seviyesi Profilleme",
+    "description": "Sistemi en çok yoran fonksiyonları (Kernel veya Userspace) canlı izler. Hangi C fonksiyonunun CPU'yu tükettiğini gösterir. Linux performans analizinin zirvesidir.",
+    "is_published": false
+  },
+  {
+    "id": 151,
+    "category": "disk_management",
+    "command": "lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,UUID",
+    "title": "Gelişmiş Blok Cihaz Listesi",
+    "description": "Standart 'lsblk' yetersiz kalabilir. '-o' parametresi ile dosya sistemi tipini (FSTYPE) ve benzersiz kimliğini (UUID) de görerek /etc/fstab düzenlemeleri için gerekli tüm veriyi tek seferde alırsınız.",
+    "is_published": false
+  },
+  {
+    "id": 152,
+    "category": "disk_management",
+    "command": "blkid",
+    "title": "UUID ve Etiket Sorgulama",
+    "description": "Disk bölümlerinin UUID (Universally Unique Identifier) değerlerini çeker. Sunucularda disk isimleri (/dev/sda) değişebilir ama UUID değişmez, bu yüzden mount işlemlerinde UUID kullanmak mühendislik standardıdır.",
+    "is_published": false
+  },
+  {
+    "id": 153,
+    "category": "filesystem",
+    "command": "df -i",
+    "title": "Inode Doluluğu Kontrolü",
+    "description": "Disk boyutu boş görünse bile dosya oluşturamıyorsanız 'Inode'larınız tükenmiş olabilir. Çok sayıda küçük dosya (örn: session dosyaları) inode tablosunu doldurur.",
+    "is_published": false
+  },
+  {
+    "id": 154,
+    "category": "disk_management",
+    "command": "fdisk -l",
+    "title": "Disk Bölüm Tablosunu Listeleme",
+    "description": "Sisteme bağlı tüm disklerin partition tablolarını (MBR/DOS) ve silindir yapılarını listeler. 2TB altı diskler için standart araçtır.",
+    "is_published": false
+  },
+  {
+    "id": 155,
+    "category": "disk_management",
+    "command": "gdisk /dev/sda",
+    "title": "GPT Disk Yönetimi",
+    "description": "2TB üzeri disklerde ve UEFI sistemlerde kullanılan GPT (GUID Partition Table) yapısını yönetmek için fdisk yerine 'gdisk' kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 156,
+    "category": "filesystem",
+    "command": "mkfs.ext4 /dev/sdb1",
+    "title": "Ext4 Formatlama",
+    "description": "Bir disk bölümünü Linux'un en yaygın ve kararlı dosya sistemi olan ext4 ile biçimlendirir. DİKKAT: Veriyi kalıcı olarak siler.",
+    "is_published": false
+  },
+  {
+    "id": 157,
+    "category": "filesystem",
+    "command": "fsck -y /dev/sda1",
+    "title": "Dosya Sistemi Onarımı",
+    "description": "Bozuk dosya sistemini (File System Check) tarar ve onarır. -y (yes) parametresi tüm onarım sorularına otomatik 'evet' der. Sadece unmount edilmiş disklerde çalıştırılmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 158,
+    "category": "filesystem",
+    "command": "tune2fs -l /dev/sda1",
+    "title": "Ext4 Dosya Sistemi Detayları",
+    "description": "Bir ext4 bölümünün ne zaman formatlandığını, son mount zamanını ve 'Reserved block count' gibi derin teknik detaylarını gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 159,
+    "category": "mount_ops",
+    "command": "mount -a",
+    "title": "Fstab Testi",
+    "description": "/etc/fstab dosyasında yaptığınız değişiklikleri sistemi yeniden başlatmadan test eder. Hata varsa ekrana basar, böylece reboot sonrası sunucunun açılmama riskini önlersiniz.",
+    "is_published": false
+  },
+  {
+    "id": 160,
+    "category": "mount_ops",
+    "command": "umount -l /mnt/yedek",
+    "title": "Lazy Unmount (Zorla Ayırma)",
+    "description": "'Device is busy' hatası aldığınızda ve diski ayıramadığınızda kullanılır. -l (lazy) parametresi, disk bağlantısını hemen keser, işlemleri ise arka planda temizler. NFS kilitlenmelerinde hayat kurtarır.",
+    "is_published": false
+  },
+  {
+    "id": 161,
+    "category": "disk_maintenance",
+    "command": "smartctl -H /dev/sda",
+    "title": "Disk Sağlık Kontrolü (SMART)",
+    "description": "Diskin fiziksel sağlığını (Self-Monitoring, Analysis and Reporting Technology) sorgular. 'PASSED' dışında bir sonuç, diskin yakında bozulacağının habercisidir.",
+    "is_published": false
+  },
+  {
+    "id": 162,
+    "category": "disk_maintenance",
+    "command": "badblocks -v /dev/sdb",
+    "title": "Bozuk Sektör Taraması",
+    "description": "Diskin yüzeyini okuyarak fiziksel hasarlı blokları (bad sectors) tespit eder. Veri kurtarma ve disk güvenilirliği testlerinde kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 163,
+    "category": "filesystem",
+    "command": "ncdu /var",
+    "title": "Görsel Disk Kullanım Analizi",
+    "description": "'du' komutunun ncurses tabanlı interaktif versiyonudur. Hangi klasörün diski doldurduğunu yön tuşlarıyla gezerek bulmanızı ve silmenizi sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 164,
+    "category": "mount_ops",
+    "command": "findmnt",
+    "title": "Gelişmiş Mount Listesi",
+    "description": "'mount' komutunun çıktısı karmaşıktır. 'findmnt', sistemdeki bağlı diskleri ağaç yapısında (Tree view) gösterir, okuması çok daha kolaydır.",
+    "is_published": false
+  },
+  {
+    "id": 165,
+    "category": "disk_management",
+    "command": "wipefs -a /dev/sdb",
+    "title": "Dosya Sistemi İmzalarını Silme",
+    "description": "Diski yeniden bölümlemeden önce eski RAID, LVM veya dosya sistemi imzalarını temizler. Disk kurulumlarında 'Device is busy' veya garip hatalar alıyorsanız çözüm budur.",
+    "is_published": false
+  },
+  {
+    "id": 166,
+    "category": "lvm",
+    "command": "pvcreate /dev/sdb1",
+    "title": "LVM: Fiziksel Hacim Oluşturma",
+    "description": "Logical Volume Manager (LVM) kurulumunun ilk adımıdır. Ham disk bölümünü LVM tarafından kullanılabilir bir 'Physical Volume' haline getirir.",
+    "is_published": false
+  },
+  {
+    "id": 167,
+    "category": "lvm",
+    "command": "vgcreate vg_data /dev/sdb1",
+    "title": "LVM: Volüm Grubu Oluşturma",
+    "description": "Fiziksel hacimleri (PV) birleştirerek 'vg_data' adında esnek bir depolama havuzu (Volume Group) oluşturur.",
+    "is_published": false
+  },
+  {
+    "id": 168,
+    "category": "lvm",
+    "command": "lvcreate -L 10G -n lv_log vg_data",
+    "title": "LVM: Mantıksal Hacim Oluşturma",
+    "description": "Havuzdan (VG) 10GB'lık bir parça kopararak sanal bir disk (Logical Volume) oluşturur. Bu alan artık formatlanıp kullanılabilir.",
+    "is_published": false
+  },
+  {
+    "id": 169,
+    "category": "lvm",
+    "command": "lvextend -L +5G /dev/vg_data/lv_log",
+    "title": "LVM: Disk Genişletme",
+    "description": "Diski formatlamadan veya veriyi silmeden, mantıksal hacme 5GB daha ekler. Geleneksel bölümlemenin aksine sunucu çalışırken yapılabilir.",
+    "is_published": false
+  },
+  {
+    "id": 170,
+    "category": "filesystem",
+    "command": "resize2fs /dev/vg_data/lv_log",
+    "title": "Dosya Sistemini Genişletme (Ext4)",
+    "description": "LVM ile disk alanını büyüttükten sonra, dosya sisteminin (Ext4) bu yeni alanı fark etmesi ve kullanması için çalıştırılması zorunludur.",
+    "is_published": false
+  },
+  {
+    "id": 171,
+    "category": "filesystem",
+    "command": "xfs_growfs /mnt/data",
+    "title": "Dosya Sistemini Genişletme (XFS)",
+    "description": "RedHat/CentOS sistemlerde varsayılan olan XFS dosya sistemini genişletmek için kullanılır. Ext4'ten farklı olarak device path değil, mount point verilir.",
+    "is_published": false
+  },
+  {
+    "id": 172,
+    "category": "disk_performance",
+    "command": "hdparm -tT /dev/sda",
+    "title": "Disk Okuma Hızı Testi",
+    "description": "Diskin önbellekli (buffer) ve önbelleksiz (buffered) okuma hızlarını ölçer. Diskin performansını veya SSD'nin hızını doğrulamak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 173,
+    "category": "disk_maintenance",
+    "command": "fstrim -v /",
+    "title": "SSD Bakımı (TRIM)",
+    "description": "SSD disklerde silinen blokların boş olduğunu kontrolcüye bildirir. SSD'nin ömrünü uzatmak ve performans düşüşünü engellemek için periyodik yapılmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 174,
+    "category": "mount_ops",
+    "command": "mount -o ro /dev/sdb1 /mnt/test",
+    "title": "Salt Okunur (Read-Only) Mount",
+    "description": "Diski yazmaya karşı korumalı modda bağlar. Adli analiz (Forensics) yaparken veya veri kurtarırken orijinal verinin değişmemesi için kritik öneme sahiptir.",
+    "is_published": false
+  },
+  {
+    "id": 175,
+    "category": "disk_management",
+    "command": "cfdisk",
+    "title": "Görsel Bölümleme Aracı",
+    "description": "fdisk'in grafiksel (TUI) arayüzlü halidir. Partition oluşturmayı, silmeyi ve türünü değiştirmeyi menüler üzerinden görsel olarak yapmanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 176,
+    "category": "disk_maintenance",
+    "command": "sync",
+    "title": "Veriyi Diske Zorla Yazma",
+    "description": "RAM üzerindeki (buffer) verilerin tamamını fiziksel diske yazar. USB belleği çekmeden önce veya güç kesintisi riski olan durumlarda veri kaybını önler.",
+    "is_published": false
+  },
+  {
+    "id": 177,
+    "category": "swap_management",
+    "command": "swapon --show",
+    "title": "Swap Alanı Kontrolü",
+    "description": "Sistemdeki aktif Swap (takas) alanlarını, türlerini (partition/file), boyutlarını ve kullanım önceliklerini listeler.",
+    "is_published": false
+  },
+  {
+    "id": 178,
+    "category": "swap_management",
+    "command": "mkswap /dev/sdb2 && swapon /dev/sdb2",
+    "title": "Swap Alanı Oluşturma ve Etkinleştirme",
+    "description": "Bir disk bölümünü Swap formatına çevirir ve sistemin bellek yetersizliğinde kullanması için aktif hale getirir.",
+    "is_published": false
+  },
+  {
+    "id": 179,
+    "category": "encryption",
+    "command": "cryptsetup luksFormat /dev/sdb1",
+    "title": "Disk Şifreleme (LUKS)",
+    "description": "Disk bölümünü endüstri standardı LUKS (Linux Unified Key Setup) ile şifreler. Parola olmadan diskin içeriğine fiziksel olarak erişilse bile veriler okunamaz.",
+    "is_published": false
+  },
+  {
+    "id": 180,
+    "category": "encryption",
+    "command": "cryptsetup luksOpen /dev/sdb1 gizli_disk",
+    "title": "Şifreli Diski Açma",
+    "description": "LUKS ile şifrelenmiş bölümü parola ile açar ve '/dev/mapper/gizli_disk' altında sanal bir cihaz olarak sisteme tanıtır. Mount işlemi bu sanal cihaz üzerinden yapılır.",
+    "is_published": false
+  },
+  {
+    "id": 181,
+    "category": "mount_ops",
+    "command": "mount --bind /var/www /home/user/www",
+    "title": "Dizini Dizin Olarak Bağlama (Bind Mount)",
+    "description": "Sembolik linkten farklıdır. Bir klasörü dosya sistemi seviyesinde başka bir klasörün içine bağlar. Chroot ortamlarında veya FTP erişimlerinde kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 182,
+    "category": "disk_management",
+    "command": "parted /dev/sda print",
+    "title": "Parted ile Disk İnceleme",
+    "description": "Komut satırı tabanlı, scriptlenebilir bölümleme aracıdır. Özellikle 2TB üzeri disklerde ve betiklerde (automation) fdisk yerine tercih edilir.",
+    "is_published": false
+  },
+  {
+    "id": 183,
+    "category": "filesystem",
+    "command": "mke2fs -m 0 /dev/sdb1",
+    "title": "Rezerve Alanı Sıfırlayarak Formatlama",
+    "description": "Linux varsayılan olarak diskin %5'ini root kullanıcısı için rezerve eder. Veri depolama disklerinde bu %5'lik kayıp (TB'larca veri) '-m 0' ile engellenir.",
+    "is_published": false
+  },
+  {
+    "id": 184,
+    "category": "disk_management",
+    "command": "losetup -a",
+    "title": "Loop Cihazlarını Listeleme",
+    "description": "Bir dosyanın (örn: disk.iso) sanal bir blok cihazı (/dev/loop0) gibi davranmasını sağlayan loop cihazlarını ve neye bağlı olduklarını listeler.",
+    "is_published": false
+  },
+  {
+    "id": 185,
+    "category": "filesystem",
+    "command": "dumpe2fs -h /dev/sda1",
+    "title": "Süperblok Bilgisi Okuma",
+    "description": "Ext2/3/4 dosya sisteminin 'Superblock' verisini okur. Mount sayılarını, hata davranışını ve UUID bilgisini en ham haliyle gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 186,
+    "category": "filesystem",
+    "command": "e2label /dev/sda1 DISK_YEDEK",
+    "title": "Disk Etiketleme (Label)",
+    "description": "Diske okunabilir bir isim (Label) atar. /etc/fstab dosyasında '/dev/sda1' yerine 'LABEL=DISK_YEDEK' kullanmak, disk sırası değişse bile sistemin açılmasını garanti eder.",
+    "is_published": false
+  },
+  {
+    "id": 187,
+    "category": "disk_backup",
+    "command": "dd if=/dev/sda of=mbr_backup.img bs=512 count=1",
+    "title": "MBR ve Partition Table Yedekleme",
+    "description": "Diskin ilk 512 baytını (Master Boot Record ve Bölüm Tablosu) yedekler. Yanlışlıkla partition silindiğinde bu küçük dosyadan tüm disk yapısı kurtarılabilir.",
+    "is_published": false
+  },
+  {
+    "id": 188,
+    "category": "mount_ops",
+    "command": "mount -t tmpfs tmpfs /mnt/ramdisk -o size=1G",
+    "title": "RAM Disk Oluşturma",
+    "description": "Sabit disk yerine sunucunun RAM'ini disk gibi kullanır (tmpfs). İnanılmaz hızlıdır (5-10 GB/s okuma/yazma) ancak elektrik gidince veriler silinir. Cache ve geçici dosyalar için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 189,
+    "category": "disk_management",
+    "command": "blockdev --getro /dev/sda",
+    "title": "Yazma Koruması Kontrolü (Read-Only)",
+    "description": "Blok cihazının salt okunur modda olup olmadığını kontrol eder. Özellikle SD kartlar veya 'Read-Only' moda düşen SAN diskleri için tanılama komutudur.",
+    "is_published": false
+  },
+  {
+    "id": 190,
+    "category": "disk_maintenance",
+    "command": "hdparm -S 120 /dev/sdb",
+    "title": "Diski Uyku Moduna Alma (Spindown)",
+    "description": "Mekanik diskin 10 dakika (120*5sn) boşta kalınca dönmeyi durdurmasını sağlar. Enerji tasarrufu ve disk ömrü için kullanılır (Sunucularda önerilmez).",
+    "is_published": false
+  },
+  {
+    "id": 191,
+    "category": "filesystem",
+    "command": "btrfs subvolume list /",
+    "title": "Btrfs Alt Birimlerini Listeleme",
+    "description": "Modern Btrfs dosya sisteminde klasör gibi davranan ama ayrı yönetilebilen 'Subvolume'ları listeler. Snapshot ve yedekleme mekanizmalarının temelidir.",
+    "is_published": false
+  },
+  {
+    "id": 192,
+    "category": "disk_management",
+    "command": "sfdisk -d /dev/sda > part_table.dump",
+    "title": "Partition Tablosu Dökümü (Scriptlenebilir)",
+    "description": "Diskin bölümleme yapısını metin dosyasına döker. Bu dosya kullanılarak 'sfdisk /dev/sdb < part_table.dump' komutuyla aynı yapı başka bir diske saniyeler içinde kopyalanabilir.",
+    "is_published": false
+  },
+  {
+    "id": 193,
+    "category": "mount_ops",
+    "command": "mount -o loop disk.iso /mnt/iso",
+    "title": "ISO Dosyasını Mount Etme",
+    "description": "Bir CD/DVD imaj dosyasını (ISO) yazdırmadan, sanki fiziksel bir diskmiş gibi sisteme bağlar ve içindeki dosyalara erişmenizi sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 194,
+    "category": "filesystem",
+    "command": "dosfsck -a /dev/sdb1",
+    "title": "FAT32/USB Bellek Onarımı",
+    "description": "Genellikle USB belleklerde kullanılan FAT32 dosya sistemini onarır. Windows'ta 'Güvenli Kaldır' yapılmadan çekilen disklerdeki hataları düzeltir.",
+    "is_published": false
+  },
+  {
+    "id": 195,
+    "category": "disk_quota",
+    "command": "repquota -as",
+    "title": "Disk Kotası Raporu",
+    "description": "Hangi kullanıcının ne kadar disk alanı ve dosya sayısı (inode) kullandığını raporlar. Çok kullanıcılı sistemlerde limit aşımlarını görmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 196,
+    "category": "lvm",
+    "command": "vgs",
+    "title": "LVM Özet Raporu",
+    "description": "Volume Group'ların (VG) durumunu, toplam boyutunu ve ne kadar boş alan kaldığını özet olarak gösterir. LVM yönetiminde en sık bakılan komuttur.",
+    "is_published": false
+  },
+  {
+    "id": 197,
+    "category": "filesystem",
+    "command": "stat -f /",
+    "title": "Dosya Sistemi Durumu",
+    "description": "Dosya (stat dosya) yerine dosya sisteminin (stat -f) kendisi hakkında bilgi verir. Blok boyutu, maksimum dosya adı uzunluğu gibi mimari sınırları gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 198,
+    "category": "disk_maintenance",
+    "command": "fuser -vm /mnt/data",
+    "title": "Mount Noktasını Kim Kullanıyor?",
+    "description": "Diski unmount etmeye çalışırken alınan hataların sebebini, o dizinde hangi kullanıcının hangi komutla (PID) işlem yaptığını göstererek açıklar.",
+    "is_published": false
+  },
+  {
+    "id": 199,
+    "category": "disk_backup",
+    "command": "dd if=/dev/zero of=/dev/sdb bs=1M status=progress",
+    "title": "Diski Tamamen Sıfırlama (Wipe)",
+    "description": "Diskin her bir sektörüne '0' yazar. Disk satılmadan veya elden çıkarılmadan önce verilerin kurtarılamaz şekilde silinmesi (Low-level format benzeri) işlemidir.",
+    "is_published": false
+  },
+  {
+    "id": 200,
+    "category": "mount_ops",
+    "command": "findmnt --verify",
+    "title": "Fstab Doğrulama ve Uyarılar",
+    "description": "/etc/fstab dosyasını tarar, söz dizimi hatalarını, ulaşılamayan diskleri ve yanlış parametreleri kontrol eder. Sistem açılış sorunlarını önlemek için proaktif bir kontroldür.",
+    "is_published": false
+  },
+  {
+    "id": 201,
+    "category": "permissions",
+    "command": "chmod u+s /usr/bin/find",
+    "title": "SUID Bit Atama (Tehlikeli)",
+    "description": "Dosyaya SUID (Set User ID) izni verir. Bu dosya kim tarafından çalıştırılırsa çalıştırılsın, dosya sahibinin (genelde Root) yetkileriyle çalışır. 'find' gibi komutlara verilmesi 'Privilege Escalation' açığıdır.",
+    "is_published": false
+  },
+  {
+    "id": 202,
+    "category": "permissions",
+    "command": "chmod 1777 /tmp",
+    "title": "Sticky Bit (Yapışkan Bit)",
+    "description": "Klasördeki dosyayı sadece dosyanın sahibi silebilir. '/tmp' klasörü herkese yazma izni (777) verirken, kullanıcıların birbirinin dosyasını silmesini engellemek için başına '1' (Sticky) alır.",
+    "is_published": false
+  },
+  {
+    "id": 203,
+    "category": "permissions",
+    "command": "chmod g+s /shared/group_folder",
+    "title": "SGID Bit (Klasörlerde)",
+    "description": "Bu klasör içinde oluşturulan her yeni dosya, otomatik olarak klasörün grubuna sahip olur. Ortak çalışma alanlarında dosya sahipliği karmaşasını önler.",
+    "is_published": false
+  },
+  {
+    "id": 204,
+    "category": "access_control",
+    "command": "getfacl dosya.txt",
+    "title": "ACL Görüntüleme",
+    "description": "Standart 'ls -l' çıktısı yetersiz kaldığında, dosyaya atanmış genişletilmiş erişim kontrol listelerini (Access Control Lists) detaylı gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 205,
+    "category": "access_control",
+    "command": "setfacl -m u:ahmet:rw dosya.txt",
+    "title": "Kullanıcıya Özel ACL Tanımlama",
+    "description": "Dosyanın grubunu veya sahibini değiştirmeden, spesifik bir kullanıcıya (ahmet) okuma ve yazma izni verir. Hassas yetkilendirme için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 206,
+    "category": "privilege_mgmt",
+    "command": "sudo -l",
+    "title": "Sudo Yetkilerini Listeleme",
+    "description": "Mevcut kullanıcının hangi komutları 'sudo' ile şifresiz veya şifreli çalıştırabileceğini listeler. Sızma testlerinde ilk çalıştırılan komutlardan biridir.",
+    "is_published": false
+  },
+  {
+    "id": 207,
+    "category": "privilege_mgmt",
+    "command": "visudo",
+    "title": "Sudoers Dosyasını Güvenli Düzenleme",
+    "description": "/etc/sudoers dosyasını düzenlemek için asla doğrudan editör kullanılmaz. 'visudo', söz dizimi (syntax) hatası yaparsanız kaydetmeyi engelleyerek sistemin kilitlenmesini önler.",
+    "is_published": false
+  },
+  {
+    "id": 208,
+    "category": "user_mgmt",
+    "command": "chage -l user",
+    "title": "Parola Politikası Kontrolü",
+    "description": "Kullanıcının parolasının en son ne zaman değiştiğini, süresinin ne zaman dolacağını ve hesabın kilitlenme tarihini (Account Expiration) gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 209,
+    "category": "user_mgmt",
+    "command": "passwd -l user",
+    "title": "Kullanıcı Hesabını Kilitleme",
+    "description": "Hesabı silmeden girişe kapatır (Lock). Genellikle işten ayrılan personelin veya şüpheli aktivite gösteren hesabın erişimini anında kesmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 210,
+    "category": "permissions",
+    "command": "umask 027",
+    "title": "Varsayılan Dosya İzni Ayarlama",
+    "description": "Yeni oluşturulan dosyaların varsayılan izinlerini belirler. 027; dosya sahibine tam yetki verir, gruba okuma verir, diğerlerine (others) hiçbir yetki vermez.",
+    "is_published": false
+  },
+  {
+    "id": 211,
+    "category": "user_mgmt",
+    "command": "usermod -aG docker user",
+    "title": "Gruba Güvenli Üye Ekleme",
+    "description": "Kullanıcıyı mevcut gruplarından çıkarmadan (-a: append) yeni bir gruba (-G) ekler. '-a' unutulursa kullanıcı diğer tüm gruplardan atılır, dikkatli olunmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 212,
+    "category": "auditing",
+    "command": "lastb",
+    "title": "Başarısız Giriş Denemeleri",
+    "description": "Sisteme girmeye çalışıp başarısız olanların (Bad Login) listesini gösterir. Brute-force saldırılarını tespit etmek için logları (/var/log/btmp) okur.",
+    "is_published": false
+  },
+  {
+    "id": 213,
+    "category": "file_security",
+    "command": "chattr +a audit.log",
+    "title": "Sadece Ekleme Modu (Append Only)",
+    "description": "Log dosyaları için kritiktir. Dosyaya veri eklenebilir ama mevcut veriler asla silinemez veya değiştirilemez. Hackerların izlerini silmesini engeller.",
+    "is_published": false
+  },
+  {
+    "id": 214,
+    "category": "permissions",
+    "command": "chmod 700 ~/.ssh",
+    "title": "SSH Klasör İzni (Hardening)",
+    "description": ".ssh klasörü sadece sahibi tarafından okunabilir, yazılabilir ve çalıştırılabilir olmalıdır. İzinler 700'den genişse (örn: 755), SSH sunucusu güvenlik nedeniyle anahtarı reddeder.",
+    "is_published": false
+  },
+  {
+    "id": 215,
+    "category": "permissions",
+    "command": "chmod 600 ~/.ssh/id_rsa",
+    "title": "Özel Anahtar İzni",
+    "description": "Private Key (Özel Anahtar) dosyasını sahibi hariç kimse okuyamamalıdır. Aksi takdirde SSH istemcisi 'Unprotected private key file' hatası verir ve bağlanmaz.",
+    "is_published": false
+  },
+  {
+    "id": 216,
+    "category": "auditing",
+    "command": "whoami",
+    "title": "Mevcut Kimlik Doğrulama",
+    "description": "Basit ama kritiktir. Özellikle yetki yükseltme (Privilege Escalation) denemelerinden sonra root olup olmadığınızı teyit eder.",
+    "is_published": false
+  },
+  {
+    "id": 217,
+    "category": "security_ops",
+    "command": "id user",
+    "title": "Kullanıcı ve Grup ID'leri",
+    "description": "Kullanıcının UID (User ID), GID (Group ID) ve üye olduğu tüm grupları gösterir. Yetki hatalarını ayıklarken kullanıcının doğru grupta olup olmadığını kontrol eder.",
+    "is_published": false
+  },
+  {
+    "id": 218,
+    "category": "auditing",
+    "command": "faillog -u user",
+    "title": "Kullanıcı Bazlı Hata Sayacı",
+    "description": "Belirli bir kullanıcının kaç kez hatalı şifre girdiğini ve hesabının kilitlenip kilitlenmediğini gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 219,
+    "category": "file_security",
+    "command": "shred -zvu -n 5 dosya.txt",
+    "title": "Paranoyak Dosya Silme",
+    "description": "Dosyanın üzerine 5 kez rastgele veri yazar, son turda sıfırlar (-z), işlem bitince dosyayı siler (-u) ve süreci gösterir (-v). Adli bilişimden kaçırma yöntemidir.",
+    "is_published": false
+  },
+  {
+    "id": 220,
+    "category": "security_context",
+    "command": "ls -Z dosya.txt",
+    "title": "SELinux Context Görüntüleme",
+    "description": "Dosyanın SELinux (Security Enhanced Linux) güvenlik etiketini gösterir. İzinler doğru olmasına rağmen 'Permission Denied' alıyorsanız sorun genellikle buradadır.",
+    "is_published": false
+  },
+  {
+    "id": 221,
+    "category": "security_context",
+    "command": "restorecon -Rv /var/www/html",
+    "title": "SELinux Context Onarımı",
+    "description": "Dosyaların SELinux etiketlerini varsayılan ayarlara döndürür. Web sunucusuna dosya kopyaladığınızda erişilemiyorsa bu komut sorunu çözer.",
+    "is_published": false
+  },
+  {
+    "id": 222,
+    "category": "user_mgmt",
+    "command": "vipw",
+    "title": "Passwd Dosyasını Güvenli Düzenleme",
+    "description": "/etc/passwd dosyasını düzenlerken dosya kilitlenir (lock). Böylece aynı anda iki yönetici dosya üzerinde değişiklik yapıp birbirinin ayarını bozamaz.",
+    "is_published": false
+  },
+  {
+    "id": 223,
+    "category": "privilege_mgmt",
+    "command": "sudo -k",
+    "title": "Sudo Oturumunu Sonlandırma",
+    "description": "Sudo ile şifre girdikten sonra sistem bir süre şifre sormaz (timestamp). Bu komut önbelleği temizler ve bir sonraki sudo işleminde tekrar şifre sorulmasını zorunlu kılar.",
+    "is_published": false
+  },
+  {
+    "id": 224,
+    "category": "permissions",
+    "command": "find / -type f -perm -4000 -ls",
+    "title": "Tüm SUID Dosyaları Bulma",
+    "description": "Kök dizinden itibaren SUID biti ayarlanmış tüm dosyaları listeler. Sistemdeki potansiyel güvenlik açıklarını taramanın standart yoludur.",
+    "is_published": false
+  },
+  {
+    "id": 225,
+    "category": "permissions",
+    "command": "find / -type d -perm -0002 -ls",
+    "title": "Dünyaya Açık Klasörleri Bulma",
+    "description": "Herkesin yazabildiği (World Writable) klasörleri tespit eder. Bu klasörler, saldırganların zararlı yazılım yüklemesi için potansiyel noktalardır.",
+    "is_published": false
+  },
+  {
+    "id": 226,
+    "category": "security_ops",
+    "command": "openssl passwd -1 -salt tuz 123456",
+    "title": "MD5 Parola Hash'i Üretme",
+    "description": "Verilen parolanın (123456) Linux shadow dosyasında kullanılabilecek hash halini üretir. Manuel kullanıcı oluştururken /etc/shadow dosyasına yazmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 227,
+    "category": "auditing",
+    "command": "ausearch -m USER_LOGIN -sv no",
+    "title": "Audit Loglarında Başarısız Giriş Arama",
+    "description": "Auditd servisi yüklüyse, sistemdeki başarısız giriş denemelerini veritabanından sorgular. Standart log dosyalarından daha güvenilir ve detaylıdır.",
+    "is_published": false
+  },
+  {
+    "id": 228,
+    "category": "user_mgmt",
+    "command": "userdel -r user",
+    "title": "Kullanıcıyı Ev Diziniyle Silme",
+    "description": "Kullanıcıyı silerken, ona ait Home klasörünü (/home/user) ve mail dosyasını da siler (-r). Disk temizliği ve veri güvenliği için önemlidir.",
+    "is_published": false
+  },
+  {
+    "id": 229,
+    "category": "permissions",
+    "command": "chgrp www-data dosya.php",
+    "title": "Grup Sahipliğini Değiştirme",
+    "description": "Dosyanın sahibini değiştirmeden sadece grubunu değiştirir. Web sunucularında dosyayı kullanıcının yükleyip sunucunun okuyabilmesi için sıkça kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 230,
+    "category": "privilege_mgmt",
+    "command": "su - user",
+    "title": "Tam Ortam Değişikliği ile Kullanıcı Geçişi",
+    "description": "Sadece 'su user' yapmak ortam değişkenlerini (PATH vb.) güncellemez. '-' (tire) işareti, sanki o kullanıcıyla login olmuşsunuz gibi çevresel değişkenleri de yükler.",
+    "is_published": false
+  },
+  {
+    "id": 231,
+    "category": "security_ops",
+    "command": "history -c && history -w",
+    "title": "Komut Geçmişini Temizleme",
+    "description": "Oturum sırasında yazdığınız komutları RAM'den siler (-c) ve temizlenmiş hali dosyaya yazar (-w). Yanlışlıkla terminale şifre yazdıysanız bunu kullanmalısınız.",
+    "is_published": false
+  },
+  {
+    "id": 232,
+    "category": "access_control",
+    "command": "setfacl -b dosya.txt",
+    "title": "Tüm ACL İzinlerini Sıfırlama",
+    "description": "Dosyaya tanımlanmış tüm özel kullanıcı ve grup ACL ayarlarını siler, dosyayı standart Unix izinlerine döndürür.",
+    "is_published": false
+  },
+  {
+    "id": 233,
+    "category": "permissions",
+    "command": "chmod -R o-rwx /var/www/private",
+    "title": "Diğerlerini (Others) Engelleme",
+    "description": "Dosya sahibi ve grubu dışındaki herkesin (others) okuma, yazma ve çalıştırma yetkilerini rekürsif (-R) olarak kaldırır. Gizlilik için temel komuttur.",
+    "is_published": false
+  },
+  {
+    "id": 234,
+    "category": "user_mgmt",
+    "command": "getent passwd user",
+    "title": "Kullanıcı Bilgisini Veritabanından Çekme",
+    "description": "/etc/passwd dosyasını grep ile aramak yerine, sistem veritabanından (LDAP vb. dahil) kullanıcı bilgisini çeker. Kurumsal sistemlerde daha doğrudur.",
+    "is_published": false
+  },
+  {
+    "id": 235,
+    "category": "security_ops",
+    "command": "echo 'auth required pam_tally2.so deny=3 unlock_time=600' >> /etc/pam.d/common-auth",
+    "title": "Hesap Kilitleme Politikası (PAM)",
+    "description": "3 kez hatalı şifre giren kullanıcının hesabını 10 dakika (600sn) boyunca kilitler. Brute-force saldırılarına karşı en etkili sistem seviyesi savunmadır.",
+    "is_published": false
+  },
+  {
+    "id": 236,
+    "category": "privilege_mgmt",
+    "command": "sudo -i",
+    "title": "Root Shell'e Geçiş",
+    "description": "Root kullanıcısının ortam değişkenleri ve ev dizini (/root) ile tam yetkili bir kabuk açar. 'sudo su' yerine kullanılması önerilen modern yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 237,
+    "category": "auditing",
+    "command": "lastlog",
+    "title": "Kullanıcıların Son Giriş Raporu",
+    "description": "Sistemdeki tüm kullanıcıların en son ne zaman giriş yaptığını listeler. Hiç giriş yapmamış veya aylardır girmeyen (zombi) hesapları tespit etmekte kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 238,
+    "category": "security_ops",
+    "command": "md5sum -c sums.txt",
+    "title": "Dosya Bütünlük Kontrolü",
+    "description": "Daha önce alınmış hash değerleri ile mevcut dosyaları karşılaştırır. Sistem dosyalarının değiştirilip değiştirilmediğini (hacklenip hacklenmediğini) doğrular.",
+    "is_published": false
+  },
+  {
+    "id": 239,
+    "category": "permissions",
+    "command": "find . -xdev -type f -print0 | xargs -0 chmod 644",
+    "title": "Toplu Dosya İzni Düzeltme",
+    "description": "Klasörler hariç sadece dosyaları bulur ve izinlerini standart 644 (Sahip:RW, Grup:R, Diğer:R) yapar. Web sitelerinde izin karmaşasını düzeltmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 240,
+    "category": "permissions",
+    "command": "find . -xdev -type d -print0 | xargs -0 chmod 755",
+    "title": "Toplu Klasör İzni Düzeltme",
+    "description": "Sadece klasörleri bulur ve izinlerini standart 755 (İçine girilebilir ve okunabilir) yapar. Dosya izni düzeltme (239) ile birlikte kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 241,
+    "category": "user_mgmt",
+    "command": "gpasswd -d user group",
+    "title": "Kullanıcıyı Gruptan Atma",
+    "description": "Kullanıcıyı tamamen silmeden, sadece belirli bir gruptan (örn: sudo grubundan) çıkararak yetkilerini kısıtlar.",
+    "is_published": false
+  },
+  {
+    "id": 242,
+    "category": "security_ops",
+    "command": "chmod -R go-rwx /home/user",
+    "title": "Ev Dizinini İzole Etme",
+    "description": "Kullanıcının ev dizinini diğer kullanıcılara (group ve others) tamamen kapatır. Paylaşımlı sunucularda kullanıcıların birbirini görmesini engeller.",
+    "is_published": false
+  },
+  {
+    "id": 243,
+    "category": "auditing",
+    "command": "grep 'Accepted' /var/log/auth.log",
+    "title": "Başarılı SSH Girişlerini Listeleme",
+    "description": "Auth loglarında sadece başarılı girişleri filtreler. Sisteme kimin, ne zaman ve hangi IP'den girdiğini hızlıca görmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 244,
+    "category": "privilege_mgmt",
+    "command": "sudo --validate",
+    "title": "Sudo Zaman Aşımını Uzatma",
+    "description": "Komut çalıştırmadan sudo zamanlayıcısını (timeout) sıfırlar. Uzun scriptlerde sudo yetkisinin süresi dolmasın diye arkaplanda döngüyle çalıştırılır.",
+    "is_published": false
+  },
+  {
+    "id": 245,
+    "category": "permissions",
+    "command": "namei -mo /path/to/file",
+    "title": "İzin Yolu Analizi",
+    "description": "Bir dosya yolundaki her klasörün sahibini (m) ve izinlerini (o) alt alta gösterir. Karmaşık izin hatalarını çözmek için en net araçtır.",
+    "is_published": false
+  },
+  {
+    "id": 246,
+    "category": "user_mgmt",
+    "command": "chsh -s /sbin/nologin user",
+    "title": "Kabuk Erişimini Kapatma",
+    "description": "Kullanıcının sisteme terminal (shell) ile giriş yapmasını engeller ama FTP veya Mail servislerini kullanmasına izin verir. Servis hesapları için standarttır.",
+    "is_published": false
+  },
+  {
+    "id": 247,
+    "category": "security_ops",
+    "command": "unalias -a",
+    "title": "Tüm Takma Adları Kaldırma",
+    "description": "Saldırganlar 'ls' komutuna zararlı bir alias atamış olabilir. Güvenli bir analiz için tüm alias tanımlarını geçici olarak siler.",
+    "is_published": false
+  },
+  {
+    "id": 248,
+    "category": "auditing",
+    "command": "w -h | awk '{print $3}' | sort | uniq -c",
+    "title": "Bağlı IP Adresleri İstatistiği",
+    "description": "Şu an sisteme bağlı olan kullanıcıların IP adreslerini çeker ve hangi IP'den kaç bağlantı olduğunu sayar. Çoklu bağlantı açan şüpheli durumları gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 249,
+    "category": "permissions",
+    "command": "stat -c '%a %n' *",
+    "title": "Sayısal İzin Listesi",
+    "description": "'ls -l' harf (rwx) gösterir. Bu komut dosyaların izinlerini oktal sayı formatında (örn: 644, 755) ve dosya adıyla birlikte temiz bir liste olarak verir.",
+    "is_published": false
+  },
+  {
+    "id": 250,
+    "category": "user_mgmt",
+    "command": "cut -d: -f1 /etc/passwd",
+    "title": "Tüm Kullanıcı Adlarını Listeleme",
+    "description": "Passwd dosyasındaki diğer detaylarla uğraşmadan, sistemde tanımlı olan sadece kullanıcı isimlerini (username) temiz bir liste olarak döker.",
+    "is_published": false
+  },
+  {
+    "id": 251,
+    "category": "firewall",
+    "command": "ufw default deny incoming",
+    "title": "Varsayılan Güvenlik Duvarı Politikası",
+    "description": "Güvenliğin altın kuralı: Her şeyi yasakla, sadece gerekeni aç. UFW (Uncomplicated Firewall) için dışarıdan içeriye gelen tüm bağlantıları varsayılan olarak reddeder.",
+    "is_published": false
+  },
+  {
+    "id": 252,
+    "category": "firewall",
+    "command": "ufw limit ssh",
+    "title": "SSH Brute-Force Koruması (UFW)",
+    "description": "Port 22'yi tamamen açmak yerine 'limit' kuralı koyar. Aynı IP adresinden 30 saniye içinde 6'dan fazla başarısız bağlantı gelirse o IP'yi bloklar.",
+    "is_published": false
+  },
+  {
+    "id": 253,
+    "category": "ssh_security",
+    "command": "grep 'Protocol 2' /etc/ssh/sshd_config",
+    "title": "SSH Protokol Sürümü Kontrolü",
+    "description": "Sunucunun sadece güvenli olan SSH Protokol 2'yi kullandığından emin olur. Protokol 1 (eski sürüm) güvensizdir ve Man-in-the-Middle saldırılarına açıktır.",
+    "is_published": false
+  },
+  {
+    "id": 254,
+    "category": "security_ops",
+    "command": "find / -nouser -print",
+    "title": "Sahipsiz Dosyaları Bulma",
+    "description": "Sistemden silinmiş bir kullanıcıya ait (ID'si var ama User'ı yok) dosyaları bulur. Bu dosyalar, saldırganlar için birer 'Backdoor' potansiyelidir.",
+    "is_published": false
+  },
+  {
+    "id": 255,
+    "category": "encryption",
+    "command": "gpg -c gizli.txt",
+    "title": "Simetrik Dosya Şifreleme",
+    "description": "Dosyayı AES-256 algoritmasıyla ve bir parola ile şifreler. Anahtar yönetimi gerektirmez, sadece parolayı bilen dosyayı açabilir (gpg -d).",
+    "is_published": false
+  },
+  {
+    "id": 256,
+    "category": "audit",
+    "command": "auditctl -w /etc/passwd -p wa -k identity",
+    "title": "Dosya Değişikliklerini İzleme (Auditd)",
+    "description": "Passwd dosyasına yapılan her yazma (w) ve nitelik değiştirme (a) işlemini kernel seviyesinde loglar. Kimin kullanıcı eklediğini kanıtlamak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 257,
+    "category": "security_ops",
+    "command": "awk -F: '($2 == \"\") {print $1}' /etc/shadow",
+    "title": "Boş Parolalı Hesapları Tespit Etme",
+    "description": "Shadow dosyasını tarayarak parolasız (şifre alanı boş) kullanıcıları listeler. Bu hesaplar sisteme şifresiz giriş yapabilir, acilen kapatılmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 258,
+    "category": "access_control",
+    "command": "access.conf",
+    "title": "Login Erişim Kontrolü (PAM)",
+    "description": "/etc/security/access.conf dosyası, hangi kullanıcının hangi terminalden veya IP bloğundan giriş yapabileceğini sınırlar. SSH config'den daha kapsamlıdır.",
+    "is_published": false
+  },
+  {
+    "id": 259,
+    "category": "ssh_security",
+    "command": "ssh-keygen -t ed25519",
+    "title": "Modern SSH Anahtarı Oluşturma",
+    "description": "Eski RSA anahtarları yerine, daha kısa, daha hızlı ve daha güvenli olan Ed25519 eliptik eğri algoritması ile SSH anahtarı üretir.",
+    "is_published": false
+  },
+  {
+    "id": 260,
+    "category": "permissions",
+    "command": "getcap /usr/bin/ping",
+    "title": "Binary Yeteneklerini (Capabilities) Görme",
+    "description": "SUID bitine modern bir alternatiftir. Dosyaya tam root yetkisi vermek yerine, sadece ağ paketi atma (CAP_NET_RAW) gibi spesifik yetkiler tanımlar.",
+    "is_published": false
+  },
+  {
+    "id": 261,
+    "category": "security_ops",
+    "command": "dd if=/dev/urandom of=/dev/sda bs=1M",
+    "title": "Disk İmha (Nükleer Seçenek)",
+    "description": "Diski rastgele verilerle doldurur. 'zero' ile doldurmaktan daha güvenlidir çünkü manyetik izleri karıştırır. DİKKAT: Veri kurtarılamaz.",
+    "is_published": false
+  },
+  {
+    "id": 262,
+    "category": "ssh_security",
+    "command": "echo 'PermitRootLogin no' >> /etc/ssh/sshd_config",
+    "title": "Root SSH Girişini Kapatma",
+    "description": "Saldırganların hedefi olan 'root' kullanıcısının SSH ile doğrudan girişini engeller. Sisteme normal kullanıcı ile girip içeride yetki yükseltilmelidir.",
+    "is_published": false
+  },
+  {
+    "id": 263,
+    "category": "audit",
+    "command": "last reboot",
+    "title": "Sistem Yeniden Başlatma Geçmişi",
+    "description": "Sunucunun ne zaman ve ne sıklıkla reboot edildiğini gösterir. Beklenmeyen rebootlar donanım arızasının veya saldırının işareti olabilir.",
+    "is_published": false
+  },
+  {
+    "id": 264,
+    "category": "permissions",
+    "command": "setcap cap_net_bind_service=+ep /usr/bin/node",
+    "title": "Root Olmadan Port 80'i Dinleme",
+    "description": "Node.js gibi bir uygulamanın root olmadan 1024 altındaki portları (örn: 80) dinlemesine izin verir. Uygulama hacklense bile saldırgan root olamaz.",
+    "is_published": false
+  },
+  {
+    "id": 265,
+    "category": "security_ops",
+    "command": "diff <(sort current_users) <(sort backup_users)",
+    "title": "Kullanıcı Listesi Değişim Kontrolü",
+    "description": "Daha önce alınan kullanıcı listesi yedeği ile mevcut listeyi karşılaştırır. İzinsiz eklenen 'Backdoor' kullanıcılarını tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 266,
+    "category": "firewall",
+    "command": "iptables -A INPUT -s 192.168.1.5 -j DROP",
+    "title": "Belirli IP'yi Engelleme",
+    "description": "Saldırı yapan veya şüpheli davranan bir IP adresinden gelen tüm paketleri sessizce (DROP) çöpe atar. REJECT komutundan farkı, karşı tarafa 'kapalı' bilgisini bile göndermemesidir.",
+    "is_published": false
+  },
+  {
+    "id": 267,
+    "category": "user_mgmt",
+    "command": "logname",
+    "title": "Gerçek Giriş Kullanıcısı",
+    "description": "'whoami' o anki yetkiyi (örn: root) gösterirken, 'logname' sisteme ilk giriş yapan gerçek kullanıcıyı gösterir. 'sudo su' yapıldığında iz sürmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 268,
+    "category": "encryption",
+    "command": "openssl rand -base64 32",
+    "title": "Güçlü Parola Üretimi",
+    "description": "Kriptografik olarak güvenli rastgelelik (entropy) kullanarak 32 karakterlik karmaşık bir string üretir. API key veya veritabanı şifresi olarak kullanım için idealdir.",
+    "is_published": false
+  },
+  {
+    "id": 269,
+    "category": "security_ops",
+    "command": "apparmor_status",
+    "title": "AppArmor Durum Kontrolü",
+    "description": "Uygulama bazlı erişim kontrolü sağlayan AppArmor'un durumunu ve hangi profillerin (Enforce/Complain) yüklü olduğunu gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 270,
+    "category": "permissions",
+    "command": "chmod -R 750 /var/www",
+    "title": "Web Dizin Güvenliği",
+    "description": "Web klasörlerine; sahibine tam yetki (7), gruba (web sunucusu) okuma ve çalıştırma (5), diğerlerine ise HİÇBİR (0) yetki vermeyerek izolasyon sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 271,
+    "category": "ssh_security",
+    "command": "ssh-add -l",
+    "title": "Yüklü SSH Anahtarlarını Listeleme",
+    "description": "SSH Agent (ssh-agent) belleğinde o an yüklü olan özel anahtarların parmak izlerini (fingerprint) listeler. Hangi anahtarla işlem yaptığınızı doğrular.",
+    "is_published": false
+  },
+  {
+    "id": 272,
+    "category": "audit",
+    "command": "grep 'sudo' /var/log/auth.log | grep 'COMMAND'",
+    "title": "Sudo Komut Geçmişi",
+    "description": "Kimlerin sudo yetkisiyle HANGİ komutları çalıştırdığını gösterir. Sistem yöneticilerinin ne yaptığını denetlemek için birincil kaynaktır.",
+    "is_published": false
+  },
+  {
+    "id": 273,
+    "category": "security_ops",
+    "command": "chkrootkit",
+    "title": "Rootkit Taraması",
+    "description": "Sistemde bilinen Rootkit imzalarını, şüpheli dosyaları ve değiştirilmiş sistem komutlarını (ps, ls vb.) tarayan klasik bir güvenlik aracıdır.",
+    "is_published": false
+  },
+  {
+    "id": 274,
+    "category": "firewall",
+    "command": "ufw allow from 192.168.1.0/24 to any port 22",
+    "title": "SSH'ı Sadece Yerel Ağa Açma",
+    "description": "SSH portunu tüm dünyaya açmak yerine, sadece belirli bir subnet'e (İç ağ veya VPN bloğu) açarak saldırı yüzeyini %99 oranında küçültür.",
+    "is_published": false
+  },
+  {
+    "id": 275,
+    "category": "process_isolation",
+    "command": "chroot /mnt/jail /bin/bash",
+    "title": "Hapishane Kabuğu (Chroot Jail)",
+    "description": "Kök dizini ('/') değiştirerek, çalıştırılan sürecin sistemin geri kalanını görmesini engeller. Güvenlik izolasyonu için temel bir yöntemdir.",
+    "is_published": false
+  },
+  {
+    "id": 276,
+    "category": "audit",
+    "command": "lsof -p PID +L1",
+    "title": "Silinmiş Ama Açık Dosyaları Bulma",
+    "description": "Saldırganlar bazen çalıştırdıkları zararlı dosyayı diskten siler ama RAM'de çalışmaya devam eder. Bu komut, diskten silinmiş (Link count < 1) ama hala açık olan dosyaları yakalar.",
+    "is_published": false
+  },
+  {
+    "id": 277,
+    "category": "security_ops",
+    "command": "rkhunter --check",
+    "title": "Rootkit Hunter Taraması",
+    "description": "Chkrootkit'e alternatiftir. Dosya hash değerlerini veritabanı ile karşılaştırarak sistem dosyalarının değiştirilip değiştirilmediğini kontrol eder.",
+    "is_published": false
+  },
+  {
+    "id": 278,
+    "category": "audit",
+    "command": "export HISTTIMEFORMAT='%F %T '",
+    "title": "Komut Geçmişine Zaman Damgası Ekleme",
+    "description": "Standart 'history' komutu sadece komutları gösterir. Bu ayar ile komutların hangi tarihte ve saatte çalıştırıldığı da kaydedilir. Adli analiz için zorunludur.",
+    "is_published": false
+  },
+  {
+    "id": 279,
+    "category": "permissions",
+    "command": "ls -ld /tmp",
+    "title": "Tmp Klasör İzin Kontrolü",
+    "description": "/tmp klasörünün izinlerinin 'drwxrwxrwt' (Sticky Bit aktif) olduğunu doğrular. Eğer 't' yoksa, herhangi bir kullanıcı diğerinin dosyasını silebilir.",
+    "is_published": false
+  },
+  {
+    "id": 280,
+    "category": "user_mgmt",
+    "command": "kill -9 -1",
+    "title": "Tüm Kullanıcı Süreçlerini Öldürme (Acil Durum)",
+    "description": "Oturum sahibi kullanıcının çalıştırdığı TÜM süreçleri anında sonlandırır ve oturumu kapatır. Sistemden atılması gereken bir saldırgan için panik butonudur.",
+    "is_published": false
+  },
+  {
+    "id": 281,
+    "category": "security_ops",
+    "command": "mount -o remount,noexec /tmp",
+    "title": "Tmp Dizini Çalıştırma Yasağı",
+    "description": "/tmp dizinini 'noexec' parametresi ile bağlar. Böylece saldırganlar /tmp dizinine script veya exploit atsa bile çalıştıramaz.",
+    "is_published": false
+  },
+  {
+    "id": 282,
+    "category": "firewall",
+    "command": "firewall-cmd --list-all",
+    "title": "Firewalld Kurallarını Listeleme",
+    "description": "CentOS/RHEL sistemlerde varsayılan güvenlik duvarı yöneticisi olan firewalld'nin aktif zone üzerindeki tüm kurallarını ve açık servislerini listeler.",
+    "is_published": false
+  },
+  {
+    "id": 283,
+    "category": "encryption",
+    "command": "shred ~/.bash_history",
+    "title": "Komut Geçmişini Güvenli Silme",
+    "description": "Geçmiş dosyasını sadece silmez (rm), üzerine veri yazarak yok eder. Hassas komutlar girildikten sonra iz bırakmamak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 284,
+    "category": "audit",
+    "command": "debsecan",
+    "title": "Debian Güvenlik Açığı Taraması",
+    "description": "Sistemde yüklü paketleri bilinen güvenlik açıkları (CVE) veritabanı ile karşılaştırır ve hangi paketlerin güncellenmesi gerektiğini raporlar.",
+    "is_published": false
+  },
+  {
+    "id": 285,
+    "category": "ssh_security",
+    "command": "ssh -Q cipher",
+    "title": "Desteklenen SSH Şifreleme Algoritmaları",
+    "description": "SSH istemcisinin ve sunucusunun desteklediği şifreleme algoritmalarını listeler. Zayıf algoritmaların (örn: arcfour) kullanılıp kullanılmadığını audit etmek için gereklidir.",
+    "is_published": false
+  },
+  {
+    "id": 286,
+    "category": "permissions",
+    "command": "chmod 400 /etc/shadow",
+    "title": "Shadow Dosyası Koruması",
+    "description": "Kullanıcı parolalarının hashlerini tutan bu dosyayı sadece root okuyabilmelidir (400). Başka herhangi bir izin, tüm şifrelerin kırılmasına yol açar.",
+    "is_published": false
+  },
+  {
+    "id": 287,
+    "category": "user_mgmt",
+    "command": "pkill -u user",
+    "title": "Kullanıcıyı Kickleme",
+    "description": "Belirtilen kullanıcıya ait tüm süreçleri sonlandırarak onu sistemden atar. Canlı müdahale sırasında kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 288,
+    "category": "security_ops",
+    "command": "logger 'Manuel Guvenlik Kaydi'",
+    "title": "Syslog'a Mesaj Gönderme",
+    "description": "Sistem loglarına (/var/log/syslog) manuel bir satır ekler. Scriptlerin çalıştığını doğrulamak veya bir olay anında zaman damgası (marker) bırakmak için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 289,
+    "category": "audit",
+    "command": "netstat -plant",
+    "title": "Gelişmiş Ağ Dinleme Analizi",
+    "description": "TCP bağlantılarını, dinleyen portları, ilişkili PID'leri ve program isimlerini gösterir. 'ss' komutuna alternatif, klasik ve detaylı bir analiz sunar.",
+    "is_published": false
+  },
+  {
+    "id": 290,
+    "category": "security_ops",
+    "command": "echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all",
+    "title": "Ping Yanıtlarını Kapatma",
+    "description": "Sunucuyu 'Hayalet' moduna alır. Dışarıdan gelen Ping isteklerine cevap vermez. Ağ taramalarında sunucunun kapalı görünmesini sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 291,
+    "category": "permissions",
+    "command": "ls -l /etc/cron.d",
+    "title": "Cron İşleri İzin Kontrolü",
+    "description": "Zamanlanmış görev dosyalarının sadece root tarafından yazılabilir olduğunu kontrol eder. Buraya yazma izni olan bir kullanıcı root yetkisi kazanabilir.",
+    "is_published": false
+  },
+  {
+    "id": 292,
+    "category": "security_ops",
+    "command": "fail2ban-client status sshd",
+    "title": "Fail2Ban Durum Kontrolü",
+    "description": "Saldırı engelleyici Fail2Ban servisinin SSH hapishanesindeki (jail) durumunu ve şu ana kadar kaç IP adresinin banlandığını gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 293,
+    "category": "user_mgmt",
+    "command": "usermod -L user",
+    "title": "Hesap Kilitleme (Usermod ile)",
+    "description": "Passwd -l ile benzerdir ancak usermod daha kapsamlı bir kullanıcı yönetimi aracıdır. Hesabın şifresinin önüne '!' koyarak girişi engeller.",
+    "is_published": false
+  },
+  {
+    "id": 294,
+    "category": "encryption",
+    "command": "openssl rsa -in key.pem -check",
+    "title": "Özel Anahtar Doğrulama",
+    "description": "Bir RSA özel anahtarının (Private Key) bozuk olup olmadığını veya formatının geçerliliğini matematiksel olarak kontrol eder.",
+    "is_published": false
+  },
+  {
+    "id": 295,
+    "category": "audit",
+    "command": "ausearch -f /etc/shadow",
+    "title": "Shadow Dosyasına Erişimleri Denetleme",
+    "description": "Auditd üzerinden, kritik shadow dosyasına kimlerin eriştiğini veya erişmeye çalıştığını geçmişe dönük sorgular.",
+    "is_published": false
+  },
+  {
+    "id": 296,
+    "category": "security_ops",
+    "command": "unhide proc",
+    "title": "Gizli Süreçleri Bulma",
+    "description": "'ps' veya 'top' komutlarında görünmeyen ancak kernelde çalışan (Rootkit tarafından gizlenmiş) süreçleri tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 297,
+    "category": "permissions",
+    "command": "chown root:root /etc/passwd",
+    "title": "Kritik Dosya Sahipliği",
+    "description": "Passwd dosyasının sahibinin ve grubunun mutlaka root olduğunu garanti altına alır. Başka bir kullanıcıya ait olması sistemin ele geçirilmesi demektir.",
+    "is_published": false
+  },
+  {
+    "id": 298,
+    "category": "firewall",
+    "command": "iptables-save > /etc/iptables/rules.v4",
+    "title": "IPTables Kurallarını Kalıcı Yapma",
+    "description": "RAM'de çalışan firewall kurallarını dosyaya kaydeder. Sistem yeniden başlatıldığında kuralların silinmemesi için (iptables-persistent ile) gereklidir.",
+    "is_published": false
+  },
+  {
+    "id": 299,
+    "category": "audit",
+    "command": "systemctl list-units --type=service --state=running",
+    "title": "Çalışan Servisleri Denetleme",
+    "description": "Sistemde o an aktif olan servisleri listeler. Gereksiz veya tanınmayan bir servis çalışıyorsa (örn: saldırganın açtığı bir listener) kapatılmalıdır.",
+    "is_published": false
+  },
+  {
+    "id": 300,
+    "category": "system_ops",
+    "command": "init 0",
+    "title": "Sistemi Güvenli Kapatma",
+    "description": "Sistemi 'Halt' durumuna getirir ve gücü keser. Saldırı altında veya fiziksel müdahale gerektiğinde sistemi kapatmanın en temel (System V) komutudur.",
+    "is_published": false
+  }
+]
