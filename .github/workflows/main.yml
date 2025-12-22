@@ -39,8 +39,12 @@ jobs:
           git config --global user.name 'LinuxTipBot'
           git config --global user.email 'bot@noreply.github.com'
           
-          # KRİTİK ADIM: Önce uzaktaki (remote) değişiklikleri çekip birleştiriyoruz
+          # 1. Önce yerel değişikliği commit et (Henüz gönderme)
+          git add data/tips.json
+          git commit -m "🤖 Bot: Günlük ipucu yayınlandı [skip ci]" || echo "Commit edilecek değişiklik yok."
+          
+          # 2. Uzaktaki değişiklikleri çek ve bizimkilerin altına ekle (Rebase)
           git pull --rebase origin main
           
-          git add data/tips.json || echo "Tips dosyası bulunamadı veya değişmedi."
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Bot: Günlük ipucu yayınlandı [skip ci]" && git push)
+          # 3. Şimdi gönder
+          git push origin main
