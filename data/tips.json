@@ -1325,7 +1325,7 @@
     "command": "pvcreate /dev/sdb1",
     "title": "LVM: Fiziksel Hacim Oluşturma",
     "description": "Logical Volume Manager (LVM) kurulumunun ilk adımıdır. Ham disk bölümünü LVM tarafından kullanılabilir bir 'Physical Volume' haline getirir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 167,
