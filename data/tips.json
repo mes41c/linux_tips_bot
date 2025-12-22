@@ -2061,7 +2061,7 @@
     "command": "access.conf",
     "title": "Login Erişim Kontrolü (PAM)",
     "description": "/etc/security/access.conf dosyası, hangi kullanıcının hangi terminalden veya IP bloğundan giriş yapabileceğini sınırlar. SSH config'den daha kapsamlıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 259,
