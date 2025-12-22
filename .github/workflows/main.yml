@@ -38,5 +38,9 @@ jobs:
         run: |
           git config --global user.name 'LinuxTipBot'
           git config --global user.email 'bot@noreply.github.com'
+          
+          # KRİTİK ADIM: Önce uzaktaki (remote) değişiklikleri çekip birleştiriyoruz
+          git pull --rebase origin main
+          
           git add data/tips.json || echo "Tips dosyası bulunamadı veya değişmedi."
           git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Bot: Günlük ipucu yayınlandı [skip ci]" && git push)
