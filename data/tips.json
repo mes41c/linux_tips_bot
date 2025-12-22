@@ -5,7 +5,7 @@
     "command": "cd -",
     "title": "Hızlı Geri Dönüş",
     "description": "Bulunduğunuz dizinden bir önceki dizine anında dönmek için kullanılır. Uzun dosya yollarını tekrar yazmanızı engeller.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 2,
