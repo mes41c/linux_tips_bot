@@ -925,7 +925,7 @@
     "command": "dmesg -w",
     "title": "Kernel Mesajlarını Canlı İzleme",
     "description": "Donanım ve sürücü (driver) seviyesindeki olayları gösterir. USB takıldığında veya disk hatası oluştuğunda kernelin ne tepki verdiğini canlı (-w: wait) izlersiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 117,
