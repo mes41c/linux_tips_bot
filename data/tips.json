@@ -1109,7 +1109,7 @@
     "command": "sysctl vm.swappiness=10",
     "title": "Swap Kullanım Eğilimini Azaltma",
     "description": "Sistemin RAM dolmadan diske (Swap) geçme eğilimini ayarlar. Varsayılan 60'tır. 10 yapmak, sistemi RAM'i sonuna kadar kullanmaya zorlar ve performansı artırır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 140,
