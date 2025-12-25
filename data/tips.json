@@ -2229,7 +2229,7 @@
     "command": "ls -ld /tmp",
     "title": "Tmp Klasör İzin Kontrolü",
     "description": "/tmp klasörünün izinlerinin 'drwxrwxrwt' (Sticky Bit aktif) olduğunu doğrular. Eğer 't' yoksa, herhangi bir kullanıcı diğerinin dosyasını silebilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 280,
