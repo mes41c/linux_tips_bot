@@ -2,9 +2,9 @@ name: Daily Linux Tip Scheduler
 
 on:
   schedule:
-    # Her gün sabah 09:00'da (UTC+3 için 06:00 UTC)
-    - cron: '0 8 * * *'
-  workflow_dispatch: # Manuel tetikleme butonu için burası şart
+    # UTC 06:00 ile 17:00 arasi her saat basi calis (TRT 09:00 - 20:00)
+    - cron: '0 7-17 * * *'
+  workflow_dispatch:
 
 permissions:
   contents: write # Repoya yazma izni (Commit için şart)
