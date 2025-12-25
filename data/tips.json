@@ -1429,7 +1429,7 @@
     "command": "cryptsetup luksFormat /dev/sdb1",
     "title": "Disk Şifreleme (LUKS)",
     "description": "Disk bölümünü endüstri standardı LUKS (Linux Unified Key Setup) ile şifreler. Parola olmadan diskin içeriğine fiziksel olarak erişilse bile veriler okunamaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 180,
