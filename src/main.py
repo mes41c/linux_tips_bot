@@ -3,6 +3,7 @@ import os
 import sys
 import random
 import datetime
+import hashlib  # <--- YENI: Guvenlik icin gerekli
 from pathlib import Path
 from notifier import TelegramNotifier
 
@@ -22,6 +23,10 @@ def save_json(path, data):
     with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
+def get_hash(text):
+    """Verilen metnin SHA256 ozetini dondurur. (Tek Yonlu Sifreleme)"""
+    return hashlib.sha256(text.encode('utf-8')).hexdigest()
+
 def format_tip(tip):
     hashtag = f"#{tip.get('category', 'linux').replace('_', '')}"
     return (
@@ -34,20 +39,20 @@ def format_tip(tip):
     )
 
 def main():
-    print("DEBUG: Script baslatiliyor (Retry Modu)...")
+    print("DEBUG: Script baslatiliyor (Secure Hash Modu)...")
 
-    # 1. ORTAM DEGISKENLERI
+    # 1. ORTAM DEGISKENLERI (Secret'tan Ham Veriyi Al)
     token = os.getenv("TELEGRAM_TOKEN")
     raw_chat_ids = os.getenv("TELEGRAM_CHAT_ID")
     
     if not token or not raw_chat_ids:
         print("KRITIK: Token veya Chat ID eksik.")
-        sys.exit(1) # Konfigurasyon hatasi varsa fail olsun
+        sys.exit(1)
 
-    all_target_ids = [x.strip() for x in raw_chat_ids.split(',') if x.strip()]
+    # Ham ID listesini olustur (RAM'de tutulur, diske yazilmaz)
+    target_ids_list = [x.strip() for x in raw_chat_ids.split(',') if x.strip()]
     
-    # 2. DURUM YONETIMI (STATE MANAGEMENT)
-    # Bugunun tarihini al (UTC kullanmak action icin daha guvenli)
+    # 2. DURUM YONETIMI
     today_str = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
     
     status_data = load_json(STATUS_FILE)
@@ -58,12 +63,10 @@ def main():
         sys.exit(1)
 
     # --- YENI GUN KONTROLU ---
-    # Eger status dosyasindaki tarih bugun degilse, yeni bir gun baslamistir.
-    # Eski gun tamamlanmadiysa bile artik sifirlanir (User'in "ertelesin" istegi).
+    # Eger gun degistiyse status dosyasini sifirla
     if status_data.get("date") != today_str:
-        print(f"BILGI: Yeni gun tespit edildi ({today_str}). Gunluk islem baslatiliyor.")
+        print(f"BILGI: Yeni gun ({today_str}).")
         
-        # Yeni bir ipucu sec
         unpublished_pool = [tip for tip in tips_data if not tip.get("is_published", False)]
         
         if not unpublished_pool:
@@ -72,65 +75,65 @@ def main():
             
         selected_tip = random.choice(unpublished_pool)
         
-        # Status dosyasini bugun icin sifirla
         status_data = {
             "date": today_str,
             "target_tip_id": selected_tip['id'],
-            "pending_ids": all_target_ids, # Herkes beklemede
+            "completed_hashes": [], # <--- ARTIK ID DEGIL HASH TUTUYORUZ
             "is_completed": False
         }
         save_json(STATUS_FILE, status_data)
     
     # --- GOREV KONTROLU ---
     if status_data["is_completed"]:
-        print("BILGI: Bugunun gorevi zaten tamamlanmis. Cikis yapiliyor.")
+        print("BILGI: Bugunun gorevi tamamlanmis.")
         sys.exit(0)
 
-    # Hedef ipucunu tips_data icinden bul
     target_tip = next((t for t in tips_data if t["id"] == status_data["target_tip_id"]), None)
     if not target_tip:
-        print("HATA: Hedef ipucu veritabaninda bulunamadi.")
+        print("HATA: Hedef ipucu bulunamadi.")
         sys.exit(1)
 
-    # 3. GONDERIM DONGUSU (Sadece pending_ids icin)
-    pending_list = status_data["pending_ids"]
-    print(f"DEBUG: Bekleyen alicilar: {pending_list}")
-    
-    still_pending = []
+    # 3. GONDERIM DONGUSU
+    # Ham ID'leri dolasiyoruz, ama kontrolu Hash uzerinden yapiyoruz
     message = format_tip(target_tip)
-    success_in_this_run = False
+    completed_hashes = status_data.get("completed_hashes", [])
+    any_failure = False
 
-    for uid in pending_list:
+    for uid in target_ids_list:
+        uid_hash = get_hash(uid) # ID'yi hashle
+        
+        # Eger bu Hash zaten tamamlananlar listesindeyse atla
+        if uid_hash in completed_hashes:
+            print(f"ATLANDI (Zaten gonderildi): {uid_hash[:8]}...")
+            continue
+
         try:
             notifier = TelegramNotifier(token, uid)
             if notifier.send_message(message):
-                print(f"BASARILI: {uid}")
-                success_in_this_run = True
+                print(f"BASARILI (Hash): {uid_hash[:8]}...")
+                completed_hashes.append(uid_hash)
             else:
-                print(f"ULASILAMADI (Retrying later): {uid}")
-                still_pending.append(uid)
+                print(f"ULASILAMADI: {uid_hash[:8]}...")
+                any_failure = True
         except Exception as e:
-            print(f"HATA ({uid}): {e}")
-            still_pending.append(uid)
+            print(f"HATA: {e}")
+            any_failure = True
 
     # 4. DURUM GUNCELLEME
-    status_data["pending_ids"] = still_pending
+    status_data["completed_hashes"] = completed_hashes
 
-    # Eger kimse kalmadiysa gorev tamamlanmistir
-    if not still_pending:
-        print("SONUC: Tum alicilara ulasildi. Gorev tamamlandi.")
+    # Eger hicbir hata yoksa ve tum hedefler tamamlandiysa
+    if not any_failure and len(completed_hashes) == len(target_ids_list):
+        print("SONUC: Tum hedeflere ulasildi.")
         status_data["is_completed"] = True
         
-        # Ana veritabaninda da yayinlandi olarak isaretle
         for tip in tips_data:
             if tip["id"] == target_tip["id"]:
                 tip["is_published"] = True
                 break
         save_json(DATA_FILE, tips_data)
     else:
-        print(f"BILGI: {len(still_pending)} aliciya ulasilamadi. Sonraki saat tekrar denenecek.")
-        # Burada sys.exit(1) YAPMIYORUZ. Cünkü bu bir hata degil, surecin parcasidir.
-        # GitHub Action "Success" verecek ama islem bitmemis olacak.
+        print("BILGI: Bazi hedeflere ulasilamadi, sonra tekrar denenecek.")
 
     save_json(STATUS_FILE, status_data)
 
