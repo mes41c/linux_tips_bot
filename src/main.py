@@ -1,23 +1,25 @@
 import json
 import os
 import sys
-import random  # <--- YENI: Rastgelelik icin gerekli kutuphane
+import random
+import datetime
 from pathlib import Path
 from notifier import TelegramNotifier
 
 # --- AYARLAR ---
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_FILE = BASE_DIR / "data" / "tips.json"
+STATUS_FILE = BASE_DIR / "data" / "status.json"
 
-def load_data():
-    if not DATA_FILE.exists():
-        print(f"Hata: Veri dosyası bulunamadı: {DATA_FILE}")
-        sys.exit(1)
-    with open(DATA_FILE, "r", encoding="utf-8") as f:
+# --- YARDIMCI FONKSIYONLAR ---
+def load_json(path):
+    if not path.exists():
+        return None
+    with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
-def save_data(data):
-    with open(DATA_FILE, "w", encoding="utf-8") as f:
+def save_json(path, data):
+    with open(path, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
 def format_tip(tip):
@@ -32,74 +34,105 @@ def format_tip(tip):
     )
 
 def main():
-    print("DEBUG: Script baslatiliyor (Rastgele Mod)...")
+    print("DEBUG: Script baslatiliyor (Retry Modu)...")
 
-    # 1. ORTAM DEGISKENLERINI AL
+    # 1. ORTAM DEGISKENLERI
     token = os.getenv("TELEGRAM_TOKEN")
     raw_chat_ids = os.getenv("TELEGRAM_CHAT_ID")
+    
+    if not token or not raw_chat_ids:
+        print("KRITIK: Token veya Chat ID eksik.")
+        sys.exit(1) # Konfigurasyon hatasi varsa fail olsun
 
-    # 2. KONTROLLER
-    if not token:
-        print("HATA: TELEGRAM_TOKEN environment variable bulunamadi!")
+    all_target_ids = [x.strip() for x in raw_chat_ids.split(',') if x.strip()]
+    
+    # 2. DURUM YONETIMI (STATE MANAGEMENT)
+    # Bugunun tarihini al (UTC kullanmak action icin daha guvenli)
+    today_str = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
+    
+    status_data = load_json(STATUS_FILE)
+    tips_data = load_json(DATA_FILE)
+
+    if not status_data or not tips_data:
+        print("KRITIK: Veri dosyalari okunamadi.")
         sys.exit(1)
-    
-    if not raw_chat_ids:
-        print("HATA: TELEGRAM_CHAT_ID environment variable bulunamadi!")
-        sys.exit(1)
 
-    target_ids = [x.strip() for x in raw_chat_ids.split(',') if x.strip()]
-
-    if not target_ids:
-        print("HATA: Gecerli bir Chat ID bulunamadi.")
-        sys.exit(1)
-
-    # 3. VERIYI YUKLE
-    data = load_data()
+    # --- YENI GUN KONTROLU ---
+    # Eger status dosyasindaki tarih bugun degilse, yeni bir gun baslamistir.
+    # Eski gun tamamlanmadiysa bile artik sifirlanir (User'in "ertelesin" istegi).
+    if status_data.get("date") != today_str:
+        print(f"BILGI: Yeni gun tespit edildi ({today_str}). Gunluk islem baslatiliyor.")
+        
+        # Yeni bir ipucu sec
+        unpublished_pool = [tip for tip in tips_data if not tip.get("is_published", False)]
+        
+        if not unpublished_pool:
+            print("BILGI: Yayinlanacak ipucu kalmadi.")
+            sys.exit(0)
+            
+        selected_tip = random.choice(unpublished_pool)
+        
+        # Status dosyasini bugun icin sifirla
+        status_data = {
+            "date": today_str,
+            "target_tip_id": selected_tip['id'],
+            "pending_ids": all_target_ids, # Herkes beklemede
+            "is_completed": False
+        }
+        save_json(STATUS_FILE, status_data)
     
-    # --- DEGISIKLIK BASLANGICI ---
-    
-    # A) Yayinlanmamis (is_published: false) tum ipuclarini bir havuza at
-    unpublished_pool = [tip for tip in data if not tip.get("is_published", False)]
-    
-    # B) Havuz bos mu kontrol et
-    if not unpublished_pool:
-        print("BILGI: Yayinlanacak yeni ipucu kalmadi. Hepsi tukendi.")
+    # --- GOREV KONTROLU ---
+    if status_data["is_completed"]:
+        print("BILGI: Bugunun gorevi zaten tamamlanmis. Cikis yapiliyor.")
         sys.exit(0)
-    
-    # C) Havuzdan RASTGELE bir tane sec
-    target_tip = random.choice(unpublished_pool)
-    
-    # D) Secilen ipucunun orijinal ana listedeki sirasini (index) bul
-    # (Kaydederken dogru satiri guncellemek icin bu sart)
-    target_index = data.index(target_tip)
-    
-    print(f"DEBUG: Rastgele secilen ID: {target_tip['id']}")
-    
-    # --- DEGISIKLIK BITISI ---
 
-    # 4. GONDERIM DONGUSU
+    # Hedef ipucunu tips_data icinden bul
+    target_tip = next((t for t in tips_data if t["id"] == status_data["target_tip_id"]), None)
+    if not target_tip:
+        print("HATA: Hedef ipucu veritabaninda bulunamadi.")
+        sys.exit(1)
+
+    # 3. GONDERIM DONGUSU (Sadece pending_ids icin)
+    pending_list = status_data["pending_ids"]
+    print(f"DEBUG: Bekleyen alicilar: {pending_list}")
+    
+    still_pending = []
     message = format_tip(target_tip)
-    success_count = 0
+    success_in_this_run = False
 
-    for uid in target_ids:
+    for uid in pending_list:
         try:
             notifier = TelegramNotifier(token, uid)
             if notifier.send_message(message):
                 print(f"BASARILI: {uid}")
-                success_count += 1
+                success_in_this_run = True
             else:
-                print(f"BASARISIZ: {uid}")
+                print(f"ULASILAMADI (Retrying later): {uid}")
+                still_pending.append(uid)
         except Exception as e:
             print(f"HATA ({uid}): {e}")
+            still_pending.append(uid)
 
-    # 5. DURUM GUNCELLEME
-    if success_count > 0:
-        data[target_index]["is_published"] = True
-        save_data(data)
-        print(f"SONUC: İpucu {target_tip['id']} yayinlandi ve durum guncellendi.")
+    # 4. DURUM GUNCELLEME
+    status_data["pending_ids"] = still_pending
+
+    # Eger kimse kalmadiysa gorev tamamlanmistir
+    if not still_pending:
+        print("SONUC: Tum alicilara ulasildi. Gorev tamamlandi.")
+        status_data["is_completed"] = True
+        
+        # Ana veritabaninda da yayinlandi olarak isaretle
+        for tip in tips_data:
+            if tip["id"] == target_tip["id"]:
+                tip["is_published"] = True
+                break
+        save_json(DATA_FILE, tips_data)
     else:
-        print("KRITIK: Mesaj gonderilemedi. Veritabani guncellenmedi.")
-        sys.exit(1)
+        print(f"BILGI: {len(still_pending)} aliciya ulasilamadi. Sonraki saat tekrar denenecek.")
+        # Burada sys.exit(1) YAPMIYORUZ. Cünkü bu bir hata degil, surecin parcasidir.
+        # GitHub Action "Success" verecek ama islem bitmemis olacak.
+
+    save_json(STATUS_FILE, status_data)
 
 if __name__ == "__main__":
     main()
