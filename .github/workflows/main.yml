@@ -39,9 +39,13 @@ jobs:
           git config --global user.name 'LinuxTipBot'
           git config --global user.email 'bot@noreply.github.com'
           
-          # status.json'u da eklemeyi unutmuyoruz
+          # 1. Botun yaptığı değişiklikleri sahneye al ve commit et
           git add data/tips.json data/status.json
-          
           git commit -m "🤖 Bot: Günlük durum güncellemesi [skip ci]" || echo "Commit edilecek değişiklik yok."
-          git pull --rebase origin main
+          
+          # 2. Uzaktaki değişiklikleri çek AMA çakışma olursa "Botun Verisini" (-X ours) kabul et
+          # Rebase yerine Merge stratejisi kullanıyoruz ki geçmiş kaybolmasın
+          git pull origin main --no-rebase -X ours
+          
+          # 3. Son hali gönder
           git push origin main
