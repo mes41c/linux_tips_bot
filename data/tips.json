@@ -2197,7 +2197,7 @@
     "command": "chroot /mnt/jail /bin/bash",
     "title": "Hapishane Kabuğu (Chroot Jail)",
     "description": "Kök dizini ('/') değiştirerek, çalıştırılan sürecin sistemin geri kalanını görmesini engeller. Güvenlik izolasyonu için temel bir yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 276,
