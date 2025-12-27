@@ -1405,7 +1405,7 @@
     "command": "sync",
     "title": "Veriyi Diske Zorla Yazma",
     "description": "RAM üzerindeki (buffer) verilerin tamamını fiziksel diske yazar. USB belleği çekmeden önce veya güç kesintisi riski olan durumlarda veri kaybını önler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 177,
