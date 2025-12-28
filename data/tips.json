@@ -309,7 +309,7 @@
     "command": "grep -l 'error' *.log",
     "title": "Sadece Dosya İsimlerini Listeleme",
     "description": "Hatayı içeren satırları ekrana basmak yerine, hatanın geçtiği dosya isimlerini (-l: list files) listeler. Hangi günün logunda sorun olduğunu bulmak için hızlı bir yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 40,
