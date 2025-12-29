@@ -1733,7 +1733,7 @@
     "command": "id user",
     "title": "Kullanıcı ve Grup ID'leri",
     "description": "Kullanıcının UID (User ID), GID (Group ID) ve üye olduğu tüm grupları gösterir. Yetki hatalarını ayıklarken kullanıcının doğru grupta olup olmadığını kontrol eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 218,
