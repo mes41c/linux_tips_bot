@@ -2205,7 +2205,7 @@
     "command": "lsof -p PID +L1",
     "title": "Silinmiş Ama Açık Dosyaları Bulma",
     "description": "Saldırganlar bazen çalıştırdıkları zararlı dosyayı diskten siler ama RAM'de çalışmaya devam eder. Bu komut, diskten silinmiş (Link count < 1) ama hala açık olan dosyaları yakalar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 277,
