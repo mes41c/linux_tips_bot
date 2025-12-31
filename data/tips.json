@@ -621,7 +621,7 @@
     "command": "resolvectl flush-caches",
     "title": "DNS Önbelleğini Temizleme",
     "description": "Systemd tabanlı modern Linux sistemlerde (Ubuntu 20.04+), yapılan DNS değişikliklerinin hemen algılanması için yerel DNS önbelleğini temizler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 79,
