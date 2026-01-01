@@ -333,7 +333,7 @@
     "command": "lsattr -R",
     "title": "Gizli Dosya Niteliklerini Görüntüleme",
     "description": "'ls -l' izinleri gösterir ama 'chattr' ile atanmış özel nitelikleri (örn: silinemezlik) göstermez. 'lsattr' ile bu nitelikleri rekürsif (-R) olarak görebilirsiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 43,
