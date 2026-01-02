@@ -21,7 +21,7 @@
     "command": "du -sh ./*",
     "title": "Dizin Boyutlarını İnsan Gözüyle Görme",
     "description": "'disk usage' komutudur. -s (summary) ve -h (human-readable) parametreleri ile klasörlerin boyutunu MB/GB cinsinden listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 4,
