@@ -845,7 +845,7 @@
     "command": "iotop",
     "title": "Disk I/O İzleme",
     "description": "CPU kullanımı düşük olmasına rağmen sistem yavaşsa, suçlu disktir. 'iotop', hangi sürecin diske en çok yazma/okuma yaptığını anlık gösterir. (Root yetkisi ister)",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 107,
