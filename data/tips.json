@@ -1813,7 +1813,7 @@
     "command": "ausearch -m USER_LOGIN -sv no",
     "title": "Audit Loglarında Başarısız Giriş Arama",
     "description": "Auditd servisi yüklüyse, sistemdeki başarısız giriş denemelerini veritabanından sorgular. Standart log dosyalarından daha güvenilir ve detaylıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 228,
