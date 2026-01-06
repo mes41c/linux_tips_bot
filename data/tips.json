@@ -1381,7 +1381,7 @@
     "command": "fstrim -v /",
     "title": "SSD Bakımı (TRIM)",
     "description": "SSD disklerde silinen blokların boş olduğunu kontrolcüye bildirir. SSD'nin ömrünü uzatmak ve performans düşüşünü engellemek için periyodik yapılmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 174,
