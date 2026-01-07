@@ -709,7 +709,7 @@
     "command": "nmtui",
     "title": "Terminal İçinde Görsel Ağ Ayarı",
     "description": "Karmaşık 'nmcli' komutlarını hatırlamak zorunda kalmadan, terminal içinde çalışan grafiksel bir arayüzle (TUI) IP atama, DNS değiştirme ve Wi-Fi bağlantısı yapmanızı sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 90,
