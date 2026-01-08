@@ -1541,7 +1541,7 @@
     "command": "mount -o loop disk.iso /mnt/iso",
     "title": "ISO Dosyasını Mount Etme",
     "description": "Bir CD/DVD imaj dosyasını (ISO) yazdırmadan, sanki fiziksel bir diskmiş gibi sisteme bağlar ve içindeki dosyalara erişmenizi sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 194,
