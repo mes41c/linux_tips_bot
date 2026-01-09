@@ -773,7 +773,7 @@
     "command": "wget --limit-rate=100k http://site.com/dosya.iso",
     "title": "İndirme Hızını Sınırlama",
     "description": "Büyük bir dosya indirirken tüm ağın bant genişliğini (bandwidth) tüketmemek için indirme hızını 100KB/s ile sınırlar. Paylaşımlı ağlarda veya IDS/IPS sistemlerini tetiklememek için (Stealth) kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 98,
