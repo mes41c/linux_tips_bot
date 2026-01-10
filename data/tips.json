@@ -949,7 +949,7 @@
     "command": "systemd-analyze blame",
     "title": "Yavaş Açılış Analizi",
     "description": "Sistemin açılış (boot) süresini hangi servisin ne kadar geciktirdiğini sıralı bir liste halinde gösterir. Optimizasyon için darboğazı işaret eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 120,
