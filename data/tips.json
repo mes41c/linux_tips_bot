@@ -2213,7 +2213,7 @@
     "command": "rkhunter --check",
     "title": "Rootkit Hunter Taraması",
     "description": "Chkrootkit'e alternatiftir. Dosya hash değerlerini veritabanı ile karşılaştırarak sistem dosyalarının değiştirilip değiştirilmediğini kontrol eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 278,
