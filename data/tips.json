@@ -2317,7 +2317,7 @@
     "command": "echo 1 > /proc/sys/net/ipv4/icmp_echo_ignore_all",
     "title": "Ping Yanıtlarını Kapatma",
     "description": "Sunucuyu 'Hayalet' moduna alır. Dışarıdan gelen Ping isteklerine cevap vermez. Ağ taramalarında sunucunun kapalı görünmesini sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 291,
