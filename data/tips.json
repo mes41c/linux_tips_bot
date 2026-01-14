@@ -229,7 +229,7 @@
     "command": "diff -u eski.conf yeni.conf",
     "title": "Konfigürasyon Farklarını Bulma",
     "description": "İki dosya arasındaki farkları satır satır gösterir. -u (unified) formatı, hangi satırın eklendiğini (+) veya çıkarıldığını (-) daha okunaklı sunar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 30,
