@@ -1917,7 +1917,7 @@
     "command": "find . -xdev -type d -print0 | xargs -0 chmod 755",
     "title": "Toplu Klasör İzni Düzeltme",
     "description": "Sadece klasörleri bulur ve izinlerini standart 755 (İçine girilebilir ve okunabilir) yapar. Dosya izni düzeltme (239) ile birlikte kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 241,
