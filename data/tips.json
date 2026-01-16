@@ -157,7 +157,7 @@
     "command": "realpath goreceli_dosya.txt",
     "title": "Tam Dosya Yolunu (Absolute Path) Alma",
     "description": "Bir dosyanın tam yolunu (/home/user/...) verir. Scriptlerde veya başka bir programa dosya yolu verirken hata yapmayı önler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 21,
