@@ -1141,7 +1141,7 @@
     "command": "sync; echo 3 > /proc/sys/vm/drop_caches",
     "title": "RAM Önbelleğini (Cache) Zorla Temizleme",
     "description": "Kernelin dosya işlemleri için ayırdığı önbelleği boşaltır ve RAM'i 'Free' durumuna getirir. Genellikle performans testlerinden önce sistemi sıfırlamak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 144,
