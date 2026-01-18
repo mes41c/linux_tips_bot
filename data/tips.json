@@ -2341,7 +2341,7 @@
     "command": "usermod -L user",
     "title": "Hesap Kilitleme (Usermod ile)",
     "description": "Passwd -l ile benzerdir ancak usermod daha kapsamlı bir kullanıcı yönetimi aracıdır. Hesabın şifresinin önüne '!' koyarak girişi engeller.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 294,
