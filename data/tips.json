@@ -1173,7 +1173,7 @@
     "command": "dmidecode -t memory",
     "title": "Fiziksel RAM Slot Bilgisi",
     "description": "Kasayı açmadan anakart üzerindeki RAM slotlarının dolu mu boş mu olduğunu, takılı RAM'in hızını ve üreticisini BIOS (DMI) üzerinden okur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 148,
