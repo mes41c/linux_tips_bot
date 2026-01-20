@@ -1709,7 +1709,7 @@
     "command": "chmod 700 ~/.ssh",
     "title": "SSH Klasör İzni (Hardening)",
     "description": ".ssh klasörü sadece sahibi tarafından okunabilir, yazılabilir ve çalıştırılabilir olmalıdır. İzinler 700'den genişse (örn: 755), SSH sunucusu güvenlik nedeniyle anahtarı reddeder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 215,
