@@ -373,7 +373,7 @@
     "command": "iconv -f ISO-8859-9 -t UTF-8 eski.txt > yeni.txt",
     "title": "Karakter Kodlaması Dönüştürme",
     "description": "Türkçe karakter sorunu yaşayan (bozuk görünen) dosyaların encoding yapısını ISO-8859-9'dan (veya Windows-1254) modern UTF-8 formatına çevirir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 48,
