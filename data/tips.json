@@ -613,7 +613,7 @@
     "command": "tcpdump -r capture.pcap",
     "title": "PCAP Dosyasını Terminalde Okuma",
     "description": "Daha önce kaydedilmiş bir ağ trafiği dosyasını (Wireshark formatı) terminal üzerinden okumanızı sağlar. GUI olmayan sunucularda analiz için gereklidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 78,
