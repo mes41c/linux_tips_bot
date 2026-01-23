@@ -165,7 +165,7 @@
     "command": "watch -n 1 'ls -lh dosya_adi'",
     "title": "Dosya Değişimini Canlı İzleme",
     "description": "'watch' komutu, yanına yazılan komutu belirli aralıklarla (burada 1 saniye) tekrar tekrar çalıştırır. Dosya boyutu değişimini veya indirme işlemlerini izlemek için idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 22,
