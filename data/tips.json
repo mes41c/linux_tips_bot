@@ -1581,7 +1581,7 @@
     "command": "fuser -vm /mnt/data",
     "title": "Mount Noktasını Kim Kullanıyor?",
     "description": "Diski unmount etmeye çalışırken alınan hataların sebebini, o dizinde hangi kullanıcının hangi komutla (PID) işlem yaptığını göstererek açıklar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 199,
