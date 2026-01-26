@@ -813,7 +813,7 @@
     "command": "ps aux | grep 'python'",
     "title": "Süreç Yakalama (Snapshot)",
     "description": "Sistemde o an çalışan tüm süreçlerin dökümünü alır (aux) ve içinden belirli bir kelimeyi (örn: python) filtreler. Anlık analiz için standart yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 103,
