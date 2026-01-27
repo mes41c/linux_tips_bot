@@ -413,7 +413,7 @@
     "command": "curl -I https://site.com",
     "title": "HTTP Header Analizi",
     "description": "Sayfanın gövdesini indirmeden sadece sunucu yanıt başlıklarını (Headers) çeker. Sunucu türünü (Nginx/Apache), versiyon bilgisini veya güvenlik başlıklarını kontrol etmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 53,
