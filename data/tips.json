@@ -37,7 +37,7 @@
     "command": "mkdir -p proje/src/main",
     "title": "İç İçe Klasör Oluşturma",
     "description": "Tek tek klasör oluşturmak yerine, -p (parents) bayrağı ile tüm dizin ağacını tek komutla oluşturabilirsiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 6,
