@@ -101,7 +101,7 @@
     "command": "stat dosya.txt",
     "title": "Dosya Metaverisi ve Zaman Damgaları",
     "description": "'ls' komutundan çok daha detaylıdır. Dosyanın erişim (Access), değişiklik (Modify) ve durum değiştirme (Change) zamanlarını ve inode numarasını gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 14,
