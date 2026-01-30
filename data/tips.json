@@ -2053,7 +2053,7 @@
     "command": "awk -F: '($2 == \"\") {print $1}' /etc/shadow",
     "title": "Boş Parolalı Hesapları Tespit Etme",
     "description": "Shadow dosyasını tarayarak parolasız (şifre alanı boş) kullanıcıları listeler. Bu hesaplar sisteme şifresiz giriş yapabilir, acilen kapatılmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 258,
