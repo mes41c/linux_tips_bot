@@ -1453,7 +1453,7 @@
     "command": "parted /dev/sda print",
     "title": "Parted ile Disk İnceleme",
     "description": "Komut satırı tabanlı, scriptlenebilir bölümleme aracıdır. Özellikle 2TB üzeri disklerde ve betiklerde (automation) fdisk yerine tercih edilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 183,
