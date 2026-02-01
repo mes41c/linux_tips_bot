@@ -1509,7 +1509,7 @@
     "command": "blockdev --getro /dev/sda",
     "title": "Yazma Koruması Kontrolü (Read-Only)",
     "description": "Blok cihazının salt okunur modda olup olmadığını kontrol eder. Özellikle SD kartlar veya 'Read-Only' moda düşen SAN diskleri için tanılama komutudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 190,
