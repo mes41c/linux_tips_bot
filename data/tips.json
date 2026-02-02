@@ -1685,7 +1685,7 @@
     "command": "usermod -aG docker user",
     "title": "Gruba Güvenli Üye Ekleme",
     "description": "Kullanıcıyı mevcut gruplarından çıkarmadan (-a: append) yeni bir gruba (-G) ekler. '-a' unutulursa kullanıcı diğer tüm gruplardan atılır, dikkatli olunmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 212,
