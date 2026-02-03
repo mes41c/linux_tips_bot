@@ -789,7 +789,7 @@
     "command": "curl --cookie 'session_id=123' http://site.com",
     "title": "Oturum Çalma (Session Hijacking) Testi",
     "description": "Web sitesine tarayıcı olmadan, belirli bir çerez (cookie) değeriyle istek atar. XSS açıklarıyla elde edilen oturum çerezlerini test etmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 100,
