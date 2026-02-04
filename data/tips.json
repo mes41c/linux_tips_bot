@@ -821,7 +821,7 @@
     "command": "free -h",
     "title": "RAM Kullanımı Kontrolü",
     "description": "Sistemin bellek durumunu insan tarafından okunabilir (human-readable, GB/MB) formatta gösterir. 'Available' sütunu, gerçekten kullanılabilir boş belleği ifade eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 104,
