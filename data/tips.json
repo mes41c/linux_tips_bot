@@ -637,7 +637,7 @@
     "command": "wget -O - http://site.com/script.sh | bash",
     "title": "İndir ve Doğrudan Çalıştır (Pipe to Bash)",
     "description": "Dosyayı diske kaydetmeden (-O -) doğrudan standart çıktıya (stdout) verir ve bunu bash'e aktarır. Hızlı kurulumlar için kullanılır ancak güvenlik riski yüksektir, kaynağa güvenilmelidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 81,
