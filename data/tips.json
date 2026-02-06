@@ -733,7 +733,7 @@
     "command": "socat TCP-LISTEN:8080,fork TCP:192.168.1.5:80",
     "title": "Gelişmiş Port Yönlendirme (Socat)",
     "description": "Netcat'in çok daha güçlü abisidir. Bu komut, makinenize 8080 portundan gelen trafiği alır ve 192.168.1.5'in 80 portuna iletir. 'Fork' parametresi birden fazla bağlantıyı yönetmesini sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 93,
