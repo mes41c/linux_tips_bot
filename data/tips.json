@@ -1229,7 +1229,7 @@
     "command": "fdisk -l",
     "title": "Disk Bölüm Tablosunu Listeleme",
     "description": "Sisteme bağlı tüm disklerin partition tablolarını (MBR/DOS) ve silindir yapılarını listeler. 2TB altı diskler için standart araçtır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 155,
