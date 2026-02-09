@@ -565,7 +565,7 @@
     "command": "sudo nano /etc/hosts",
     "title": "Yerel DNS Yönlendirmesi (DNS Spoofing)",
     "description": "DNS sunucusuna sormadan, belirli bir alan adını (örn: banka.com) istediğiniz IP adresine yönlendirmek için kullanılır. Yazılım geliştirme ve phishing simülasyonlarında kritiktir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 72,
