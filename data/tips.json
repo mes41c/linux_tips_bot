@@ -509,7 +509,7 @@
     "command": "rsync -avz -e ssh /yerel/klasor user@server:/uzak/yedek",
     "title": "Akıllı ve Sıkıştırılmış Senkronizasyon",
     "description": "'scp'den daha verimlidir. Sadece değişen dosyaları gönderir, kesilirse kaldığı yerden devam eder ve transfer sırasında veriyi sıkıştırır (-z).",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 65,
