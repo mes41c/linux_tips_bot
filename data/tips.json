@@ -1821,7 +1821,7 @@
     "command": "userdel -r user",
     "title": "Kullanıcıyı Ev Diziniyle Silme",
     "description": "Kullanıcıyı silerken, ona ait Home klasörünü (/home/user) ve mail dosyasını da siler (-r). Disk temizliği ve veri güvenliği için önemlidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 229,
