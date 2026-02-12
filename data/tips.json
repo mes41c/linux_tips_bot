@@ -2037,7 +2037,7 @@
     "command": "gpg -c gizli.txt",
     "title": "Simetrik Dosya Şifreleme",
     "description": "Dosyayı AES-256 algoritmasıyla ve bir parola ile şifreler. Anahtar yönetimi gerektirmez, sadece parolayı bilen dosyayı açabilir (gpg -d).",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 256,
