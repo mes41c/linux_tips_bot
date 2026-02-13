@@ -2005,7 +2005,7 @@
     "command": "ufw default deny incoming",
     "title": "Varsayılan Güvenlik Duvarı Politikası",
     "description": "Güvenliğin altın kuralı: Her şeyi yasakla, sadece gerekeni aç. UFW (Uncomplicated Firewall) için dışarıdan içeriye gelen tüm bağlantıları varsayılan olarak reddeder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 252,
