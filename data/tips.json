@@ -2253,7 +2253,7 @@
     "command": "firewall-cmd --list-all",
     "title": "Firewalld Kurallarını Listeleme",
     "description": "CentOS/RHEL sistemlerde varsayılan güvenlik duvarı yöneticisi olan firewalld'nin aktif zone üzerindeki tüm kurallarını ve açık servislerini listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 283,
