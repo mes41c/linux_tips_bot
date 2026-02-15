@@ -2173,7 +2173,7 @@
     "command": "grep 'sudo' /var/log/auth.log | grep 'COMMAND'",
     "title": "Sudo Komut Geçmişi",
     "description": "Kimlerin sudo yetkisiyle HANGİ komutları çalıştırdığını gösterir. Sistem yöneticilerinin ne yaptığını denetlemek için birincil kaynaktır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 273,
