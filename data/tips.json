@@ -213,7 +213,7 @@
     "command": "split -b 100M buyuk_dosya.tar.gz parca_",
     "title": "Dosyayı Parçalara Bölme",
     "description": "Devasa bir dosyayı taşımak veya e-posta ile atmak için belirli boyutlarda (örn: 100MB) parçalara böler. Birleştirmek için 'cat parca_* > tek_dosya' kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 28,
