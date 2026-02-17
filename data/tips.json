@@ -2221,7 +2221,7 @@
     "command": "export HISTTIMEFORMAT='%F %T '",
     "title": "Komut Geçmişine Zaman Damgası Ekleme",
     "description": "Standart 'history' komutu sadece komutları gösterir. Bu ayar ile komutların hangi tarihte ve saatte çalıştırıldığı da kaydedilir. Adli analiz için zorunludur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 279,
