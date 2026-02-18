@@ -1293,7 +1293,7 @@
     "command": "badblocks -v /dev/sdb",
     "title": "Bozuk Sektör Taraması",
     "description": "Diskin yüzeyini okuyarak fiziksel hasarlı blokları (bad sectors) tespit eder. Veri kurtarma ve disk güvenilirliği testlerinde kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 163,
