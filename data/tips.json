@@ -1221,7 +1221,7 @@
     "command": "df -i",
     "title": "Inode Doluluğu Kontrolü",
     "description": "Disk boyutu boş görünse bile dosya oluşturamıyorsanız 'Inode'larınız tükenmiş olabilir. Çok sayıda küçük dosya (örn: session dosyaları) inode tablosunu doldurur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 154,
