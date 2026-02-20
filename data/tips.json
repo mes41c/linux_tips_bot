@@ -1525,7 +1525,7 @@
     "command": "btrfs subvolume list /",
     "title": "Btrfs Alt Birimlerini Listeleme",
     "description": "Modern Btrfs dosya sisteminde klasör gibi davranan ama ayrı yönetilebilen 'Subvolume'ları listeler. Snapshot ve yedekleme mekanizmalarının temelidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 192,
