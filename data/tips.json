@@ -541,7 +541,7 @@
     "command": "nmcli device wifi list",
     "title": "Terminalden Wi-Fi Taraması",
     "description": "NetworkManager'ın komut satırı aracıdır. GUI olmayan sunucularda veya headless cihazlarda çevredeki kablosuz ağları listelemek ve bağlanmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 69,
