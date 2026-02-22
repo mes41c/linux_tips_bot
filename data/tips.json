@@ -1261,7 +1261,7 @@
     "command": "tune2fs -l /dev/sda1",
     "title": "Ext4 Dosya Sistemi Detayları",
     "description": "Bir ext4 bölümünün ne zaman formatlandığını, son mount zamanını ve 'Reserved block count' gibi derin teknik detaylarını gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 159,
