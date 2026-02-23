@@ -1877,7 +1877,7 @@
     "command": "echo 'auth required pam_tally2.so deny=3 unlock_time=600' >> /etc/pam.d/common-auth",
     "title": "Hesap Kilitleme Politikası (PAM)",
     "description": "3 kez hatalı şifre giren kullanıcının hesabını 10 dakika (600sn) boyunca kilitler. Brute-force saldırılarına karşı en etkili sistem seviyesi savunmadır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 236,
