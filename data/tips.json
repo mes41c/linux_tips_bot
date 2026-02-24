@@ -1061,7 +1061,7 @@
     "command": "cat /proc/meminfo",
     "title": "Ham Bellek Detayları",
     "description": "'free' komutunun kaynak verisidir. RAM'in ne kadarının 'Dirty', ne kadarının 'Mapped' veya 'Slab' (Kernel cache) olduğunu mikroskobik düzeyde gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 134,
