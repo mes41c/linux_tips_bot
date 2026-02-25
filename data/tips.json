@@ -1021,7 +1021,7 @@
     "command": "lsmod",
     "title": "Yüklü Kernel Modülleri",
     "description": "Çekirdeğe yüklenmiş sürücüleri (drivers) ve modülleri listeler. Rootkit'ler genellikle kendilerini buraya gizlemeye çalışır veya buradan tespit edilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 129,
