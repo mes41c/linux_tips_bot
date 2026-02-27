@@ -2117,7 +2117,7 @@
     "command": "diff <(sort current_users) <(sort backup_users)",
     "title": "Kullanıcı Listesi Değişim Kontrolü",
     "description": "Daha önce alınan kullanıcı listesi yedeği ile mevcut listeyi karşılaştırır. İzinsiz eklenen 'Backdoor' kullanıcılarını tespit eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 266,
