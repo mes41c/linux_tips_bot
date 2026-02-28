@@ -109,7 +109,7 @@
     "command": "ln -s /uzun/yol/hedef link_ismi",
     "title": "Sembolik Link (Symlink) Oluşturma",
     "description": "Windows'taki 'Kısayol' mantığıdır. Bir dosyanın veya klasörün başka bir konumda da varmış gibi davranmasını sağlar. Konfigürasyon yönetiminde kritiktir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 15,
