@@ -2085,7 +2085,7 @@
     "command": "dd if=/dev/urandom of=/dev/sda bs=1M",
     "title": "Disk İmha (Nükleer Seçenek)",
     "description": "Diski rastgele verilerle doldurur. 'zero' ile doldurmaktan daha güvenlidir çünkü manyetik izleri karıştırır. DİKKAT: Veri kurtarılamaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 262,
