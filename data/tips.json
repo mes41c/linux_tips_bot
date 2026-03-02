@@ -469,7 +469,7 @@
     "command": "curl ifconfig.me",
     "title": "Dış (Public) IP Adresini Öğrenme",
     "description": "NAT arkasındaki bir cihazdan internete hangi IP adresi ile çıktığınızı öğrenmek için harici bir servise istek atar. VPN kontrolü için sıkça kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 60,
