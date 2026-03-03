@@ -1037,7 +1037,7 @@
     "command": "top -b -n 1 > snapshot.txt",
     "title": "Süreç Raporunu Dosyaya Kaydetme",
     "description": "'top' komutunu interaktif mod yerine Batch (-b) modunda tek seferlik (-n 1) çalıştırır. Otomatik scriptlerde sistem durumunu log dosyasına yazmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 131,
