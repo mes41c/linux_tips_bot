@@ -1341,7 +1341,7 @@
     "command": "lvcreate -L 10G -n lv_log vg_data",
     "title": "LVM: Mantıksal Hacim Oluşturma",
     "description": "Havuzdan (VG) 10GB'lık bir parça kopararak sanal bir disk (Logical Volume) oluşturur. Bu alan artık formatlanıp kullanılabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 169,
