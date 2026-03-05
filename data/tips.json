@@ -1973,7 +1973,7 @@
     "command": "unalias -a",
     "title": "Tüm Takma Adları Kaldırma",
     "description": "Saldırganlar 'ls' komutuna zararlı bir alias atamış olabilir. Güvenli bir analiz için tüm alias tanımlarını geçici olarak siler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 248,
