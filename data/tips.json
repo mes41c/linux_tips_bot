@@ -2093,7 +2093,7 @@
     "command": "echo 'PermitRootLogin no' >> /etc/ssh/sshd_config",
     "title": "Root SSH Girişini Kapatma",
     "description": "Saldırganların hedefi olan 'root' kullanıcısının SSH ile doğrudan girişini engeller. Sisteme normal kullanıcı ile girip içeride yetki yükseltilmelidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 263,
