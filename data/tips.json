@@ -893,7 +893,7 @@
     "command": "journalctl -xe",
     "title": "Sistem Hata Logları (Detaylı)",
     "description": "Bir servis başlamadığında sebebini bulmak için kullanılır. -x (explanation) hatayı açıklar, -e (end) ise logun en sonuna (güncel olana) gider.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 113,
