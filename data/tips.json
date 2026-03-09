@@ -1053,7 +1053,7 @@
     "command": "lsusb -t",
     "title": "USB Cihaz Hiyerarşisi",
     "description": "Hangi USB portuna neyin takılı olduğunu, hangi sürücüyü (driver) kullandığını ve veri yolu hızını gösterir. Fiziksel güvenlik denetimlerinde (Keylogger tespiti) kritiktir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 133,
