@@ -837,7 +837,7 @@
     "command": "uptime",
     "title": "Sistem Yükü (Load Average)",
     "description": "Sistemin ne kadar süredir açık olduğunu ve son 1, 5, 15 dakikalık yük ortalamasını gösterir. Yük ortalaması CPU çekirdek sayısını geçiyorsa darboğaz var demektir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 106,
