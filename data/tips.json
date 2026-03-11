@@ -669,7 +669,7 @@
     "command": "traceroute -T -p 443 google.com",
     "title": "TCP Traceroute",
     "description": "Klasik traceroute (ICMP) güvenlik duvarlarına takılabilir. -T parametresi TCP paketleri (varsayılan 80. port, -p ile değişir) göndererek gerçek bir web isteği gibi davranır ve engelleri aşar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 85,
