@@ -1469,7 +1469,7 @@
     "command": "losetup -a",
     "title": "Loop Cihazlarını Listeleme",
     "description": "Bir dosyanın (örn: disk.iso) sanal bir blok cihazı (/dev/loop0) gibi davranmasını sağlayan loop cihazlarını ve neye bağlı olduklarını listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 185,
