@@ -1045,7 +1045,7 @@
     "command": "lspci -tv",
     "title": "PCI Veriyolu Ağacı",
     "description": "Anakarta takılı donanımları (Ekran kartı, Ağ kartı, USB denetleyicisi) ve bunların nasıl bağlandığını ağaç yapısında gösterir. Donanım uyumluluk sorunlarını çözerken kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 132,
