@@ -1829,7 +1829,7 @@
     "command": "chgrp www-data dosya.php",
     "title": "Grup Sahipliğini Değiştirme",
     "description": "Dosyanın sahibini değiştirmeden sadece grubunu değiştirir. Web sunucularında dosyayı kullanıcının yükleyip sunucunun okuyabilmesi için sıkça kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 230,
