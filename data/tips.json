@@ -181,7 +181,7 @@
     "command": "grep -C 5 'Error' app.log",
     "title": "Hata Bağlamını Görme (Context)",
     "description": "Grep ile arama yaparken sadece hatayı görmek yetmez. -C (Context) parametresi, aranan kelimenin geçtiği satırın 5 satır öncesini ve 5 satır sonrasını da getirerek olayı anlamanızı sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 24,
