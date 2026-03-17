@@ -1749,7 +1749,7 @@
     "command": "shred -zvu -n 5 dosya.txt",
     "title": "Paranoyak Dosya Silme",
     "description": "Dosyanın üzerine 5 kez rastgele veri yazar, son turda sıfırlar (-z), işlem bitince dosyayı siler (-u) ve süreci gösterir (-v). Adli bilişimden kaçırma yöntemidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 220,
