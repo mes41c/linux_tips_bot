@@ -981,7 +981,7 @@
     "command": "pstree -p",
     "title": "Süreç Ağacı",
     "description": "Süreçleri düz liste yerine, ebeveyn-çocuk (parent-child) ilişkisine göre ağaç yapısında gösterir. Bir zararlı yazılımın hangi süreç tarafından başlatıldığını (origin) tespit etmekte kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 124,
