@@ -2301,7 +2301,7 @@
     "command": "logger 'Manuel Guvenlik Kaydi'",
     "title": "Syslog'a Mesaj Gönderme",
     "description": "Sistem loglarına (/var/log/syslog) manuel bir satır ekler. Scriptlerin çalıştığını doğrulamak veya bir olay anında zaman damgası (marker) bırakmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 289,
