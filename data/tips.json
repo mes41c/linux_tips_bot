@@ -1013,7 +1013,7 @@
     "command": "time ./script.sh",
     "title": "Komut Süresi Ölçme (Benchmarking)",
     "description": "Bir komutun veya scriptin ne kadar sürede tamamlandığını ölçer. Real (gerçek süre), User (CPU süresi) ve Sys (Kernel süresi) ayrımlarını verir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 128,
