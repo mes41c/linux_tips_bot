@@ -1501,7 +1501,7 @@
     "command": "mount -t tmpfs tmpfs /mnt/ramdisk -o size=1G",
     "title": "RAM Disk Oluşturma",
     "description": "Sabit disk yerine sunucunun RAM'ini disk gibi kullanır (tmpfs). İnanılmaz hızlıdır (5-10 GB/s okuma/yazma) ancak elektrik gidince veriler silinir. Cache ve geçici dosyalar için idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 189,
