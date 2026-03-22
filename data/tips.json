@@ -253,7 +253,7 @@
     "command": "awk '{print $1, $9}' access.log",
     "title": "Sütun Bazlı Veri Çekme",
     "description": "Dosyayı satır satır değil, sütun sütun okur. Örneğin bir Apache log dosyasından sadece IP adresini (1. sütun) ve HTTP durum kodunu (9. sütun) çekip temiz bir liste almanızı sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 33,
