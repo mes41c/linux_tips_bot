@@ -349,7 +349,7 @@
     "command": "namei -l /var/www/html/index.php",
     "title": "İzin Hatalarını Ayıklama",
     "description": "Derin bir dizin yapısında 'Permission denied' hatası alıyorsanız, bu komut yol üzerindeki her bir klasörün izinlerini alt alta listeleyerek tıkanıklığın nerede olduğunu gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 45,
