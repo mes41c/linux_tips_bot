@@ -501,7 +501,7 @@
     "command": "ip neigh show",
     "title": "ARP Tablosunu Görüntüleme",
     "description": "Eski 'arp -a' komutunun modern halidir. Aynı ağdaki cihazların IP ve MAC adresi eşleşmelerini (Neighbor table) gösterir. 'REACHABLE' veya 'STALE' durumlarını belirtir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 64,
