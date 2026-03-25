@@ -917,7 +917,7 @@
     "command": "systemctl enable --now docker",
     "title": "Servisi Başlat ve Otomatikleştir",
     "description": "İki komut yerine geçer: Hem servisi o an başlatır (start) hem de bir sonraki sistem açılışında otomatik başlaması için ayarlar (enable).",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 116,
