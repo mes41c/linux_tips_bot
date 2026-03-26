@@ -957,7 +957,7 @@
     "command": "last -a",
     "title": "Son Giriş Yapanları Listeleme",
     "description": "Sisteme en son kimin, ne zaman ve hangi IP adresinden bağlandığını gösterir. Yetkisiz erişim denemelerini tespit etmek için log dosyası (wtmp) kaydını okur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 121,
