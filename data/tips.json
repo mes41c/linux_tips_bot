@@ -2133,7 +2133,7 @@
     "command": "logname",
     "title": "Gerçek Giriş Kullanıcısı",
     "description": "'whoami' o anki yetkiyi (örn: root) gösterirken, 'logname' sisteme ilk giriş yapan gerçek kullanıcıyı gösterir. 'sudo su' yapıldığında iz sürmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 268,
