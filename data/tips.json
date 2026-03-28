@@ -1909,7 +1909,7 @@
     "command": "find . -xdev -type f -print0 | xargs -0 chmod 644",
     "title": "Toplu Dosya İzni Düzeltme",
     "description": "Klasörler hariç sadece dosyaları bulur ve izinlerini standart 644 (Sahip:RW, Grup:R, Diğer:R) yapar. Web sitelerinde izin karmaşasını düzeltmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 240,
