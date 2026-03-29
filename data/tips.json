@@ -381,7 +381,7 @@
     "command": "tar -xvf arsiv.tar.gz dosya.txt",
     "title": "Arşivden Tek Dosya Çıkarma",
     "description": "Devasa bir yedek dosyasını tamamen açmak yerine, sadece ihtiyacınız olan spesifik dosyayı dışarı çıkarır. Zamandan ve disk alanından tasarruf sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 49,
