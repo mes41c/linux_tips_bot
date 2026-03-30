@@ -829,7 +829,7 @@
     "command": "kill -9 PID",
     "title": "Zorla Sonlandırma (SIGKILL)",
     "description": "Normal 'kill' (SIGTERM) komutuna yanıt vermeyen inatçı veya kilitlenmiş süreçleri derhal ve temizlik yapmasına izin vermeden öldürür (-9).",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 105,
