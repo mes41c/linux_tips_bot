@@ -149,7 +149,7 @@
     "command": "tree -L 2",
     "title": "Dizin Ağacını Görselleştirme",
     "description": "Klasör yapısını ağaç şeklinde çizer. -L (Level) parametresi ile derinliği sınırlandırarak terminalin dolmasını engellersiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 20,
