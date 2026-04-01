@@ -597,7 +597,7 @@
     "command": "curl -X POST -d 'user=admin&pass=123' http://api.site.com/login",
     "title": "API Testi ve Veri Gönderme",
     "description": "Curl sadece dosya indirmez. -X POST parametresi ile web formlarını simüle edebilir veya API'lere veri (payload) gönderebilirsiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 76,
