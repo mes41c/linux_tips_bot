@@ -1285,7 +1285,7 @@
     "command": "smartctl -H /dev/sda",
     "title": "Disk Sağlık Kontrolü (SMART)",
     "description": "Diskin fiziksel sağlığını (Self-Monitoring, Analysis and Reporting Technology) sorgular. 'PASSED' dışında bir sonuç, diskin yakında bozulacağının habercisidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 162,
