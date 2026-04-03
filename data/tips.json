@@ -1941,7 +1941,7 @@
     "command": "grep 'Accepted' /var/log/auth.log",
     "title": "Başarılı SSH Girişlerini Listeleme",
     "description": "Auth loglarında sadece başarılı girişleri filtreler. Sisteme kimin, ne zaman ve hangi IP'den girdiğini hızlıca görmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 244,
