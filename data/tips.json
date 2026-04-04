@@ -1661,7 +1661,7 @@
     "command": "chage -l user",
     "title": "Parola Politikası Kontrolü",
     "description": "Kullanıcının parolasının en son ne zaman değiştiğini, süresinin ne zaman dolacağını ve hesabın kilitlenme tarihini (Account Expiration) gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 209,
