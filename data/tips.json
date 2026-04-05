@@ -2381,7 +2381,7 @@
     "command": "iptables-save > /etc/iptables/rules.v4",
     "title": "IPTables Kurallarını Kalıcı Yapma",
     "description": "RAM'de çalışan firewall kurallarını dosyaya kaydeder. Sistem yeniden başlatıldığında kuralların silinmemesi için (iptables-persistent ile) gereklidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 299,
