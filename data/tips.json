@@ -2237,7 +2237,7 @@
     "command": "kill -9 -1",
     "title": "Tüm Kullanıcı Süreçlerini Öldürme (Acil Durum)",
     "description": "Oturum sahibi kullanıcının çalıştırdığı TÜM süreçleri anında sonlandırır ve oturumu kapatır. Sistemden atılması gereken bir saldırgan için panik butonudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 281,
