@@ -277,7 +277,7 @@
     "command": "diff -y --suppress-common-lines a.txt b.txt",
     "title": "Yan Yana Karşılaştırma",
     "description": "İki dosyayı alt alta değil, yan yana (side-by-side) karşılaştırır. '--suppress-common-lines' parametresi sadece farklı olan satırları göstererek odağınızı korur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 36,
