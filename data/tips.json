@@ -1741,7 +1741,7 @@
     "command": "faillog -u user",
     "title": "Kullanıcı Bazlı Hata Sayacı",
     "description": "Belirli bir kullanıcının kaç kez hatalı şifre girdiğini ve hesabının kilitlenip kilitlenmediğini gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 219,
