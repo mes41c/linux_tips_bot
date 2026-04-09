@@ -485,7 +485,7 @@
     "command": "nmap -sV -p- 192.168.1.5",
     "title": "Versiyon Tespiti ve Tam Port Tarama",
     "description": "Hedef üzerindeki tüm 65535 portu (-p-) tarar ve çalışan servislerin versiyon bilgilerini (-sV) tespit eder. Güvenlik açıklarını (CVE) aramak için ilk adımdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 62,
