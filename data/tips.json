@@ -13,7 +13,7 @@
     "command": "Ctrl + R",
     "title": "Geçmişte Arama (Reverse Search)",
     "description": "Terminalde daha önce yazdığınız uzun bir komutu aramak için 'Ctrl + R' tuşlarına basın ve hatırladığınız birkaç harfi yazın.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 3,
