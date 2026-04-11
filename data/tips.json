@@ -1133,7 +1133,7 @@
     "command": "chrt -f -p 99 PID",
     "title": "Real-Time Öncelik Atama",
     "description": "Bir süreci FIFO (First-In First-Out) modunda en yüksek öncelikle (99) çalıştırır. Son derece tehlikelidir; süreç kilitlenirse tüm sistem donar. Endüstriyel sistemlerde kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 143,
