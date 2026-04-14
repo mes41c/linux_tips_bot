@@ -909,7 +909,7 @@
     "command": "crontab -e",
     "title": "Zamanlanmış Görevler (Cron Job)",
     "description": "Belirli zamanlarda otomatik çalışacak komutları (yedekleme, log temizleme) düzenler. Siber güvenlikte saldırganlar kalıcılık (persistence) sağlamak için buraya gizlenir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 115,
