@@ -1645,7 +1645,7 @@
     "command": "sudo -l",
     "title": "Sudo Yetkilerini Listeleme",
     "description": "Mevcut kullanıcının hangi komutları 'sudo' ile şifresiz veya şifreli çalıştırabileceğini listeler. Sızma testlerinde ilk çalıştırılan komutlardan biridir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 207,
