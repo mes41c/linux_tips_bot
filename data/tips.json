@@ -941,7 +941,7 @@
     "command": "killall -u user php-fpm",
     "title": "Kullanıcıya Ait Süreçleri Toplu Öldürme",
     "description": "PID aramak yerine, isme göre süreçleri sonlandırır. -u parametresi ile sadece belirli bir kullanıcının çalıştırdığı süreçleri hedef alarak diğerlerini korur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 119,
