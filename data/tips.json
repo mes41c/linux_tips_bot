@@ -653,7 +653,7 @@
     "command": "iftop -n",
     "title": "Anlık Bant Genişliği İzleme",
     "description": "Ağ trafiğini, hangi IP adresiyle ne kadar veri alışverişi yapıldığına göre sıralayarak gösterir. Sunucuyu sömüren bir bağlantıyı tespit etmek için 'top' komutunun ağ versiyonudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 83,
