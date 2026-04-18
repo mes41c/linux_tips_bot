@@ -1701,7 +1701,7 @@
     "command": "chattr +a audit.log",
     "title": "Sadece Ekleme Modu (Append Only)",
     "description": "Log dosyaları için kritiktir. Dosyaya veri eklenebilir ama mevcut veriler asla silinemez veya değiştirilemez. Hackerların izlerini silmesini engeller.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 214,
