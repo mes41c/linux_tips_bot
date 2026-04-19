@@ -2109,7 +2109,7 @@
     "command": "setcap cap_net_bind_service=+ep /usr/bin/node",
     "title": "Root Olmadan Port 80'i Dinleme",
     "description": "Node.js gibi bir uygulamanın root olmadan 1024 altındaki portları (örn: 80) dinlemesine izin verir. Uygulama hacklense bile saldırgan root olamaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 265,
