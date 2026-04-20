@@ -2397,6 +2397,6 @@
     "command": "init 0",
     "title": "Sistemi Güvenli Kapatma",
     "description": "Sistemi 'Halt' durumuna getirir ve gücü keser. Saldırı altında veya fiziksel müdahale gerektiğinde sistemi kapatmanın en temel (System V) komutudur.",
-    "is_published": false
+    "is_published": true
   }
 ]
