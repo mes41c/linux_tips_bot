@@ -1949,7 +1949,7 @@
     "command": "sudo --validate",
     "title": "Sudo Zaman Aşımını Uzatma",
     "description": "Komut çalıştırmadan sudo zamanlayıcısını (timeout) sıfırlar. Uzun scriptlerde sudo yetkisinin süresi dolmasın diye arkaplanda döngüyle çalıştırılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 245,
