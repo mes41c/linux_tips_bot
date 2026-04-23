@@ -445,7 +445,7 @@
     "command": "dig +short google.com MX",
     "title": "Temiz DNS Sorgusu",
     "description": "'nslookup' yerine 'dig' tercih edilir. '+short' parametresi gereksiz teknik detayları gizler ve sadece istenen kayıt türünü (örn: MX mail sunucuları) gösterir. Scriptlerde kullanımı idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 57,
