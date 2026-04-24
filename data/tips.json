@@ -1357,7 +1357,7 @@
     "command": "resize2fs /dev/vg_data/lv_log",
     "title": "Dosya Sistemini Genişletme (Ext4)",
     "description": "LVM ile disk alanını büyüttükten sonra, dosya sisteminin (Ext4) bu yeni alanı fark etmesi ve kullanması için çalıştırılması zorunludur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 171,
