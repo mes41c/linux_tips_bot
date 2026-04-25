@@ -677,7 +677,7 @@
     "command": "curl -L -v http://short.url",
     "title": "Yönlendirmeleri Takip Etme",
     "description": "-L (Location) parametresi HTTP 301/302 yönlendirmelerini takip eder. -v (verbose) ile birleştiğinde, bir kısaltılmış linkin sizi nihai olarak hangi siteye götürdüğünü analiz edersiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 86,
