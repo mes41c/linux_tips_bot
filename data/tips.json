@@ -2309,7 +2309,7 @@
     "command": "netstat -plant",
     "title": "Gelişmiş Ağ Dinleme Analizi",
     "description": "TCP bağlantılarını, dinleyen portları, ilişkili PID'leri ve program isimlerini gösterir. 'ss' komutuna alternatif, klasik ve detaylı bir analiz sunar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 290,
