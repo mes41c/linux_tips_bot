@@ -805,7 +805,7 @@
     "command": "htop",
     "title": "İnteraktif Süreç Yöneticisi",
     "description": "Klasik 'top' komutunun modern, renkli ve mouse destekli halidir. CPU çekirdeklerini grafiksel gösterir, F9 ile süreçleri öldürmenizi sağlar. Kurulu değilse mutlaka kurulmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 102,
