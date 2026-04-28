@@ -741,7 +741,7 @@
     "command": "curl -A 'Mozilla/5.0' http://site.com",
     "title": "User-Agent Spoofing (Kimlik Gizleme)",
     "description": "Sunucular bazen 'curl' veya 'python' gibi bot isteklerini engeller. -A parametresi ile kendinizi bir Chrome tarayıcısı (Mozilla/5.0...) gibi tanıtarak bu basit güvenlik duvarlarını aşarsınız.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 94,
