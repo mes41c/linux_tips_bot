@@ -1669,7 +1669,7 @@
     "command": "passwd -l user",
     "title": "Kullanıcı Hesabını Kilitleme",
     "description": "Hesabı silmeden girişe kapatır (Lock). Genellikle işten ayrılan personelin veya şüpheli aktivite gösteren hesabın erişimini anında kesmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 210,
