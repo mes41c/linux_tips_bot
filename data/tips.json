@@ -1413,7 +1413,7 @@
     "command": "swapon --show",
     "title": "Swap Alanı Kontrolü",
     "description": "Sistemdeki aktif Swap (takas) alanlarını, türlerini (partition/file), boyutlarını ve kullanım önceliklerini listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 178,
