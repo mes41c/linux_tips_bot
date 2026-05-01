@@ -1213,7 +1213,7 @@
     "command": "blkid",
     "title": "UUID ve Etiket Sorgulama",
     "description": "Disk bölümlerinin UUID (Universally Unique Identifier) değerlerini çeker. Sunucularda disk isimleri (/dev/sda) değişebilir ama UUID değişmez, bu yüzden mount işlemlerinde UUID kullanmak mühendislik standardıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 153,
