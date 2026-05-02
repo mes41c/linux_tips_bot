@@ -1477,7 +1477,7 @@
     "command": "dumpe2fs -h /dev/sda1",
     "title": "Süperblok Bilgisi Okuma",
     "description": "Ext2/3/4 dosya sisteminin 'Superblock' verisini okur. Mount sayılarını, hata davranışını ve UUID bilgisini en ham haliyle gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 186,
