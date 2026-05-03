@@ -2293,7 +2293,7 @@
     "command": "pkill -u user",
     "title": "Kullanıcıyı Kickleme",
     "description": "Belirtilen kullanıcıya ait tüm süreçleri sonlandırarak onu sistemden atar. Canlı müdahale sırasında kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 288,
