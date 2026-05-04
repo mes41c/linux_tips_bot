@@ -1245,7 +1245,7 @@
     "command": "mkfs.ext4 /dev/sdb1",
     "title": "Ext4 Formatlama",
     "description": "Bir disk bölümünü Linux'un en yaygın ve kararlı dosya sistemi olan ext4 ile biçimlendirir. DİKKAT: Veriyi kalıcı olarak siler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 157,
