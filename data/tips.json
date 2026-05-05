@@ -325,7 +325,7 @@
     "command": "find /var/log -name '*.log' -mtime +30 -delete",
     "title": "Eski Dosyaları Otomatik Temizleme",
     "description": "30 günden (+30) daha eski (-mtime) log dosyalarını bulup siler. Disk doluluğunu önlemek için cron job olarak tanımlanan standart bir bakım komutudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 42,
