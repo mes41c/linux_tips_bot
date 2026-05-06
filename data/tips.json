@@ -1901,7 +1901,7 @@
     "command": "md5sum -c sums.txt",
     "title": "Dosya Bütünlük Kontrolü",
     "description": "Daha önce alınmış hash değerleri ile mevcut dosyaları karşılaştırır. Sistem dosyalarının değiştirilip değiştirilmediğini (hacklenip hacklenmediğini) doğrular.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 239,
