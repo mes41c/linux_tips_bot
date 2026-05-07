@@ -1309,7 +1309,7 @@
     "command": "findmnt",
     "title": "Gelişmiş Mount Listesi",
     "description": "'mount' komutunun çıktısı karmaşıktır. 'findmnt', sistemdeki bağlı diskleri ağaç yapısında (Tree view) gösterir, okuması çok daha kolaydır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 165,
