@@ -61,7 +61,7 @@
     "command": "cp -a kaynak/ hedef/",
     "title": "Birebir Yedekleme (Archive Mode)",
     "description": "Dosyaları kopyalarken izinleri, sahiplik bilgilerini ve oluşturulma tarihlerini korumak için -a (archive) parametresi kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 9,
