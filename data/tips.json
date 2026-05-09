@@ -53,7 +53,7 @@
     "command": "find . -name '*.py' -type f",
     "title": "Dosya Bulma",
     "description": "Bulunduğunuz dizin ve alt dizinlerinde, uzantısı .py olan tüm dosyaları listeler. Dosya ismini tam hatırlamadığınızda etkilidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 8,
