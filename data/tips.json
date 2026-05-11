@@ -1157,7 +1157,7 @@
     "command": "cat /proc/PID/environ | tr '\\0' '\\n'",
     "title": "Süreç Ortam Değişkenlerini Okuma",
     "description": "Çalışan bir programın hangi ortam değişkenleriyle (Environment Variables) başlatıldığını gösterir. Malware analizi ve API anahtarı sızıntılarını kontrol etmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 146,
