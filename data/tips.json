@@ -1613,7 +1613,7 @@
     "command": "chmod 1777 /tmp",
     "title": "Sticky Bit (Yapışkan Bit)",
     "description": "Klasördeki dosyayı sadece dosyanın sahibi silebilir. '/tmp' klasörü herkese yazma izni (777) verirken, kullanıcıların birbirinin dosyasını silmesini engellemek için başına '1' (Sticky) alır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 203,
