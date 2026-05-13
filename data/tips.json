@@ -989,7 +989,7 @@
     "command": "ulimit -a",
     "title": "Kullanıcı Kaynak Limitleri",
     "description": "Bir kullanıcının açabileceği maksimum dosya sayısını veya çalıştırabileceği maksimum süreç sayısını gösterir. 'Too many open files' hatası alıyorsanız buraya bakmalısınız.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 125,
