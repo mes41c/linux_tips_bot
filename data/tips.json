@@ -781,7 +781,7 @@
     "command": "ss -o state established",
     "title": "Sadece Aktif Bağlantıları Listeleme",
     "description": "Dinleyen (Listening) veya kapanmış portları görmezden gelerek, sadece o anda veri alışverişi yapan (Established) bağlantıları listeler. 'Keepalive' sayaçlarını da (-o) gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 99,
