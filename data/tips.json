@@ -2365,7 +2365,7 @@
     "command": "unhide proc",
     "title": "Gizli Süreçleri Bulma",
     "description": "'ps' veya 'top' komutlarında görünmeyen ancak kernelde çalışan (Rootkit tarafından gizlenmiş) süreçleri tespit eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 297,
