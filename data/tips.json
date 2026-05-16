@@ -1589,7 +1589,7 @@
     "command": "dd if=/dev/zero of=/dev/sdb bs=1M status=progress",
     "title": "Diski Tamamen Sıfırlama (Wipe)",
     "description": "Diskin her bir sektörüne '0' yazar. Disk satılmadan veya elden çıkarılmadan önce verilerin kurtarılamaz şekilde silinmesi (Low-level format benzeri) işlemidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 200,
