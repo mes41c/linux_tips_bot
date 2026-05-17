@@ -1461,7 +1461,7 @@
     "command": "mke2fs -m 0 /dev/sdb1",
     "title": "Rezerve Alanı Sıfırlayarak Formatlama",
     "description": "Linux varsayılan olarak diskin %5'ini root kullanıcısı için rezerve eder. Veri depolama disklerinde bu %5'lik kayıp (TB'larca veri) '-m 0' ile engellenir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 184,
