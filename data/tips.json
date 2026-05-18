@@ -901,7 +901,7 @@
     "command": "Ctrl + Z ve ardından 'bg'",
     "title": "Süreci Arka Plana Atma",
     "description": "Uzun süren bir işlemi (örn: kopyalama) durdurmadan terminali geri almak için önce Ctrl+Z ile duraklatılır, sonra 'bg' komutu ile arka planda çalışmaya devam etmesi sağlanır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 114,
