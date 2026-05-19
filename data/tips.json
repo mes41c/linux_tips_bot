@@ -1389,7 +1389,7 @@
     "command": "mount -o ro /dev/sdb1 /mnt/test",
     "title": "Salt Okunur (Read-Only) Mount",
     "description": "Diski yazmaya karşı korumalı modda bağlar. Adli analiz (Forensics) yaparken veya veri kurtarırken orijinal verinin değişmemesi için kritik öneme sahiptir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 175,
