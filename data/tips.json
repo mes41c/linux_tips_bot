@@ -973,7 +973,7 @@
     "command": "sysctl -a | grep net.ipv4",
     "title": "Kernel Parametrelerini Listeleme",
     "description": "Linux çekirdeğinin çalışma zamanı (runtime) ayarlarını listeler. Özellikle ağ yığınını (network stack) optimize etmek veya IP yönlendirmeyi açmak/kapatmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 123,
