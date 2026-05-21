@@ -173,7 +173,7 @@
     "command": "chattr +i kritik_dosya.conf",
     "title": "Dosyayı Ölümsüz Yapma (Immutable)",
     "description": "Root kullanıcısının bile dosyayı silmesini veya değiştirmesini engeller. Yanlışlıkla silinmeyi önlemek veya siber saldırılarda log dosyasını korumak için kullanılır. Kaldırmak için: 'chattr -i'.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 23,
