@@ -629,7 +629,7 @@
     "command": "whois 8.8.8.8",
     "title": "IP Sahipliğini Sorgulama",
     "description": "Whois sadece domainler için değildir. Bir IP adresinin hangi kuruma (ISP, Şirket) ait olduğunu, hangi IP bloğunda (Range) yer aldığını gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 80,
