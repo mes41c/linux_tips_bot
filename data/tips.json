@@ -1005,7 +1005,7 @@
     "command": "fuser -k -v /var/lib/dpkg/lock",
     "title": "Dosyayı Kilitleyen Süreci Öldürme",
     "description": "Bir dosyayı (örneğin paket yöneticisi kilidini) hangi sürecin tuttuğunu bulur (-v) ve o süreci öldürür (-k). Güncelleme sırasında alınan kilit hatalarını çözmek için birebirdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 127,
