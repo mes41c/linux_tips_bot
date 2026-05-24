@@ -405,7 +405,7 @@
     "command": "ss -tulpn",
     "title": "Açık Portları Listeleme",
     "description": "Eski 'netstat' komutunun modern halidir. Sistemde hangi portların (p) dinlendiğini (l), TCP/UDP (tu) ayrımını ve bu portu kullanan süreç isimlerini sayısal (n) olarak gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 52,
