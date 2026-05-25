@@ -2157,7 +2157,7 @@
     "command": "chmod -R 750 /var/www",
     "title": "Web Dizin Güvenliği",
     "description": "Web klasörlerine; sahibine tam yetki (7), gruba (web sunucusu) okuma ve çalıştırma (5), diğerlerine ise HİÇBİR (0) yetki vermeyerek izolasyon sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 271,
