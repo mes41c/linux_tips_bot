@@ -341,7 +341,7 @@
     "command": "chmod -R +X .",
     "title": "Akıllı İzin Verme (Capital X)",
     "description": "Küçük 'x' tüm dosyalara çalıştırma izni verir ki bu güvenlik açığıdır. Büyük 'X' ise sadece klasörlere çalıştırma (içine girme) izni verir, dosyalara dokunmaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 44,
