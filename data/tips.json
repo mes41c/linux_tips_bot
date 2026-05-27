@@ -1893,7 +1893,7 @@
     "command": "lastlog",
     "title": "Kullanıcıların Son Giriş Raporu",
     "description": "Sistemdeki tüm kullanıcıların en son ne zaman giriş yaptığını listeler. Hiç giriş yapmamış veya aylardır girmeyen (zombi) hesapları tespit etmekte kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 238,
