@@ -2013,7 +2013,7 @@
     "command": "ufw limit ssh",
     "title": "SSH Brute-Force Koruması (UFW)",
     "description": "Port 22'yi tamamen açmak yerine 'limit' kuralı koyar. Aynı IP adresinden 30 saniye içinde 6'dan fazla başarısız bağlantı gelirse o IP'yi bloklar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 253,
