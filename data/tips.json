@@ -2373,7 +2373,7 @@
     "command": "chown root:root /etc/passwd",
     "title": "Kritik Dosya Sahipliği",
     "description": "Passwd dosyasının sahibinin ve grubunun mutlaka root olduğunu garanti altına alır. Başka bir kullanıcıya ait olması sistemin ele geçirilmesi demektir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 298,
