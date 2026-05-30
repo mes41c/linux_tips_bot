@@ -397,7 +397,7 @@
     "command": "basename /usr/local/bin/script.sh .sh",
     "title": "Dosya Adını Ayrıştırma",
     "description": "Dosya yolundan sadece dosya ismini (script) alır ve uzantıyı (.sh) atar. Scriptlerde dosya isimleriyle dinamik işlem yaparken kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 51,
