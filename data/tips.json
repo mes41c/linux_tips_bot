@@ -197,7 +197,7 @@
     "command": "sort | uniq -c | sort -nr",
     "title": "Frekans Analizi",
     "description": "Log dosyalarında en çok tekrar eden satırları sayar ve çoktan aza sıralar. Örneğin, bir web sunucusu logunda en çok istek yapan IP adreslerini tespit etmek için standart yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 26,
