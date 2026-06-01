@@ -2021,7 +2021,7 @@
     "command": "grep 'Protocol 2' /etc/ssh/sshd_config",
     "title": "SSH Protokol Sürümü Kontrolü",
     "description": "Sunucunun sadece güvenli olan SSH Protokol 2'yi kullandığından emin olur. Protokol 1 (eski sürüm) güvensizdir ve Man-in-the-Middle saldırılarına açıktır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 254,
