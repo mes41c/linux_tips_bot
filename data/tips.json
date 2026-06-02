@@ -1205,7 +1205,7 @@
     "command": "lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,UUID",
     "title": "Gelişmiş Blok Cihaz Listesi",
     "description": "Standart 'lsblk' yetersiz kalabilir. '-o' parametresi ile dosya sistemi tipini (FSTYPE) ve benzersiz kimliğini (UUID) de görerek /etc/fstab düzenlemeleri için gerekli tüm veriyi tek seferde alırsınız.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 152,
