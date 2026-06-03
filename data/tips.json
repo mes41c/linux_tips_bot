@@ -573,7 +573,7 @@
     "command": "nc -lvnp 4444",
     "title": "Netcat Listener (Dinleyici)",
     "description": "Belirtilen portta (4444) gelen bağlantıları dinler. Siber güvenlikte 'Reverse Shell' yakalamak veya iki bilgisayar arasında hızlıca dosya/mesaj transferi yapmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 73,
