@@ -2077,7 +2077,7 @@
     "command": "getcap /usr/bin/ping",
     "title": "Binary Yeteneklerini (Capabilities) Görme",
     "description": "SUID bitine modern bir alternatiftir. Dosyaya tam root yetkisi vermek yerine, sadece ağ paketi atma (CAP_NET_RAW) gibi spesifik yetkiler tanımlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 261,
