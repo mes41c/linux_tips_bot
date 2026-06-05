@@ -2285,7 +2285,7 @@
     "command": "chmod 400 /etc/shadow",
     "title": "Shadow Dosyası Koruması",
     "description": "Kullanıcı parolalarının hashlerini tutan bu dosyayı sadece root okuyabilmelidir (400). Başka herhangi bir izin, tüm şifrelerin kırılmasına yol açar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 287,
