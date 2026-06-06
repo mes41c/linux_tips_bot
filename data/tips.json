@@ -2165,7 +2165,7 @@
     "command": "ssh-add -l",
     "title": "Yüklü SSH Anahtarlarını Listeleme",
     "description": "SSH Agent (ssh-agent) belleğinde o an yüklü olan özel anahtarların parmak izlerini (fingerprint) listeler. Hangi anahtarla işlem yaptığınızı doğrular.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 272,
