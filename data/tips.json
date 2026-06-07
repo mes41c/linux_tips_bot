@@ -1605,7 +1605,7 @@
     "command": "chmod u+s /usr/bin/find",
     "title": "SUID Bit Atama (Tehlikeli)",
     "description": "Dosyaya SUID (Set User ID) izni verir. Bu dosya kim tarafından çalıştırılırsa çalıştırılsın, dosya sahibinin (genelde Root) yetkileriyle çalışır. 'find' gibi komutlara verilmesi 'Privilege Escalation' açığıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 202,
