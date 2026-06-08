@@ -1861,7 +1861,7 @@
     "command": "chmod -R o-rwx /var/www/private",
     "title": "Diğerlerini (Others) Engelleme",
     "description": "Dosya sahibi ve grubu dışındaki herkesin (others) okuma, yazma ve çalıştırma yetkilerini rekürsif (-R) olarak kaldırır. Gizlilik için temel komuttur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 234,
