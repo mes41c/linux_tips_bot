@@ -1373,7 +1373,7 @@
     "command": "hdparm -tT /dev/sda",
     "title": "Disk Okuma Hızı Testi",
     "description": "Diskin önbellekli (buffer) ve önbelleksiz (buffered) okuma hızlarını ölçer. Diskin performansını veya SSD'nin hızını doğrulamak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 173,
