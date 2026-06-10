@@ -2269,7 +2269,7 @@
     "command": "debsecan",
     "title": "Debian Güvenlik Açığı Taraması",
     "description": "Sistemde yüklü paketleri bilinen güvenlik açıkları (CVE) veritabanı ile karşılaştırır ve hangi paketlerin güncellenmesi gerektiğini raporlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 285,
