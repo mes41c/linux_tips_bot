@@ -1981,7 +1981,7 @@
     "command": "w -h | awk '{print $3}' | sort | uniq -c",
     "title": "Bağlı IP Adresleri İstatistiği",
     "description": "Şu an sisteme bağlı olan kullanıcıların IP adreslerini çeker ve hangi IP'den kaç bağlantı olduğunu sayar. Çoklu bağlantı açan şüpheli durumları gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 249,
