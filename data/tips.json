@@ -1421,7 +1421,7 @@
     "command": "mkswap /dev/sdb2 && swapon /dev/sdb2",
     "title": "Swap Alanı Oluşturma ve Etkinleştirme",
     "description": "Bir disk bölümünü Swap formatına çevirir ve sistemin bellek yetersizliğinde kullanması için aktif hale getirir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 179,
