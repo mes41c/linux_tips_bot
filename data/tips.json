@@ -1869,7 +1869,7 @@
     "command": "getent passwd user",
     "title": "Kullanıcı Bilgisini Veritabanından Çekme",
     "description": "/etc/passwd dosyasını grep ile aramak yerine, sistem veritabanından (LDAP vb. dahil) kullanıcı bilgisini çeker. Kurumsal sistemlerde daha doğrudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 235,
