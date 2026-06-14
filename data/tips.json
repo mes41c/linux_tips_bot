@@ -965,7 +965,7 @@
     "command": "strace -p PID",
     "title": "Sistem Çağrılarını İzleme (X-Ray)",
     "description": "Çalışan bir sürecin (process) kernel ile nasıl konuştuğunu, hangi dosyaları açtığını ve hangi ağ bağlantılarını yaptığını anlık izler. Debugging ve Malware analizi için 1 numaralı araçtır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 122,
