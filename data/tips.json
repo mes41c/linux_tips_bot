@@ -2277,7 +2277,7 @@
     "command": "ssh -Q cipher",
     "title": "Desteklenen SSH Şifreleme Algoritmaları",
     "description": "SSH istemcisinin ve sunucusunun desteklediği şifreleme algoritmalarını listeler. Zayıf algoritmaların (örn: arcfour) kullanılıp kullanılmadığını audit etmek için gereklidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 286,
