@@ -1181,7 +1181,7 @@
     "command": "sensors",
     "title": "Sıcaklık ve Voltaj İzleme",
     "description": "lm-sensors paketi ile CPU çekirdeklerinin sıcaklığını, fan hızlarını ve voltaj değerlerini okur. Sunucu odası klimaları bozulduğunda hayat kurtarır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 149,
