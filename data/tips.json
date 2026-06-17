@@ -2069,7 +2069,7 @@
     "command": "ssh-keygen -t ed25519",
     "title": "Modern SSH Anahtarı Oluşturma",
     "description": "Eski RSA anahtarları yerine, daha kısa, daha hızlı ve daha güvenli olan Ed25519 eliptik eğri algoritması ile SSH anahtarı üretir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 260,
