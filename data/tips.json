@@ -1965,7 +1965,7 @@
     "command": "chsh -s /sbin/nologin user",
     "title": "Kabuk Erişimini Kapatma",
     "description": "Kullanıcının sisteme terminal (shell) ile giriş yapmasını engeller ama FTP veya Mail servislerini kullanmasına izin verir. Servis hesapları için standarttır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 247,
