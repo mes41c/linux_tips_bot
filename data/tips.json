@@ -2125,7 +2125,7 @@
     "command": "iptables -A INPUT -s 192.168.1.5 -j DROP",
     "title": "Belirli IP'yi Engelleme",
     "description": "Saldırı yapan veya şüpheli davranan bir IP adresinden gelen tüm paketleri sessizce (DROP) çöpe atar. REJECT komutundan farkı, karşı tarafa 'kapalı' bilgisini bile göndermemesidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 267,
