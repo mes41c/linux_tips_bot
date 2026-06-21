@@ -1277,7 +1277,7 @@
     "command": "umount -l /mnt/yedek",
     "title": "Lazy Unmount (Zorla Ayırma)",
     "description": "'Device is busy' hatası aldığınızda ve diski ayıramadığınızda kullanılır. -l (lazy) parametresi, disk bağlantısını hemen keser, işlemleri ise arka planda temizler. NFS kilitlenmelerinde hayat kurtarır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 161,
