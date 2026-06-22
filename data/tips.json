@@ -2149,7 +2149,7 @@
     "command": "apparmor_status",
     "title": "AppArmor Durum Kontrolü",
     "description": "Uygulama bazlı erişim kontrolü sağlayan AppArmor'un durumunu ve hangi profillerin (Enforce/Complain) yüklü olduğunu gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 270,
