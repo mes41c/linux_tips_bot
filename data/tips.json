@@ -533,7 +533,7 @@
     "command": "whois example.com",
     "title": "Domain Kayıt Bilgisi (OSINT)",
     "description": "Domainin kime ait olduğu, ne zaman oluşturulduğu, hangi Name Server'ları (NS) kullandığı gibi açık kaynak istihbarat (OSINT) bilgilerini sorgular.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 68,
