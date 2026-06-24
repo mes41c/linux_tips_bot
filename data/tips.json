@@ -69,7 +69,7 @@
     "command": "grep -r 'aranan_kelime' .",
     "title": "İçerik Arama",
     "description": "Bir klasördeki yüzlerce dosyanın içinde belirli bir kelimenin geçtiği dosyaları ve satırları bulur. Kod okurken çok işe yarar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 10,
