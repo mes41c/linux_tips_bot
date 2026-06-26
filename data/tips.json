@@ -301,7 +301,7 @@
     "command": "cat dosya.csv | column -t -s ','",
     "title": "CSV'yi Tablo Olarak Okuma",
     "description": "Okunması zor olan virgülle ayrılmış (CSV) dosyaları, terminalde hizalı bir tablo formatına çevirir. -s ayırıcı karakteri belirtir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 39,
