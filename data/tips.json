@@ -933,7 +933,7 @@
     "command": "nohup ./uzun_script.sh &",
     "title": "Oturum Kapansa da Çalışmaya Devam Et",
     "description": "SSH bağlantısı kopsa bile işlemin ölmesini engeller (No Hang Up). Çıktıyı varsayılan olarak 'nohup.out' dosyasına yazar. Uzun taramalar için kritiktir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 118,
