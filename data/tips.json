@@ -1085,7 +1085,7 @@
     "command": "pmap -x PID",
     "title": "Süreç Bellek Haritası",
     "description": "Bir uygulamanın RAM'de kapladığı alanı kütüphane kütüphane (library) ayırır. Bellek sızıntısı (Memory Leak) analizi yaparken hangi modülün RAM'i şişirdiğini bulur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 137,
