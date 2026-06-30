@@ -549,7 +549,7 @@
     "command": "curl -v telnet://192.168.1.1:22",
     "title": "Curl ile Port Testi",
     "description": "Eğer sistemde 'telnet' veya 'nc' yüklü değilse, 'curl' komutu bir İsviçre çakısı gibi TCP bağlantı testi yapmak için de kullanılabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 70,
