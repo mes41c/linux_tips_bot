@@ -2261,7 +2261,7 @@
     "command": "shred ~/.bash_history",
     "title": "Komut Geçmişini Güvenli Silme",
     "description": "Geçmiş dosyasını sadece silmez (rm), üzerine veri yazarak yok eder. Hassas komutlar girildikten sonra iz bırakmamak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 284,
