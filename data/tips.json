@@ -2029,7 +2029,7 @@
     "command": "find / -nouser -print",
     "title": "Sahipsiz Dosyaları Bulma",
     "description": "Sistemden silinmiş bir kullanıcıya ait (ID'si var ama User'ı yok) dosyaları bulur. Bu dosyalar, saldırganlar için birer 'Backdoor' potansiyelidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 255,
