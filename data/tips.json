@@ -1565,7 +1565,7 @@
     "command": "vgs",
     "title": "LVM Özet Raporu",
     "description": "Volume Group'ların (VG) durumunu, toplam boyutunu ve ne kadar boş alan kaldığını özet olarak gösterir. LVM yönetiminde en sık bakılan komuttur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 197,
