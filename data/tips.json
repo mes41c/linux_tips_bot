@@ -1789,7 +1789,7 @@
     "command": "find / -type f -perm -4000 -ls",
     "title": "Tüm SUID Dosyaları Bulma",
     "description": "Kök dizinden itibaren SUID biti ayarlanmış tüm dosyaları listeler. Sistemdeki potansiyel güvenlik açıklarını taramanın standart yoludur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 225,
