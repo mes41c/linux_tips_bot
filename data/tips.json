@@ -125,7 +125,7 @@
     "command": "find . -type f -name '*.tmp' -delete",
     "title": "Bul ve Yok Et",
     "description": "Belirli kriterlere uyan dosyaları bulup tek komutla siler. Dikkatli kullanılmalıdır. Test etmek için önce -delete yerine -print kullanın.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 17,
