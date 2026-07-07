@@ -1805,7 +1805,7 @@
     "command": "openssl passwd -1 -salt tuz 123456",
     "title": "MD5 Parola Hash'i Üretme",
     "description": "Verilen parolanın (123456) Linux shadow dosyasında kullanılabilecek hash halini üretir. Manuel kullanıcı oluştururken /etc/shadow dosyasına yazmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 227,
