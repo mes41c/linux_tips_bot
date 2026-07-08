@@ -317,7 +317,7 @@
     "command": "mount -o remount,rw /",
     "title": "Read-Only Dosya Sistemini Yazılabilir Yapma",
     "description": "Sistem hatası nedeniyle 'Read-only file system' moduna düşen bir sunucuda, kök dizini tekrar yazılabilir (Read-Write) olarak bağlamak için kullanılan kurtarma komutudur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 41,
