@@ -1637,7 +1637,7 @@
     "command": "setfacl -m u:ahmet:rw dosya.txt",
     "title": "Kullanıcıya Özel ACL Tanımlama",
     "description": "Dosyanın grubunu veya sahibini değiştirmeden, spesifik bir kullanıcıya (ahmet) okuma ve yazma izni verir. Hassas yetkilendirme için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 206,
