@@ -1069,7 +1069,7 @@
     "command": "ionice -c 3 -p PID",
     "title": "Disk I/O Önceliğini Düşürme",
     "description": "CPU için 'nice' neyse, Disk için 'ionice' odur. -c 3 (Idle) parametresi, sürece 'Sadece disk boşken yazma yap' emri verir. Yedekleme scriptleri için idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 135,
