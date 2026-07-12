@@ -493,7 +493,7 @@
     "command": "ssh -L 8080:localhost:80 user@remote_server",
     "title": "SSH Local Port Forwarding (Tünelleme)",
     "description": "Uzaktaki sunucunun yerel ağında çalışan (dışarıya kapalı) bir servise, kendi bilgisayarınızın 8080 portundan erişmenizi sağlar. Güvenli erişim ve firewall atlatma yöntemidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 63,
