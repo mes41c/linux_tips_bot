@@ -1621,7 +1621,7 @@
     "command": "chmod g+s /shared/group_folder",
     "title": "SGID Bit (Klasörlerde)",
     "description": "Bu klasör içinde oluşturulan her yeni dosya, otomatik olarak klasörün grubuna sahip olur. Ortak çalışma alanlarında dosya sahipliği karmaşasını önler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 204,
