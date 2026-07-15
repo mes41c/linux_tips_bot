@@ -1677,7 +1677,7 @@
     "command": "umask 027",
     "title": "Varsayılan Dosya İzni Ayarlama",
     "description": "Yeni oluşturulan dosyaların varsayılan izinlerini belirler. 027; dosya sahibine tam yetki verir, gruba okuma verir, diğerlerine (others) hiçbir yetki vermez.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 211,
