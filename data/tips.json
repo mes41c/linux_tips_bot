@@ -685,7 +685,7 @@
     "command": "arp-scan --localnet",
     "title": "Aktif Yerel Ağ Taraması",
     "description": "Yerel ağdaki tüm cihazlara ARP paketleri göndererek aktif cihazları listeler. Pasif izlemenin aksine, IP'si gizlenmiş olsa bile fiziksel olarak ağda olan cihazları bulur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 87,
