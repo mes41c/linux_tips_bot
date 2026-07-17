@@ -133,7 +133,7 @@
     "command": "file resim.jpg",
     "title": "Gerçek Dosya Türünü Tespit Etme",
     "description": "Linux dosya uzantılarına güvenmez. Dosyanın 'Magic Number'ına (header) bakarak gerçekten ne dosyası olduğunu (ASCII text, PNG image, executable) söyler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 18,
