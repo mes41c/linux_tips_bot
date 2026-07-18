@@ -1597,7 +1597,7 @@
     "command": "findmnt --verify",
     "title": "Fstab Doğrulama ve Uyarılar",
     "description": "/etc/fstab dosyasını tarar, söz dizimi hatalarını, ulaşılamayan diskleri ve yanlış parametreleri kontrol eder. Sistem açılış sorunlarını önlemek için proaktif bir kontroldür.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 201,
