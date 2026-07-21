@@ -1717,7 +1717,7 @@
     "command": "chmod 600 ~/.ssh/id_rsa",
     "title": "Özel Anahtar İzni",
     "description": "Private Key (Özel Anahtar) dosyasını sahibi hariç kimse okuyamamalıdır. Aksi takdirde SSH istemcisi 'Unprotected private key file' hatası verir ve bağlanmaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 216,
