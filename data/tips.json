@@ -453,7 +453,7 @@
     "command": "mtr google.com",
     "title": "Gelişmiş Ağ Tanılaması",
     "description": "'ping' ve 'traceroute' komutlarının birleşimidir. Paketin hangi hop (durak) noktalarında ne kadar paket kaybettiğini (packet loss) canlı ve istatistiksel olarak gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 58,
