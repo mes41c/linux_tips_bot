@@ -525,7 +525,7 @@
     "command": "iptables -L -v -n",
     "title": "Firewall Kurallarını Okuma",
     "description": "Güvenlik duvarı kurallarını listeler. '-n' parametresi DNS çözümlemesi yapmadan sadece IP'leri gösterdiği için komutun çok hızlı çalışmasını sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 67,
