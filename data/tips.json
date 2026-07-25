@@ -1845,7 +1845,7 @@
     "command": "history -c && history -w",
     "title": "Komut Geçmişini Temizleme",
     "description": "Oturum sırasında yazdığınız komutları RAM'den siler (-c) ve temizlenmiş hali dosyaya yazar (-w). Yanlışlıkla terminale şifre yazdıysanız bunu kullanmalısınız.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 232,
