@@ -1885,7 +1885,7 @@
     "command": "sudo -i",
     "title": "Root Shell'e Geçiş",
     "description": "Root kullanıcısının ortam değişkenleri ve ev dizini (/root) ile tam yetkili bir kabuk açar. 'sudo su' yerine kullanılması önerilen modern yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 237,
