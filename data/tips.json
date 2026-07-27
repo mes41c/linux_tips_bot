@@ -141,7 +141,7 @@
     "command": "shred -u hassas_veri.txt",
     "title": "Güvenli Dosya Silme",
     "description": "Dosyayı sadece silmez (unlink), üzerine rastgele veriler yazarak (overwrite) kurtarılmasını imkansız hale getirir. -u işlemi bitince dosyayı kaldırır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 19,
