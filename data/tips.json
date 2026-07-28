@@ -429,7 +429,7 @@
     "command": "nc -zv 192.168.1.1 22",
     "title": "Hızlı Port Kontrolü (Netcat)",
     "description": "Telnet yerine 'Netcat' kullanılır. Hedef IP ve Port'a TCP bağlantısı (-z) dener. Portun açık olup olmadığını (Open/Connection refused) anlamanın en hızlı yoludur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 55,
