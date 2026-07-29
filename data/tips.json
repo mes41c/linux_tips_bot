@@ -1757,7 +1757,7 @@
     "command": "ls -Z dosya.txt",
     "title": "SELinux Context Görüntüleme",
     "description": "Dosyanın SELinux (Security Enhanced Linux) güvenlik etiketini gösterir. İzinler doğru olmasına rağmen 'Permission Denied' alıyorsanız sorun genellikle buradadır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 221,
