@@ -237,7 +237,7 @@
     "command": "tee -a islem.log",
     "title": "Hem Ekrana Hem Dosyaya Yazma",
     "description": "Bir komutun çıktısını hem terminalde görmek hem de aynı anda bir dosyaya kaydetmek için boru (pipe) ile 'tee' komutuna aktarılır. -a (append) üzerine ekleme yapar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 31,
