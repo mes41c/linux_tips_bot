@@ -997,7 +997,7 @@
     "command": "cat /proc/cpuinfo",
     "title": "Detaylı İşlemci Bilgisi (ProcFS)",
     "description": "Kernelin işlemciyi nasıl gördüğünü ham haliyle okur. 'flags' kısmında işlemcinin desteklediği özellikleri (örn: sanallaştırma için 'vmx' veya 'svm') görebilirsiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 126,
