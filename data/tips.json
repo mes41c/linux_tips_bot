@@ -1397,7 +1397,7 @@
     "command": "cfdisk",
     "title": "Görsel Bölümleme Aracı",
     "description": "fdisk'in grafiksel (TUI) arayüzlü halidir. Partition oluşturmayı, silmeyi ve türünü değiştirmeyi menüler üzerinden görsel olarak yapmanızı sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 176,
