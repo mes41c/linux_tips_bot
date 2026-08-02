@@ -861,7 +861,7 @@
     "command": "vmstat 1",
     "title": "Sanal Bellek ve CPU İstatistikleri",
     "description": "Sistem kaynaklarını her saniye (1) güncelleyerek raporlar. 'htop'un aksine metin tabanlıdır ve loglanabilir. CPU bekleme süresi (wa) ve swap kullanımı (si/so) kritik metriklerdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 109,
