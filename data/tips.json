@@ -245,7 +245,7 @@
     "command": "sed -i 's/eski/yeni/g' config.xml",
     "title": "Dosya İçi Yerinde Değişiklik",
     "description": "Dosyayı açmadan içindeki metinleri değiştirir. 'sed' (stream editor) ile yapılan bu işlem kalıcıdır (-i: in-place). Büyük SQL dump dosyalarında domain değiştirmek için idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 32,
