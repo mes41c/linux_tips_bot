@@ -581,7 +581,7 @@
     "command": "ip route show",
     "title": "Yönlendirme Tablosunu (Routing Table) İnceleme",
     "description": "Paketlerin hangi ağ geçidinden (Gateway) geçerek dışarı çıktığını gösterir. 'default via' satırı, internete çıkış kapınızdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 74,
