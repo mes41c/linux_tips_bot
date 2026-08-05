@@ -1853,7 +1853,7 @@
     "command": "setfacl -b dosya.txt",
     "title": "Tüm ACL İzinlerini Sıfırlama",
     "description": "Dosyaya tanımlanmış tüm özel kullanıcı ve grup ACL ayarlarını siler, dosyayı standart Unix izinlerine döndürür.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 233,
