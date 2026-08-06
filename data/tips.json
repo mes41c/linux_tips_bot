@@ -2389,7 +2389,7 @@
     "command": "systemctl list-units --type=service --state=running",
     "title": "Çalışan Servisleri Denetleme",
     "description": "Sistemde o an aktif olan servisleri listeler. Gereksiz veya tanınmayan bir servis çalışıyorsa (örn: saldırganın açtığı bir listener) kapatılmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 300,
