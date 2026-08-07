@@ -85,7 +85,7 @@
     "command": "pushd /var/log && popd",
     "title": "Dizin Yığınlama (Stack)",
     "description": "'cd' komutundan daha yeteneklidir. 'pushd' ile bir dizine giderken mevcut konumunuzu hafızaya alırsınız, işiniz bitince 'popd' diyerek tam olarak kaldığınız yere dönersiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 12,
