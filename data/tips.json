@@ -2045,7 +2045,7 @@
     "command": "auditctl -w /etc/passwd -p wa -k identity",
     "title": "Dosya Değişikliklerini İzleme (Auditd)",
     "description": "Passwd dosyasına yapılan her yazma (w) ve nitelik değiştirme (a) işlemini kernel seviyesinde loglar. Kimin kullanıcı eklediğini kanıtlamak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 257,
