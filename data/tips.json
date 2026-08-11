@@ -2245,7 +2245,7 @@
     "command": "mount -o remount,noexec /tmp",
     "title": "Tmp Dizini Çalıştırma Yasağı",
     "description": "/tmp dizinini 'noexec' parametresi ile bağlar. Böylece saldırganlar /tmp dizinine script veya exploit atsa bile çalıştıramaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 282,
