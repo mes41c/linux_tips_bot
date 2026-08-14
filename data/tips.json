@@ -285,7 +285,7 @@
     "command": "tar -czvf yedek.tar.gz -C /var/www html",
     "title": "Dizin Yapısını Bozmadan Arşivleme",
     "description": "Arşiv oluştururken tam dosya yolunu (/var/www/html/...) dahil etmemek için -C (Change directory) kullanılır. Böylece arşiv açıldığında dosyalar doğrudan mevcut dizine çıkar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 37,
