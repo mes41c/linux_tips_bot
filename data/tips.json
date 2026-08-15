@@ -557,7 +557,7 @@
     "command": "scp -r user@server:/var/www/html .",
     "title": "Sunucudan Klasör İndirme",
     "description": "SSH protokolü üzerinden güvenli dosya kopyalama (Secure Copy). '-r' (recursive) parametresi ile tek bir dosya yerine tüm klasör yapısını bilgisayarınıza çeker.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 71,
