@@ -1957,7 +1957,7 @@
     "command": "namei -mo /path/to/file",
     "title": "İzin Yolu Analizi",
     "description": "Bir dosya yolundaki her klasörün sahibini (m) ve izinlerini (o) alt alta gösterir. Karmaşık izin hatalarını çözmek için en net araçtır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 246,
