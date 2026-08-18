@@ -221,7 +221,7 @@
     "command": "locate dosya_adi",
     "title": "Veritabanından Hızlı Arama",
     "description": "'find' komutu diski o an taradığı için yavaştır. 'locate' ise önceden indekslenmiş veritabanından (mlocate.db) sorgu yaptığı için sonuçları milisaniyeler içinde getirir. (Veritabanını güncellemek için: sudo updatedb)",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 29,
