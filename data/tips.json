@@ -605,7 +605,7 @@
     "command": "hostnamectl set-hostname yeni-isim",
     "title": "Makine İsmini (Hostname) Değiştirme",
     "description": "Sunucunun ağda görünen ismini kalıcı olarak değiştirir. Değişikliğin aktif olması için oturumu kapatıp açmak gerekebilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 77,
