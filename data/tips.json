@@ -1317,7 +1317,7 @@
     "command": "wipefs -a /dev/sdb",
     "title": "Dosya Sistemi İmzalarını Silme",
     "description": "Diski yeniden bölümlemeden önce eski RAID, LVM veya dosya sistemi imzalarını temizler. Disk kurulumlarında 'Device is busy' veya garip hatalar alıyorsanız çözüm budur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 166,
