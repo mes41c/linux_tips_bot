@@ -1933,7 +1933,7 @@
     "command": "chmod -R go-rwx /home/user",
     "title": "Ev Dizinini İzole Etme",
     "description": "Kullanıcının ev dizinini diğer kullanıcılara (group ve others) tamamen kapatır. Paylaşımlı sunucularda kullanıcıların birbirini görmesini engeller.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 243,
