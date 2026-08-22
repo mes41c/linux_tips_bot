@@ -725,7 +725,7 @@
     "command": "openssl s_client -connect google.com:443",
     "title": "SSL/TLS Sertifika Analizi",
     "description": "Bir sunucunun SSL sertifikasının geçerlilik süresini, şifreleme algoritmasını ve zincir yapısını (Chain) terminalden detaylıca inceler. Tarayıcının 'kilit' ikonuna tıklamanın mühendislik karşılığıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 92,
