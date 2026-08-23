@@ -1125,7 +1125,7 @@
     "command": "watch -d 'cat /proc/interrupts'",
     "title": "Donanım Kesmelerini (Interrupts) İzleme",
     "description": "CPU'nun hangi donanımla (Klavye, Ethernet, Disk) ne kadar meşgul olduğunu gösterir. Bir çekirdeğin neden %100 kullanıldığını anlamak için donanım seviyesi analizdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 142,
