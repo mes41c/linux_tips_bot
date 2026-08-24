@@ -1253,7 +1253,7 @@
     "command": "fsck -y /dev/sda1",
     "title": "Dosya Sistemi Onarımı",
     "description": "Bozuk dosya sistemini (File System Check) tarar ve onarır. -y (yes) parametresi tüm onarım sorularına otomatik 'evet' der. Sadece unmount edilmiş disklerde çalıştırılmalıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 158,
