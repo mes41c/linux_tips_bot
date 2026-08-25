@@ -1149,7 +1149,7 @@
     "command": "lshw -short",
     "title": "Donanım Envanteri",
     "description": "Sistemin Marka, Model, Seri Numarası, RAM slotları ve Firmware sürümlerini tek bir tabloda özetler. Sunucu envanteri çıkarmak için en iyi araçtır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 145,
