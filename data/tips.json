@@ -661,7 +661,7 @@
     "command": "ssh -D 9090 user@server",
     "title": "Dinamik SOCKS Proxy (SSH Tünelleme)",
     "description": "SSH üzerinden dinamik bir SOCKS proxy tüneli açar. Tarayıcınızı localhost:9090'a yönlendirerek, internete sanki uzak sunucu üzerinden çıkıyormuşsunuz gibi (VPN benzeri) gezebilirsiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 84,
