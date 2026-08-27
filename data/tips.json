@@ -2141,7 +2141,7 @@
     "command": "openssl rand -base64 32",
     "title": "Güçlü Parola Üretimi",
     "description": "Kriptografik olarak güvenli rastgelelik (entropy) kullanarak 32 karakterlik karmaşık bir string üretir. API key veya veritabanı şifresi olarak kullanım için idealdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 269,
