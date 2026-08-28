@@ -589,7 +589,7 @@
     "command": "ethtool eth0",
     "title": "Fiziksel Bağlantı Kontrolü",
     "description": "Ağ kartının fiziksel durumunu sorgular. Kablo takılı mı (Link detected: yes), bağlantı hızı ne (Speed: 1000Mb/s) ve Duplex modu nedir gibi donanımsal bilgileri verir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 75,
