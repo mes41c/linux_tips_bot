@@ -117,7 +117,7 @@
     "command": "df -hT",
     "title": "Disk Alanı ve Dosya Sistemi Tipi",
     "description": "Disklerin doluluk oranını (-h: human readable) ve dosya sistemi tiplerini (-T: type, örn: ext4, xfs) gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 16,
