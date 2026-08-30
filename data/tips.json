@@ -2325,7 +2325,7 @@
     "command": "ls -l /etc/cron.d",
     "title": "Cron İşleri İzin Kontrolü",
     "description": "Zamanlanmış görev dosyalarının sadece root tarafından yazılabilir olduğunu kontrol eder. Buraya yazma izni olan bir kullanıcı root yetkisi kazanabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 292,
