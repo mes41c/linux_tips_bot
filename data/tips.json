@@ -45,7 +45,7 @@
     "command": "!!",
     "title": "Son Komutu Tekrarla",
     "description": "Son yazdığınız komutu çalıştırır. Genellikle yetki hatası aldığınızda 'sudo !!' şeklinde kullanılarak hayat kurtarır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 7,
