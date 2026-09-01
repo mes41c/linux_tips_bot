@@ -1445,7 +1445,7 @@
     "command": "mount --bind /var/www /home/user/www",
     "title": "Dizini Dizin Olarak Bağlama (Bind Mount)",
     "description": "Sembolik linkten farklıdır. Bir klasörü dosya sistemi seviyesinde başka bir klasörün içine bağlar. Chroot ortamlarında veya FTP erişimlerinde kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 182,
