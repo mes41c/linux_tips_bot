@@ -29,7 +29,7 @@
     "command": "tail -f error.log",
     "title": "Logları Canlı İzleme",
     "description": "Bir log dosyasına yazılan verileri anlık olarak (real-time) ekranda akıtmak için kullanılır. Hata ayıklama için kritiktir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 5,
