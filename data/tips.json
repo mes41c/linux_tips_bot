@@ -2349,7 +2349,7 @@
     "command": "openssl rsa -in key.pem -check",
     "title": "Özel Anahtar Doğrulama",
     "description": "Bir RSA özel anahtarının (Private Key) bozuk olup olmadığını veya formatının geçerliliğini matematiksel olarak kontrol eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 295,
