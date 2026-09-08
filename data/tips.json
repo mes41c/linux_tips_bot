@@ -261,7 +261,7 @@
     "command": "find . -name '*.log' -print0 | xargs -0 rm",
     "title": "Hızlı ve Güvenli Toplu Silme",
     "description": "'find' sonuçlarını 'rm' komutuna argüman olarak verir. '-print0' ve '-0' kullanımı, dosya isminde boşluk karakteri olsa bile (örn: 'Hata Logu.txt') işlemin hatasız yapılmasını sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 34,
