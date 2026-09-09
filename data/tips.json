@@ -461,7 +461,7 @@
     "command": "lsof -i :80",
     "title": "Portu Kullanan Süreci Bulma",
     "description": "Belirli bir portu (örn: 80) hangi uygulamanın veya PID'nin işgal ettiğini listeler. Çakışma durumlarında veya şüpheli bağlantıları tespit etmekte kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 59,
