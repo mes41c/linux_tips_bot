@@ -293,7 +293,7 @@
     "command": "sha256sum -c checksum.txt",
     "title": "Dosya Bütünlüğü Doğrulama",
     "description": "İndirdiğiniz bir ISO veya script dosyasının yolda bozulmadığını veya hacklenmediğini doğrular. Orijinal hash değerlerini içeren dosyayı kontrol eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 38,
