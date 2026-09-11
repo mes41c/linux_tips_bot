@@ -1093,7 +1093,7 @@
     "command": "sar -u 1 5",
     "title": "Geçmişe Dönük Performans (System Activity Reporter)",
     "description": "Sistem o an yavaş olmasa bile, geçmişte ne zaman CPU tavan yaptı? 'sar', sistemin kara kutusudur. CPU, RAM ve Disk istatistiklerini tarihçeli olarak tutar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 138,
