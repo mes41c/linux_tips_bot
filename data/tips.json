@@ -717,7 +717,7 @@
     "command": "nano ~/.ssh/config",
     "title": "SSH Konfigürasyon Dosyası",
     "description": "Her seferinde 'ssh user@uzun.sunucu.adresi -p 2222 -i key.pem' yazmak yerine, bu dosyaya takma ad (alias) tanımlayarak sadece 'ssh sunucum' yazarak bağlanmanızı sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 91,
