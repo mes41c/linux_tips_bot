@@ -2181,7 +2181,7 @@
     "command": "chkrootkit",
     "title": "Rootkit Taraması",
     "description": "Sistemde bilinen Rootkit imzalarını, şüpheli dosyaları ve değiştirilmiş sistem komutlarını (ps, ls vb.) tarayan klasik bir güvenlik aracıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 274,
