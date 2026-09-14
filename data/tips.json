@@ -2357,7 +2357,7 @@
     "command": "ausearch -f /etc/shadow",
     "title": "Shadow Dosyasına Erişimleri Denetleme",
     "description": "Auditd üzerinden, kritik shadow dosyasına kimlerin eriştiğini veya erişmeye çalıştığını geçmişe dönük sorgular.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 296,
