@@ -1725,7 +1725,7 @@
     "command": "whoami",
     "title": "Mevcut Kimlik Doğrulama",
     "description": "Basit ama kritiktir. Özellikle yetki yükseltme (Privilege Escalation) denemelerinden sonra root olup olmadığınızı teyit eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 217,
