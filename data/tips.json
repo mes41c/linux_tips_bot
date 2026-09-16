@@ -1117,7 +1117,7 @@
     "command": "logrotate -d /etc/logrotate.conf",
     "title": "Log Rotasyonu Debug",
     "description": "Disk doluluğunun ana sebebi logların dönmemesidir (rotate). -d (debug) modu, logrotate işlemini simüle eder ve neden eski logların silinmediğini raporlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 141,
