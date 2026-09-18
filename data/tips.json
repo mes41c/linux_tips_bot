@@ -2101,7 +2101,7 @@
     "command": "last reboot",
     "title": "Sistem Yeniden Başlatma Geçmişi",
     "description": "Sunucunun ne zaman ve ne sıklıkla reboot edildiğini gösterir. Beklenmeyen rebootlar donanım arızasının veya saldırının işareti olabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 264,
