@@ -1301,7 +1301,7 @@
     "command": "ncdu /var",
     "title": "Görsel Disk Kullanım Analizi",
     "description": "'du' komutunun ncurses tabanlı interaktif versiyonudur. Hangi klasörün diski doldurduğunu yön tuşlarıyla gezerek bulmanızı ve silmenizi sağlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 164,
