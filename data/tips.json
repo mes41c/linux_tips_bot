@@ -1837,7 +1837,7 @@
     "command": "su - user",
     "title": "Tam Ortam Değişikliği ile Kullanıcı Geçişi",
     "description": "Sadece 'su user' yapmak ortam değişkenlerini (PATH vb.) güncellemez. '-' (tire) işareti, sanki o kullanıcıyla login olmuşsunuz gibi çevresel değişkenleri de yükler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 231,
