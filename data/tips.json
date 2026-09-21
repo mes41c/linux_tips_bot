@@ -1349,7 +1349,7 @@
     "command": "lvextend -L +5G /dev/vg_data/lv_log",
     "title": "LVM: Disk Genişletme",
     "description": "Diski formatlamadan veya veriyi silmeden, mantıksal hacme 5GB daha ekler. Geleneksel bölümlemenin aksine sunucu çalışırken yapılabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 170,
