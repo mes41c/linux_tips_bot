@@ -205,7 +205,7 @@
     "command": "ls -lrt",
     "title": "Zamana Göre Sıralama",
     "description": "Dosyaları oluşturulma/değiştirilme tarihine göre sıralar (-t) ve listeyi ters çevirir (-r). Böylece dizindeki en yeni dosyalar en altta görünür, hemen fark edilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 27,
