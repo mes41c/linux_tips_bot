@@ -1101,7 +1101,7 @@
     "command": "taskset -cp 0-2 PID",
     "title": "CPU Affinity (Çekirdek Sabitleme)",
     "description": "Bir süreci belirli CPU çekirdeklerine (örn: 0, 1 ve 2) hapseder. Yüksek performanslı sunucularda Context Switch maliyetini azaltmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 139,
