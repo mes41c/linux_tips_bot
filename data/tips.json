@@ -1653,7 +1653,7 @@
     "command": "visudo",
     "title": "Sudoers Dosyasını Güvenli Düzenleme",
     "description": "/etc/sudoers dosyasını düzenlemek için asla doğrudan editör kullanılmaz. 'visudo', söz dizimi (syntax) hatası yaparsanız kaydetmeyi engelleyerek sistemin kilitlenmesini önler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 208,
