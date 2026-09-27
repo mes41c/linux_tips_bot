@@ -1365,7 +1365,7 @@
     "command": "xfs_growfs /mnt/data",
     "title": "Dosya Sistemini Genişletme (XFS)",
     "description": "RedHat/CentOS sistemlerde varsayılan olan XFS dosya sistemini genişletmek için kullanılır. Ext4'ten farklı olarak device path değil, mount point verilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 172,
