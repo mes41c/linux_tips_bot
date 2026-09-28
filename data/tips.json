@@ -1773,7 +1773,7 @@
     "command": "vipw",
     "title": "Passwd Dosyasını Güvenli Düzenleme",
     "description": "/etc/passwd dosyasını düzenlerken dosya kilitlenir (lock). Böylece aynı anda iki yönetici dosya üzerinde değişiklik yapıp birbirinin ayarını bozamaz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 223,
