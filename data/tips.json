@@ -1781,7 +1781,7 @@
     "command": "sudo -k",
     "title": "Sudo Oturumunu Sonlandırma",
     "description": "Sudo ile şifre girdikten sonra sistem bir süre şifre sormaz (timestamp). Bu komut önbelleği temizler ve bir sonraki sudo işleminde tekrar şifre sorulmasını zorunlu kılar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 224,
