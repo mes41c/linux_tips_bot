@@ -1269,7 +1269,7 @@
     "command": "mount -a",
     "title": "Fstab Testi",
     "description": "/etc/fstab dosyasında yaptığınız değişiklikleri sistemi yeniden başlatmadan test eder. Hata varsa ekrana basar, böylece reboot sonrası sunucunun açılmama riskini önlersiniz.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 160,
