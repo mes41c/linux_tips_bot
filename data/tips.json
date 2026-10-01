@@ -1797,7 +1797,7 @@
     "command": "find / -type d -perm -0002 -ls",
     "title": "Dünyaya Açık Klasörleri Bulma",
     "description": "Herkesin yazabildiği (World Writable) klasörleri tespit eder. Bu klasörler, saldırganların zararlı yazılım yüklemesi için potansiyel noktalardır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 226,
