@@ -645,7 +645,7 @@
     "command": "macchanger -r eth0",
     "title": "MAC Adresi Spoofing (Rastgele)",
     "description": "Donanım adresinizi (MAC) rastgele bir değerle değiştirir. Halka açık Wi-Fi ağlarında kimliğinizi gizlemek veya MAC filtresi uygulayan ağlara sızmak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 82,
