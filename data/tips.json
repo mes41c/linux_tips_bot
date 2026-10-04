@@ -1549,7 +1549,7 @@
     "command": "dosfsck -a /dev/sdb1",
     "title": "FAT32/USB Bellek Onarımı",
     "description": "Genellikle USB belleklerde kullanılan FAT32 dosya sistemini onarır. Windows'ta 'Güvenli Kaldır' yapılmadan çekilen disklerdeki hataları düzeltir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 195,
