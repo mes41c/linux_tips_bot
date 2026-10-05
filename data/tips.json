@@ -93,7 +93,7 @@
     "command": "zcat access.log.tar.gz | grep '404'",
     "title": "Sıkıştırılmış Dosyayı Açmadan Okuma",
     "description": "Log dosyalarını açmakla (extract) zaman kaybetmeyin. zcat (veya zless, zgrep) sıkıştırılmış dosyaların içeriğini doğrudan okur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 13,
