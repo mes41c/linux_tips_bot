@@ -77,7 +77,7 @@
     "command": "alias cls='clear'",
     "title": "Kendi Komutunu Yarat",
     "description": "Sık kullandığınız uzun komutlara kısa isimler takmanızı sağlar. Kalıcı olması için .bashrc veya .zshrc dosyasına eklenmelidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 11,
