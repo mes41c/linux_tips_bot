@@ -477,7 +477,7 @@
     "command": "tcpdump -i eth0 port 80 -w capture.pcap",
     "title": "Ağ Trafiğini Kaydetme",
     "description": "Belirtilen arayüz (eth0) ve port (80) üzerindeki paketleri yakalar ve daha sonra Wireshark ile incelenmek üzere bir dosyaya (.pcap) yazar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 61,
