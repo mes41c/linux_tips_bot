@@ -885,7 +885,7 @@
     "command": "systemctl status nginx",
     "title": "Servis Durumunu Sorgulama",
     "description": "Bir servisin (Daemon) çalışıp çalışmadığını, en son ne zaman başladığını ve son log satırlarını gösterir. Sistem yöneticisinin sabah kahvesinden önce baktığı ilk yerdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 112,
