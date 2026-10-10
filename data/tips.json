@@ -693,7 +693,7 @@
     "command": "host -t txt google.com",
     "title": "DNS TXT Kayıtlarını Okuma",
     "description": "Sadece IP değil, SPF kayıtları ve doğrulama anahtarları gibi metin tabanlı DNS kayıtlarını çeker. Phishing analizlerinde domainin güvenilirliğini sorgulamak için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 88,
