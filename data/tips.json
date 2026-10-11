@@ -1197,7 +1197,7 @@
     "command": "perf top",
     "title": "Kernel Seviyesi Profilleme",
     "description": "Sistemi en çok yoran fonksiyonları (Kernel veya Userspace) canlı izler. Hangi C fonksiyonunun CPU'yu tükettiğini gösterir. Linux performans analizinin zirvesidir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 151,
