@@ -1573,7 +1573,7 @@
     "command": "stat -f /",
     "title": "Dosya Sistemi Durumu",
     "description": "Dosya (stat dosya) yerine dosya sisteminin (stat -f) kendisi hakkında bilgi verir. Blok boyutu, maksimum dosya adı uzunluğu gibi mimari sınırları gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 198,
