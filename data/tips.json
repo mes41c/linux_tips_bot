@@ -1557,7 +1557,7 @@
     "command": "repquota -as",
     "title": "Disk Kotası Raporu",
     "description": "Hangi kullanıcının ne kadar disk alanı ve dosya sayısı (inode) kullandığını raporlar. Çok kullanıcılı sistemlerde limit aşımlarını görmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 196,
