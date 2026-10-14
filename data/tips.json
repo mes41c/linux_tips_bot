@@ -749,7 +749,7 @@
     "command": "python3 -m http.server 8000",
     "title": "Anlık HTTP Sunucusu Başlatma",
     "description": "Bulunduğunuz klasörü anında bir web sunucusuna dönüştürür. Ağdaki diğer cihazlara hızlıca dosya göndermek veya bir exploit'i karşı tarafa indirtmek için en pratik yöntemdir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 95,
