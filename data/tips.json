@@ -1493,7 +1493,7 @@
     "command": "dd if=/dev/sda of=mbr_backup.img bs=512 count=1",
     "title": "MBR ve Partition Table Yedekleme",
     "description": "Diskin ilk 512 baytını (Master Boot Record ve Bölüm Tablosu) yedekler. Yanlışlıkla partition silindiğinde bu küçük dosyadan tüm disk yapısı kurtarılabilir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 188,
