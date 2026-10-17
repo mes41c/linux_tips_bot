@@ -2189,7 +2189,7 @@
     "command": "ufw allow from 192.168.1.0/24 to any port 22",
     "title": "SSH'ı Sadece Yerel Ağa Açma",
     "description": "SSH portunu tüm dünyaya açmak yerine, sadece belirli bir subnet'e (İç ağ veya VPN bloğu) açarak saldırı yüzeyini %99 oranında küçültür.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 275,
