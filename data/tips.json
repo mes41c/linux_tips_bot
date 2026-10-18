@@ -1765,7 +1765,7 @@
     "command": "restorecon -Rv /var/www/html",
     "title": "SELinux Context Onarımı",
     "description": "Dosyaların SELinux etiketlerini varsayılan ayarlara döndürür. Web sunucusuna dosya kopyaladığınızda erişilemiyorsa bu komut sorunu çözer.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 222,
