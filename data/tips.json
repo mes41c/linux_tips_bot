@@ -1189,7 +1189,7 @@
     "command": "pidof uygulama_adi",
     "title": "PID Bulma (Hızlı)",
     "description": "'ps aux | grep' yazmak yerine, bir uygulamanın Process ID'sini tek seferde döndürür. Scriptlerde 'kill $(pidof apache2)' şeklinde sıkça kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 150,
