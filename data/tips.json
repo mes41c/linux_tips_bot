@@ -269,7 +269,7 @@
     "command": "lsof +D /var/log",
     "title": "Dizini Kullanan Süreçleri Bulma",
     "description": "Bir klasörü silmek veya unmount etmek istediğinizde 'Device or resource busy' hatası alırsanız, bu komut o dizindeki dosyaları o an hangi programın açık tuttuğunu gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 35,
