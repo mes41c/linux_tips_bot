@@ -421,7 +421,7 @@
     "command": "ip -c a",
     "title": "IP Adreslerini Renkli Görüntüleme",
     "description": "Kullanımdan kaldırılan 'ifconfig' yerine 'ip' komutu kullanılır. '-c' parametresi çıktıyı renklendirerek arayüzleri ve IP adreslerini okumayı kolaylaştırır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 54,
