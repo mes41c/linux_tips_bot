@@ -2333,7 +2333,7 @@
     "command": "fail2ban-client status sshd",
     "title": "Fail2Ban Durum Kontrolü",
     "description": "Saldırı engelleyici Fail2Ban servisinin SSH hapishanesindeki (jail) durumunu ve şu ana kadar kaç IP adresinin banlandığını gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 293,
