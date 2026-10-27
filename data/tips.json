@@ -189,7 +189,7 @@
     "command": "mv config.yaml{,.yedek}",
     "title": "Brace Expansion ile Hızlı Yedekleme",
     "description": "Dosya ismini iki kez yazmanıza gerek yoktur. Bu komut 'mv config.yaml config.yaml.yedek' komutunun Bash kısayoludur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 25,
