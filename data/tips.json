@@ -517,7 +517,7 @@
     "command": "wget --mirror --convert-links example.com",
     "title": "Web Sitesini Klonlama",
     "description": "Bir web sitesinin tamamını çevrimdışı incelemek üzere indirir. Linkleri yerel yapıya göre dönüştürür. Statik site analizi ve phishing senaryoları (eğitim amaçlı) için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 66,
