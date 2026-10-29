@@ -701,7 +701,7 @@
     "command": "wget -c http://site.com/buyuk_dosya.iso",
     "title": "İndirmeye Kaldığı Yerden Devam Etme",
     "description": "Kesilen bir indirmeyi baştan başlatmak yerine -c (continue) parametresi ile kaldığı yerden devam ettirir. Kararsız ağ bağlantılarında büyük dosyalar için hayat kurtarıcıdır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 89,
