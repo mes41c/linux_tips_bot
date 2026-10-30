@@ -765,7 +765,7 @@
     "command": "fping -a -g 192.168.1.0/24",
     "title": "Hızlı Ağ Taraması (Ping Sweep)",
     "description": "Standart ping yavaştır. 'fping', tüm bloğu (-g) paralel olarak pingler ve sadece hayatta olan (-a: alive) cihazları listeler. Nmap öncesi hızlı keşif için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 97,
