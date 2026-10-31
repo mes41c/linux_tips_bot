@@ -1077,7 +1077,7 @@
     "command": "lsblk -f",
     "title": "Blok Cihazları ve Dosya Sistemleri",
     "description": "Diskleri, bölümleri (partitions), dosya sistemi tiplerini (ext4, xfs) ve UUID'lerini ağaç yapısında listeler. Disk yönetimi öncesi büyük resmi görmek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 136,
