@@ -1989,7 +1989,7 @@
     "command": "stat -c '%a %n' *",
     "title": "Sayısal İzin Listesi",
     "description": "'ls -l' harf (rwx) gösterir. Bu komut dosyaların izinlerini oktal sayı formatında (örn: 644, 755) ve dosya adıyla birlikte temiz bir liste olarak verir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 250,
