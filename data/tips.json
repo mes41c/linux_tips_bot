@@ -1029,7 +1029,7 @@
     "command": "w",
     "title": "Kim Ne Yapıyor?",
     "description": "'who' komutundan daha detaylıdır. Sisteme bağlı kullanıcıları, nereden bağlandıklarını ve O AN terminalde hangi komutu çalıştırdıklarını (WHAT) gösterir.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 130,
