@@ -2398,5 +2398,406 @@
     "title": "Sistemi Güvenli Kapatma",
     "description": "Sistemi 'Halt' durumuna getirir ve gücü keser. Saldırı altında veya fiziksel müdahale gerektiğinde sistemi kapatmanın en temel (System V) komutudur.",
     "is_published": true
+  },
+  {
+    "id": 301,
+    "category": "detection_engineering",
+    "command": "jq -c 'select(.rule.level >= 10) | {timestamp, agent: .agent.name, desc: .rule.description, srcip: .data.srcip}' /var/ossec/logs/alerts/alerts.json",
+    "title": "Wazuh Yüksek Seviyeli Alarmları Filtreleme",
+    "description": "Wazuh SIEM'in ürettiği ham alerts.json dosyasından sadece kural seviyesi 10 ve üzeri olan kritik alarmları, kaynak IP ve ajan bilgisiyle birlikte okunabilir şekilde süzmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 302,
+    "category": "detection_engineering",
+    "command": "jq 'select(.event_type == \"alert\") | {timestamp, src_ip, dest_ip, sig: .alert.signature}' /var/log/suricata/eve.json",
+    "title": "Suricata EVE JSON Alarm Analizi",
+    "description": "Suricata IDS/IPS motorunun tüm ağ telemetrisini yazdığı eve.json dosyasından sadece tetiklenen saldırı imzalarını (alerts) hızlıca ayıklamak için standart SOC analiz komutudur.",
+    "is_published": false
+  },
+  {
+    "id": 303,
+    "category": "threat_hunting",
+    "command": "aureport --auth --failed --summary",
+    "title": "Auditd Başarısız Kimlik Doğrulama Özeti",
+    "description": "Linux auditd servisi tarafından kaydedilen başarısız oturum açma denemelerini kullanıcı ve kaynak bazında özetler. Dağıtık brute-force veya parola püskürtme (password spraying) saldırılarını tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 304,
+    "category": "detection_engineering",
+    "command": "auditctl -a always,exit -F arch=b64 -S execve -k proc_exec",
+    "title": "Kernel Seviyesinde Süreç Çalıştırma İzleme",
+    "description": "Sistemde çalıştırılan her 64-bit komut ve ikili dosyayı (execve sistem çağrısı) 'proc_exec' anahtarıyla loglar. Windows Sysmon Event ID 1'in Linux tarafındaki karşılığıdır.",
+    "is_published": false
+  },
+  {
+    "id": 305,
+    "category": "threat_hunting",
+    "command": "ausearch -k proc_exec -i | grep -E 'curl|wget|nc|python|bash -i'",
+    "title": "LOLBins ve Reverse Shell Avı",
+    "description": "Auditd süreç logları içinde saldırganların araç indirmek veya ters kabuk (reverse shell) açmak için kullandığı yerleşik Linux araçlarının (Living-off-the-Land) izlerini tarar.",
+    "is_published": false
+  },
+  {
+    "id": 306,
+    "category": "dfir",
+    "command": "cp /proc/PID/exe /tmp/recovered_malware.bin",
+    "title": "Silinmiş Zararlı Yazılımı RAM'den Kurtarma",
+    "description": "Saldırgan zararlı dosyayı çalıştırdıktan sonra diskten silse (rm) bile süreç çalıştığı sürece kernel bu dosyayı bellekte tutar. Bu komutla zararlı binary imajını adli analiz için kopyalayabilirsiniz.",
+    "is_published": false
+  },
+  {
+    "id": 307,
+    "category": "dfir",
+    "command": "ls -la /proc/PID/fd",
+    "title": "Sürecin Açık Dosya ve Soketlerini İnceleme",
+    "description": "Şüpheli bir PID'nin o an okuduğu/yazdığı dosyaları ve açık tuttuğu ağ soketlerini (File Descriptors) kernel üzerinden doğrudan gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 308,
+    "category": "malware_analysis",
+    "command": "readelf -h -l -S supheli_dosya",
+    "title": "Linux ELF Başlık ve Bölüm Analizi",
+    "description": "Şüpheli bir Linux çalıştırılabilir dosyasının (ELF) mimarisini, giriş noktasını (Entry Point), segmentlerini ve paketlenmiş (packed/UPX) olup olmadığını statik analizle ortaya çıkarır.",
+    "is_published": false
+  },
+  {
+    "id": 309,
+    "category": "malware_analysis",
+    "command": "ldd /usr/bin/sshd",
+    "title": "Paylaşımlı Kütüphane Bağımlılık Kontrolü",
+    "description": "Bir binary dosyasının çalışma zamanında yüklediği .so kütüphanelerini listeler. Kritik servislerin içine LD_PRELOAD veya kötü niyetli kütüphane enjekte edilip edilmediğini denetler.",
+    "is_published": false
+  },
+  {
+    "id": 310,
+    "category": "malware_analysis",
+    "command": "ltrace -f ./bilinmeyen_program",
+    "title": "Dinamik Kütüphane Çağrılarını İzleme",
+    "description": "strace sistem çağrılarını izlerken, ltrace programın yaptığı C/kütüphane fonksiyon çağrılarını (strcmp, malloc, getenv vb.) ve parametrelerini gösterir. Parola veya anahtar kontrollerini çözerken kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 311,
+    "category": "malware_analysis",
+    "command": "strings -n 8 -e l zararli.bin",
+    "title": "İkili Dosyadan C2 ve Metin Çıkarma",
+    "description": "Derlenmiş bir ikili dosya içindeki en az 8 karakterli ASCII ve UTF-16 (Little Endian) dizelerini ayıklar. Gömülü C2 IP adreslerini, alan adlarını veya dosya yollarını bulmak için ilk adımdır.",
+    "is_published": false
+  },
+  {
+    "id": 312,
+    "category": "malware_analysis",
+    "command": "yara -r kurallar.yar /var/www/html",
+    "title": "YARA Kuralları ile Zararlı Taraması",
+    "description": "Yazdığınız veya tehdit istihbaratından aldığınız YARA imzalarını kullanarak belirtilen dizin altında özyinelemeli (recursive) olarak web shell veya zararlı yazılım tespiti yapar.",
+    "is_published": false
+  },
+  {
+    "id": 313,
+    "category": "network_analysis",
+    "command": "tshark -i eth0 -Y \"http.request or tls.handshake.type == 1\" -T fields -e ip.src -e http.host -e tls.handshake.extensions_server_name",
+    "title": "Canlı Trafikten HTTP Host ve TLS SNI Çıkarma",
+    "description": "Ağ üzerindeki şifreli HTTPS (TLS Client Hello SNI) ve şifresiz HTTP isteklerinden istemcilerin hangi alan adlarına bağlandığını gerçek zamanlı olarak konsola döker.",
+    "is_published": false
+  },
+  {
+    "id": 314,
+    "category": "network_analysis",
+    "command": "tshark -r capture.pcap -q -z conv,tcp",
+    "title": "PCAP Üzerinde Veri Sızıntısı (Exfiltration) Analizi",
+    "description": "Yakalanmış bir ağ trafiği dosyasındaki tüm TCP oturumlarını gönderilen/alınan bayt miktarına göre listeler. Dışarıya anormal boyutta veri aktaran IP'leri tespit etmeyi sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 315,
+    "category": "network_analysis",
+    "command": "tcpdump -ni eth0 'tcp[tcpflags] & (tcp-syn|tcp-fin) != 0 and tcp[tcpflags] & tcp-ack == 0'",
+    "title": "Ham Paket Seviyesinde SYN/FIN Tarama Tespiti",
+    "description": "BPF (Berkeley Packet Filter) kullanarak ACK bayrağı olmayan saf SYN veya gizli FIN paketlerini yakalar. Ağdaki keşif (port scan) aktivitelerini IDS olmadan yakalamanızı sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 316,
+    "category": "cti",
+    "command": "whois -h whois.cymru.com \" -v 1.1.1.1\"",
+    "title": "IP Adresinin ASN ve BGP Altyapı Sorgusu",
+    "description": "Şüpheli bir IP adresinin hangi Otonom Sistem Numarasına (ASN), BGP IP bloğuna ve ülkeye ait olduğunu Team Cymru sunucusu üzerinden saniyeler içinde sorgular.",
+    "is_published": false
+  },
+  {
+    "id": 317,
+    "category": "cti",
+    "command": "openssl s_client -connect hedef.com:443 </dev/null 2>/dev/null | openssl x509 -noout -fingerprint -sha256 -ext subjectAltName",
+    "title": "C2 Altyapı Takibi İçin Sertifika Parmak İzi",
+    "description": "Bir sunucunun TLS sertifikasının SHA256 parmak izini ve Subject Alternative Name (SAN) kayıtlarını çıkarır. Tehdit aktörlerinin aynı sertifikayı kullandığı diğer C2 sunucularını bulmak (pivoting) için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 318,
+    "category": "cti",
+    "command": "dig +trace example.com",
+    "title": "Root Sunuculardan İtibaren Tam DNS İzleme",
+    "description": "Yerel DNS önbelleğini atlayarak kök (.) sunuculardan yetkili (Authoritative) sunucuya kadar tüm delegasyon zincirini adım adım sorgular. DNS hijacking veya zehirlenme analizinde kritiktir.",
+    "is_published": false
+  },
+  {
+    "id": 319,
+    "category": "cti",
+    "command": "curl -s \"https://crt.sh/?q=%25.hedefdomain.com&output=json\" | jq -r '.[].name_value' | sort -u",
+    "title": "Certificate Transparency Loglarından Pasif Keşif",
+    "description": "Hedef alan adına paket göndermeden, herkese açık SSL/TLS sertifika şeffaflık kayıtlarından kuruma ait tüm alt alan adlarını (subdomains) pasif olarak listeler.",
+    "is_published": false
+  },
+  {
+    "id": 320,
+    "category": "cryptography",
+    "command": "openssl dgst -sha256 -hmac \"gizli_anahtar\" mesaj.txt",
+    "title": "HMAC-SHA256 ile Mesaj Bütünlüğü İmzalama",
+    "description": "Paylaşılan gizli bir anahtar kullanarak verinin hem bütünlüğünü hem de kaynağını doğrulayan kriptografik imza üretir. Otomasyon betikleri ve ajan mimarileri arasındaki API güvenliğinde kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 321,
+    "category": "cryptography",
+    "command": "ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub",
+    "title": "Sunucu SSH Host Key Parmak İzi Doğrulama",
+    "description": "Uzak bir sunucuya ilk kez SSH bağlantısı kurmadan önce sunucunun gerçek açık anahtar parmak izini görüntüler. Ortadaki adam (MITM) saldırılarına karşı kimlik doğrulaması sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 322,
+    "category": "infrastructure",
+    "command": "wg show",
+    "title": "WireGuard Mesh Tünel Durumu Denetimi",
+    "description": "Aktif WireGuard arayüzlerini, bağlı uç noktaları (peers), son başarılı el sıkışma (handshake) sürelerini ve aktarılan veri miktarını gösterir. Tünel kopmalarını izlemek için temel komuttur.",
+    "is_published": false
+  },
+  {
+    "id": 323,
+    "category": "infrastructure",
+    "command": "wg genkey | tee privatekey | wg pubkey > publickey",
+    "title": "WireGuard Anahtar Çifti Oluşturma",
+    "description": "WireGuard VPN düğümleri için kriptografik özel anahtar (private key) üretir ve bu anahtardan türetilen açık anahtarı (public key) tek boru hattında dosyalara yazar.",
+    "is_published": false
+  },
+  {
+    "id": 324,
+    "category": "container_security",
+    "command": "docker diff konteyner_adi",
+    "title": "Konteyner Dosya Sistemi Değişim Analizi",
+    "description": "Çalışan bir Docker konteynerinin temel imajına kıyasla sonradan eklenen (A), değiştirilen (C) veya silinen (D) dosyalarını listeler. Konteyner içine sızan saldırganların bıraktığı dosyaları yakalar.",
+    "is_published": false
+  },
+  {
+    "id": 325,
+    "category": "container_security",
+    "command": "docker inspect --format '{{.HostConfig.Privileged}} {{.HostConfig.CapAdd}}' konteyner_adi",
+    "title": "Konteyner Kaçış (Escape) Riski Denetimi",
+    "description": "Konteynerin ana makine çekirdeğine tam erişim sağlayan 'Privileged' modda çalışıp çalışmadığını ve tehlikeli Linux Capabilities yetkilerini kontrol eder.",
+    "is_published": false
+  },
+  {
+    "id": 326,
+    "category": "ad_security",
+    "command": "ldapsearch -x -H ldap://10.0.0.10 -b \"dc=sirket,dc=local\" \"(servicePrincipalName=*)\" sAMAccountName servicePrincipalName",
+    "title": "Linux Üzerinden Kerberoastable Hesap Sorgusu",
+    "description": "Active Directory ortamına LDAP üzerinden bağlanarak SPN (Service Principal Name) tanımlı servis hesaplarını listeler. Saldırganların TGS bileti talep edip çevrimdışı kırabileceği hedefleri tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 327,
+    "category": "ad_security",
+    "command": "smbclient -L //10.0.0.10 -N",
+    "title": "Anonim SMB Paylaşım Taraması",
+    "description": "Windows veya Samba sunucularında parola gerektirmeyen (Null Session) paylaşımları listeler. Kurumsal ağlarda yanlış yapılandırılmış dosya sunucularını tespit etmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 328,
+    "category": "ad_security",
+    "command": "rpcclient -U \"\" -N 10.0.0.10 -c \"enumdomusers\"",
+    "title": "RPC Null Session ile Domain Kullanıcı Keşfi",
+    "description": "Anonim RPC erişimi açık bırakılmış bir Windows sisteminden tüm Active Directory kullanıcı listesini ve RID değerlerini çeker. Ağ sıkılaştırma denetimlerinde kritik bir bulgudur.",
+    "is_published": false
+  },
+  {
+    "id": 329,
+    "category": "ad_security",
+    "command": "bloodhound-python -u kullanici -p 'Parola123' -d sirket.local -ns 10.0.0.10 -c All",
+    "title": "Linux Üzerinden Active Directory Saldırı Grafiği",
+    "description": "Windows aracına ihtiyaç duymadan Linux üzerinden Domain Controller ile konuşarak kullanıcı, grup, oturum ve ACL ilişkilerini toplar. Domain Admin yetkisine giden en kısa saldırı yollarını haritalandırır.",
+    "is_published": false
+  },
+  {
+    "id": 330,
+    "category": "hardening",
+    "command": "debsums -c",
+    "title": "Sistem İkili Dosyalarının Bütünlük Denetimi",
+    "description": "Debian/Ubuntu sistemlerde yüklü tüm paketlerin dosyalarını orijinal MD5 özetleriyle karşılaştırır. Saldırganlar tarafından trojanlanmış (değiştirilmiş) sistem komutlarını tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 331,
+    "category": "hardening",
+    "command": "sysctl -w net.ipv4.conf.all.rp_filter=1",
+    "title": "IP Spoofing Koruması (Reverse Path Filtering)",
+    "description": "Gelen paketin kaynak IP adresine geri dönüş yolunun, paketin geldiği ağ arayüzüyle eşleşip eşleşmediğini kontrol eder. Sahte kaynak IP ile yapılan DDoS ve ağ saldırılarını kernel seviyesinde düşürür.",
+    "is_published": false
+  },
+  {
+    "id": 332,
+    "category": "hardening",
+    "command": "sysctl -w kernel.kptr_restrict=2",
+    "title": "Kernel Bellek Adreslerini Gizleme",
+    "description": "/proc/kallsyms dosyasındaki çekirdek sembol adreslerini root dahil tüm kullanıcılardan gizler. Yerel yetki yükseltme (Local Privilege Escalation) exploit'lerinin bellek adresi bulmasını zorlaştırır.",
+    "is_published": false
+  },
+  {
+    "id": 333,
+    "category": "hardening",
+    "command": "nft list ruleset",
+    "title": "Nftables Güvenlik Duvarı Kurallarını Denetleme",
+    "description": "Modern Linux dağıtımlarında iptables'ın yerini alan nftables altyapısındaki aktif tüm tabloları, zincirleri ve paket filtreleme kurallarını tek ekranda gösterir.",
+    "is_published": false
+  },
+  {
+    "id": 334,
+    "category": "hardening",
+    "command": "systemd-analyze security ssh.service",
+    "title": "Systemd Servis İzolasyon ve Sıkılaştırma Denetimi",
+    "description": "Belirtilen servisin dosya sistemi, ağ ve sistem çağrısı kısıtlamalarını (Sandboxing) analiz ederek 0 ile 10 arasında bir maruziyet (Exposure) risk puanı hesaplar.",
+    "is_published": false
+  },
+  {
+    "id": 335,
+    "category": "threat_hunting",
+    "command": "grep -rnE \"(eval\\(|base64_decode|shell_exec|passthru|system\\()\" /var/www/html/",
+    "title": "Web Dizininde Gizli Web Shell Avı",
+    "description": "Web sunucusu dosyaları içinde saldırganların uzaktan komut çalıştırmak (RCE) için kullandığı tehlikeli PHP fonksiyonlarını ve şifreli (obfuscated) yükleri satır numarasıyla tespit eder.",
+    "is_published": false
+  },
+  {
+    "id": 336,
+    "category": "threat_hunting",
+    "command": "find /etc/systemd/system /lib/systemd/system -type f -mtime -7",
+    "title": "Son 7 Günde Eklenen Systemd Servisleri",
+    "description": "Saldırganların sistem yeniden başlasa bile kalıcılık (Persistence) sağlamak için oluşturduğu yeni veya değiştirilmiş servis birimlerini (unit files) tarih bazlı filtreler.",
+    "is_published": false
+  },
+  {
+    "id": 337,
+    "category": "threat_hunting",
+    "command": "cat /etc/ld.so.preload",
+    "title": "Userland Rootkit (LD_PRELOAD) Kontrolü",
+    "description": "Sistemde başlatılan her süreçten önce belleğe zorla yüklenen paylaşımlı kütüphanelerin listesini kontrol eder. 'ps', 'netstat' gibi komutların çıktısını manipüle eden rootkit'lerin ana gizlenme yeridir.",
+    "is_published": false
+  },
+  {
+    "id": 338,
+    "category": "threat_hunting",
+    "command": "find / -name \".*\" -not -path \"/proc/*\" -not -path \"/sys/*\" -ls 2>/dev/null",
+    "title": "Sistem Genelinde Gizli Dosya ve Dizin Taraması",
+    "description": "Saldırganların zararlı araçlarını saklamak için '/tmp', '/dev/shm' veya '/var/tmp' gibi dizinlerde nokta (.) ile gizlediği dosya ve klasörleri ortaya çıkarır.",
+    "is_published": false
+  },
+  {
+    "id": 339,
+    "category": "dfir",
+    "command": "stat -c \"%n | Birth: %w | Modify: %y | Change: %z\" supheli_dosya",
+    "title": "Zaman Damgası Manipülasyonu (Timestomping) Tespiti",
+    "description": "Saldırganlar 'touch' komutuyla dosyanın değiştirilme tarihini (Modify) geçmişe çekebilir ama kernel seviyesindeki inode değişim zamanını (Change) gizleyemez. İkisi arasındaki tutarsızlık manipülasyonu kanıtlar.",
+    "is_published": false
+  },
+  {
+    "id": 340,
+    "category": "dfir",
+    "command": "xxd -l 64 supheli_dosya",
+    "title": "Hex Dökümü ile Dosya İmzası İnceleme",
+    "description": "Dosyanın ilk 64 baytını onaltılık (Hex) ve ASCII formatında gösterir. Uzantısı '.jpg' veya '.pdf' olarak değiştirilmiş bir ELF (7f 45 4c 46) veya PE (4d 5a) zararlısını anında teşhis etmenizi sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 341,
+    "category": "dfir",
+    "command": "journalctl -u ssh -S \"2026-11-15 00:00:00\" -U \"2026-11-16 00:00:00\" -o json-pretty",
+    "title": "Olay Müdahalesi İçin Yapılandırılmış JSON Log Çıktısı",
+    "description": "Belirli bir zaman penceresindeki servis kayıtlarını SIEM veya Python analiz betiklerine doğrudan beslenebilecek yapılandırılmış JSON formatında dışa aktarır.",
+    "is_published": false
+  },
+  {
+    "id": 342,
+    "category": "detection_engineering",
+    "command": "suricata-update && systemctl reload suricata",
+    "title": "Suricata İmzalarını Kesintisiz Güncelleme",
+    "description": "Emerging Threats ve tanımlı diğer kural kaynaklarından güncel saldırı imzalarını indirir ve Suricata servisini yeniden başlatmadan (paket kaybı yaşatmadan) yeni kuralları aktif eder.",
+    "is_published": false
+  },
+  {
+    "id": 343,
+    "category": "detection_engineering",
+    "command": "suricata -T -c /etc/suricata/suricata.yaml",
+    "title": "Özel Suricata Kural Doğrulama Testi",
+    "description": "Yeni yazdığınız özel IDS/IPS kurallarını üretim veya laboratuvar trafiğine almadan önce söz dizimi (syntax), SID çakışması ve performans hatalarına karşı test eder.",
+    "is_published": false
+  },
+  {
+    "id": 344,
+    "category": "detection_engineering",
+    "command": "/var/ossec/bin/wazuh-logtest",
+    "title": "Wazuh Decoder ve Rule Canlı Simülasyonu",
+    "description": "Geliştirdiğiniz özel Wazuh decoder ve korelasyon kurallarının ham bir log satırını nasıl ayrıştırdığını ve hangi alarm seviyesini tetiklediğini canlı ortamı kirletmeden test etmenizi sağlar.",
+    "is_published": false
+  },
+  {
+    "id": 345,
+    "category": "network_analysis",
+    "command": "ngrep -d eth0 -q -W byline \"Authorization:|Cookie:\" port 80",
+    "title": "Ağ Üzerinde Açık Kimlik Bilgisi Yakalama",
+    "description": "Wireshark ve grep birleşimi olan ngrep ile şifrelenmemiş HTTP trafiği içinde geçen oturum çerezlerini (Cookie) ve Authorization başlıklarını canlı olarak filtreler.",
+    "is_published": false
+  },
+  {
+    "id": 346,
+    "category": "network_analysis",
+    "command": "ethtool -K eth0 gro off lro off",
+    "title": "IDS Sensörlerinde Paket Birleştirmeyi Kapatma",
+    "description": "Ağ kartının donanımsal paket birleştirme (GRO/LRO) özelliklerini kapatır. Suricata ve tcpdump gibi analiz araçlarının standart MTU boyutundan büyük paketleri hatalı değerlendirip saldırı kaçırmasını önler.",
+    "is_published": false
+  },
+  {
+    "id": 347,
+    "category": "red_team",
+    "command": "ffuf -u http://hedef.local/FUZZ -w /usr/share/wordlists/dirb/common.txt -mc 200,301,403",
+    "title": "Yüksek Hızlı Web Dizin Keşfi (Fuzzing)",
+    "description": "Go tabanlı ffuf aracıyla web sunucularındaki gizli yönetim panellerini, yedek dosyalarını ve API uç noktalarını tespit eder. WAF ve IDS kural testlerinde gürültü profili oluşturmak için de kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 348,
+    "category": "red_team",
+    "command": "sqlmap -u \"http://hedef.local/urun?id=1\" --batch --dbs",
+    "title": "Otomatik SQL Injection Doğrulama",
+    "description": "Web parametrelerindeki SQL enjeksiyonu zafiyetlerini doğrular ve veritabanı şemalarını listeler. Mavi takım tarafında WAF kurallarının ve SIEM SQLi alarmlarının etkinliğini test etmek için kullanılır.",
+    "is_published": false
+  },
+  {
+    "id": 349,
+    "category": "automation",
+    "command": "jq -s 'group_by(.src_ip) | map({ip: .[0].src_ip, count: length}) | sort_by(-.count)[:10]' eve.json",
+    "title": "JSON Loglarından En Saldırgan 10 IP Analizi",
+    "description": "Python betiği yazmaya gerek kalmadan tek satırlık jq sorgusuyla Suricata veya SIEM JSON loglarını kaynak IP'ye göre gruplar ve en çok alarm üreten ilk 10 saldırganı sıralar.",
+    "is_published": false
+  },
+  {
+    "id": 350,
+    "category": "automation",
+    "command": "inotifywait -m -r -e create,modify,delete /var/www/html",
+    "title": "Kernel Seviyesinde Dosya Bütünlüğü İzleme (FIM)",
+    "description": "Belirtilen dizindeki dosya oluşturma, değiştirme ve silme olaylarını inotify alt sistemi üzerinden anlık yakalar. Özel Python Active Response betiklerine gerçek zamanlı tetikleyici (trigger) olarak bağlanabilir.",
+    "is_published": false
   }
+]
 ]
