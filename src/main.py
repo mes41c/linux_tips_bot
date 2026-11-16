@@ -3,6 +3,7 @@ import os
 import sys
 import random
 import datetime
+import html
 import hashlib  # <--- YENI: Guvenlik icin gerekli
 from pathlib import Path
 from notifier import TelegramNotifier
@@ -29,12 +30,18 @@ def get_hash(text):
 
 def format_tip(tip):
     hashtag = f"#{tip.get('category', 'linux').replace('_', '')}"
+    
+    # Metin içindeki <, >, & gibi HTML karakterlerini güvenli hale getir
+    title = html.escape(tip['title'])
+    description = html.escape(tip['description'])
+    command = html.escape(tip['command'])
+    
     return (
-        f"🚀 **Günün Linux İpucu** {hashtag}\n\n"
-        f"**{tip['title']}**\n\n"
-        f"📝 *Açıklama:*\n{tip['description']}\n\n"
-        f"💻 *Komut:*\n"
-        f"```bash\n{tip['command']}\n```\n"
+        f"🚀 <b>Günün Linux İpucu</b> {hashtag}\n\n"
+        f"<b>{title}</b>\n\n"
+        f"📝 <i>Açıklama:</i>\n{description}\n\n"
+        f"💻 <i>Komut:</i>\n"
+        f"<pre><code class=\"language-bash\">{command}</code></pre>\n"
         f"🆔 ID: {tip['id']}"
     )
 
