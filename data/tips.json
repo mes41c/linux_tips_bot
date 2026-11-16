@@ -3533,7 +3533,7 @@
     "command": "dhcpdump -i eth0",
     "title": "Sahte DHCP Sunucusu (Rogue DHCP) Paket Analizi",
     "description": "Ağdaki DHCP Discover/Offer/Request/Ack paketlerini insan tarafından okunabilir şekilde ayrıştırarak ağa yetkisiz bağlanıp sahte DNS/Gateway dağıtan cihazları tespit eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 443,
