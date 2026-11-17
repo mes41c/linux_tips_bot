@@ -2525,7 +2525,7 @@
     "command": "whois -h whois.cymru.com \" -v 1.1.1.1\"",
     "title": "IP Adresinin ASN ve BGP Altyapı Sorgusu",
     "description": "Şüpheli bir IP adresinin hangi Otonom Sistem Numarasına (ASN), BGP IP bloğuna ve ülkeye ait olduğunu Team Cymru sunucusu üzerinden saniyeler içinde sorgular.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 317,
