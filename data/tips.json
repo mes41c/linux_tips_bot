@@ -2885,7 +2885,7 @@
     "command": "bpftool prog show",
     "title": "Çekirdeğe Yüklü eBPF Programlarını Listeleme",
     "description": "Modern Linux sistemlerde hem EDR ajanlarının hem de gelişmiş kernel seviyesindeki eBPF rootkit'lerinin çekirdeğe yüklediği tüm BPF programlarını ve türlerini denetler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 362,
