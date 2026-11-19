@@ -3469,7 +3469,7 @@
     "command": "hayabusa csv-timeline -d ./evtx_logs -o timeline.csv",
     "title": "Linux Üzerinden Windows EVTX Olay Günlüğü Zaman Çizelgesi",
     "description": "Windows sistemlerden toplanan '.evtx' olay günlüklerini Linux analiz istasyonunda yüksek hızda tarar, gömülü tespit kurallarıyla eşleştirir ve adli zaman çizelgesi (CSV) oluşturur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 435,
