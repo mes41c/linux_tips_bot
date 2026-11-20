@@ -2821,7 +2821,7 @@
     "command": "vol -f memory.raw linux.bash",
     "title": "RAM İmajından Saldırgan Komut Geçmişini Kurtarma",
     "description": "Saldırgan 'history -c' ile diskteki komut geçmişini silmiş olsa bile, bash sürecinin bellek yapılarında kalan komut satırı geçmişini doğrudan RAM dökümünden okur.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 354,
