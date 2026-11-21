@@ -3101,7 +3101,7 @@
     "command": "conntrack -L",
     "title": "Linux Kernel Bağlantı İzleme (NAT/Stateful) Tablosu",
     "description": "Netfilter/iptables üzerinde o an aktif olan tüm durum bilgili (stateful) ağ bağlantılarını, NAT dönüşümlerini ve paket sayaçlarını çekirdek seviyesinde listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 389,
