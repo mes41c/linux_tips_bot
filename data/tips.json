@@ -4093,7 +4093,7 @@
     "command": "unattended-upgrade --dry-run -d",
     "title": "Otomatik Güvenlik Güncellemesi Simülasyonu",
     "description": "Debian/Ubuntu sistemlerde kritik güvenlik yamalarının otomatik uygulanma yapılandırmasını sisteme dokunmadan test eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 513,
