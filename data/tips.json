@@ -3997,7 +3997,7 @@
     "command": "sqlite3 /var/ossec/queue/db/001.db \"SELECT file, md5, sha256, date FROM fim_entry ORDER BY date DESC LIMIT 10;\"",
     "title": "Wazuh Ajan FIM Veritabanından Son Dosya Değişikliklerini Sorgulama",
     "description": "Belirli bir ajana (örneğin 001) ait Wazuh Syscheck dosya bütünlüğü izleme (FIM) veritabanını doğrudan sorgulayarak sistemde son değiştirilen 10 kritik dosyayı ve hash değerlerini listeler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 501,
