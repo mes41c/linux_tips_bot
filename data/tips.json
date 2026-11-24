@@ -3717,7 +3717,7 @@
     "command": "sysctl -w kernel.yama.ptrace_scope=1",
     "title": "Ptrace ile Süreç Belleği Enjeksiyonunu Kısıtlama",
     "description": "Aynı kullanıcıya ait olsa bile bir sürecin başka bir sürecin (örneğin SSH agent veya parola yöneticisi) belleğini 'ptrace' ile okumasını veya kod enjekte etmesini kısıtlar.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 466,
