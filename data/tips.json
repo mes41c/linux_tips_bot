@@ -2533,7 +2533,7 @@
     "command": "openssl s_client -connect hedef.com:443 </dev/null 2>/dev/null | openssl x509 -noout -fingerprint -sha256 -ext subjectAltName",
     "title": "C2 Altyapı Takibi İçin Sertifika Parmak İzi",
     "description": "Bir sunucunun TLS sertifikasının SHA256 parmak izini ve Subject Alternative Name (SAN) kayıtlarını çıkarır. Tehdit aktörlerinin aynı sertifikayı kullandığı diğer C2 sunucularını bulmak (pivoting) için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 318,
