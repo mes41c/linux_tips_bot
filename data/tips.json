@@ -3285,7 +3285,7 @@
     "command": "curl -s -H \"Authorization: Bearer Oracle\" http://169.254.169.254/opc/v2/instance/",
     "title": "Bulut Metadata Servisi (IMDSv2) ve SSRF Yüzeyi Denetimi",
     "description": "Bulut sunucularındaki Instance Metadata servisine erişimi test eder. Web uygulamalarındaki SSRF açıklarının bulut kimlik bilgilerini sızdırıp sızdıramayacağını denetlemek için kullanılır.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 412,
