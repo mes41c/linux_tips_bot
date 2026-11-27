@@ -2637,7 +2637,7 @@
     "command": "debsums -c",
     "title": "Sistem İkili Dosyalarının Bütünlük Denetimi",
     "description": "Debian/Ubuntu sistemlerde yüklü tüm paketlerin dosyalarını orijinal MD5 özetleriyle karşılaştırır. Saldırganlar tarafından trojanlanmış (değiştirilmiş) sistem komutlarını tespit eder.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 331,
