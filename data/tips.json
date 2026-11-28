@@ -4285,7 +4285,7 @@
     "command": "tail -f /var/ossec/logs/active-responses.log",
     "title": "Otonom Active Response Müdahale Kayıtlarını İzleme",
     "description": "SIEM tarafından tetiklenen otomatik IP engelleme veya süreç sonlandırma aksiyonlarının zamanlamasını ve parametrelerini canlı denetler.",
-    "is_published": false
+    "is_published": true
   },
   {
     "id": 537,
